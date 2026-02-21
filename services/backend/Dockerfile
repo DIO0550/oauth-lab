@@ -5,7 +5,8 @@ WORKDIR /app
 COPY package.json ./
 RUN npm install
 
+COPY tsconfig.json ./
 COPY src/ ./src/
 
-EXPOSE 3000
-CMD ["node", "src/index.js"]
+EXPOSE 3001
+CMD ["npx", "tsx", "src/index.ts"]

@@ -30,7 +30,8 @@ OAuth 2.0 Authorization Code Flow を学ぶための実験環境です。
 ## 技術スタック
 
 - **Hono** - 軽量Webフレームワーク（全サービス共通）
-- **Node.js 20** - ランタイム
+- **TypeScript** - 型安全な開発
+- **Node.js 20** - ランタイム（tsx で TS を直接実行）
 - **Docker Compose** - コンテナオーケストレーション
 - **DevContainer** - 開発環境（Ubuntu 22.04ベース）
 
@@ -86,6 +87,7 @@ docker compose up --build
 | POST | `/approve` | 認可承認（認可コード発行） |
 | POST | `/token` | トークンエンドポイント（コード→トークン交換） |
 | POST | `/introspect` | トークン検証（RFC 7662） |
+| GET | `/userinfo` | ユーザー情報取得（OIDC） |
 
 ### Backend (:3001)
 
@@ -103,3 +105,25 @@ docker compose up --build
 | GET | `/login` | 認可リクエスト開始 |
 | GET | `/callback` | 認可コード受信 & トークン交換 |
 | GET | `/proxy/*` | Backend APIへのプロキシ |
+
+## プロジェクト構成
+
+```
+oauth-lab/
+├── .devcontainer/           # DevContainer設定
+├── docs/                    # OAuth/OIDC学習ドキュメント
+│   ├── 01-oauth-overview.md
+│   ├── 02-authorization-code-flow.md
+│   ├── 03-tokens.md
+│   ├── 04-pkce.md
+│   ├── 05-openid-connect.md
+│   ├── 06-id-token-jwt.md
+│   ├── 07-scopes-claims.md
+│   └── 08-security.md
+├── services/
+│   ├── auth-server/         # 認可サーバー
+│   ├── backend/             # リソースサーバー
+│   └── frontend/            # クライアントアプリ
+├── docker-compose.yml
+└── README.md
+```

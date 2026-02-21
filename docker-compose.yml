@@ -15,24 +15,24 @@ services:
   # 認可サーバー（OAuth 2.0 Authorization Server）
   auth-server:
     build:
-      context: ./auth-server
+      context: ./services/auth-server
       dockerfile: Dockerfile
     ports:
       - "8080:8080"
     volumes:
-      - ./auth-server/src:/app/src
+      - ./services/auth-server/src:/app/src
     environment:
       - NODE_ENV=development
 
   # リソースサーバー（Backend API）
   backend:
     build:
-      context: ./backend
+      context: ./services/backend
       dockerfile: Dockerfile
     ports:
       - "3001:3001"
     volumes:
-      - ./backend/src:/app/src
+      - ./services/backend/src:/app/src
     environment:
       - NODE_ENV=development
       - AUTH_SERVER_URL=http://auth-server:8080
@@ -42,12 +42,12 @@ services:
   # クライアントアプリ（Frontend）
   frontend:
     build:
-      context: ./frontend
+      context: ./services/frontend
       dockerfile: Dockerfile
     ports:
       - "3000:3000"
     volumes:
-      - ./frontend/src:/app/src
+      - ./services/frontend/src:/app/src
     environment:
       - NODE_ENV=development
       - AUTH_SERVER_URL=http://auth-server:8080

@@ -2,8 +2,8 @@
   "name": "oauth-lab",
   "private": true,
   "workspaces": [
-    "auth-server",
-    "backend",
-    "frontend"
+    "services/auth-server",
+    "services/backend",
+    "services/frontend"
   ]
 }
