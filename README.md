@@ -44,7 +44,7 @@ VS Codeで「Reopen in Container」を選択すると、全サービスが自動
 ### Docker Compose
 
 ```bash
-docker compose up --build
+docker compose -f .devcontainer/docker-compose.yml up --build
 ```
 
 起動後、ブラウザで http://localhost:3000 にアクセスしてください。
@@ -110,7 +110,11 @@ docker compose up --build
 
 ```
 oauth-lab/
-├── .devcontainer/           # DevContainer設定
+├── .devcontainer/
+│   ├── Dockerfile           # Ubuntu 22.04 ベース
+│   ├── devcontainer.json
+│   └── docker-compose.yml   # 全サービスのオーケストレーション
+├── docker/                  # Docker関連の追加設定（DB init等）
 ├── docs/                    # OAuth/OIDC学習ドキュメント
 │   ├── 01-oauth-overview.md
 │   ├── 02-authorization-code-flow.md
@@ -124,6 +128,6 @@ oauth-lab/
 │   ├── auth-server/         # 認可サーバー
 │   ├── backend/             # リソースサーバー
 │   └── frontend/            # クライアントアプリ
-├── docker-compose.yml
+├── CLAUDE.md
 └── README.md
 ```
