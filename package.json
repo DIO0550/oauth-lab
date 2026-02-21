@@ -1,0 +1,9 @@
+{
+  "name": "oauth-lab",
+  "private": true,
+  "workspaces": [
+    "auth-server",
+    "backend",
+    "frontend"
+  ]
+}

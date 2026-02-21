@@ -1,0 +1,22 @@
+{
+  "name": "OAuth Lab",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "devcontainer",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "humao.rest-client"
+      ]
+    }
+  },
+  "forwardPorts": [3000, 3001, 8080],
+  "portsAttributes": {
+    "3000": { "label": "Frontend", "onAutoForward": "notify" },
+    "3001": { "label": "Backend API", "onAutoForward": "notify" },
+    "8080": { "label": "Auth Server", "onAutoForward": "notify" }
+  },
+  "postCreateCommand": "cd /workspace && npm install --workspaces"
+}
