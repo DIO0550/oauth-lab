@@ -1,0 +1,59 @@
+services:
+  # DevContainer用のサービス（開発時に使用）
+  devcontainer:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    volumes:
+      - ..:/workspace:cached
+    command: sleep infinity
+    depends_on:
+      - auth-server
+      - backend
+      - frontend
+
+  # 認可サーバー（OAuth 2.0 Authorization Server）
+  auth-server:
+    build:
+      context: ../services/auth-server
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - ../services/auth-server/src:/app/src
+    environment:
+      - NODE_ENV=development
+
+  # リソースサーバー（Backend API）
+  backend:
+    build:
+      context: ../services/backend
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    volumes:
+      - ../services/backend/src:/app/src
+    environment:
+      - NODE_ENV=development
+      - AUTH_SERVER_URL=http://auth-server:8080
+    depends_on:
+      - auth-server
+
+  # クライアントアプリ（Frontend）
+  frontend:
+    build:
+      context: ../services/frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ../services/frontend/src:/app/src
+    environment:
+      - NODE_ENV=development
+      - AUTH_SERVER_URL=http://auth-server:8080
+      - AUTH_SERVER_EXTERNAL_URL=http://localhost:8080
+      - BACKEND_URL=http://backend:3001
+      - FRONTEND_URL=http://localhost:3000
+    depends_on:
+      - auth-server
+      - backend
