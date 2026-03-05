@@ -1,5 +1,9 @@
 # Implicit Flow（非推奨）
 
+## フロー図
+
+![Implicit Flow](./diagrams/implicit-flow.svg)
+
 ## 概要
 
 Implicit フローは、SPA（Single Page Application）向けに設計されたグラントタイプです（RFC 6749 Section 4.2）。

@@ -1,5 +1,9 @@
 # SAML 2.0（Security Assertion Markup Language）
 
+## フロー図
+
+![SAML 2.0 SP-Initiated SSO Flow](./diagrams/saml-flow.svg)
+
 ## SAML とは
 
 SAML 2.0 は **XML ベースの認証・認可プロトコル**で、主に**エンタープライズ SSO**（シングルサインオン）で使用されます。

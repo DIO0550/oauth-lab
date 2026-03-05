@@ -1,5 +1,9 @@
 # Authorization Code Flow
 
+## フロー図
+
+![Authorization Code Flow](./diagrams/authorization-code-flow.svg)
+
 ## フロー全体像
 
 ```

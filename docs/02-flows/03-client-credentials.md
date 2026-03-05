@@ -1,5 +1,9 @@
 # Client Credentials Flow
 
+## フロー図
+
+![Client Credentials Flow](./diagrams/client-credentials-flow.svg)
+
 ## 概要
 
 Client Credentials フローは、**ユーザーが関与しない**サーバー間（Machine-to-Machine）通信で使用されるグラントタイプです（RFC 6749 Section 4.4）。
