@@ -1,0 +1,414 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 3200">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrowPurple" markerWidth="11" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 11 3.5, 0 7" fill="#a855f7"/>
+    </marker>
+    <marker id="arrowCyan" markerWidth="11" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 11 3.5, 0 7" fill="#22d3ee"/>
+    </marker>
+    <marker id="arrowAmber" markerWidth="11" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 11 3.5, 0 7" fill="#f59e0b"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="11" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 11 3.5, 0 7" fill="#22c55e"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="11" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 11 3.5, 0 7" fill="#3b82f6"/>
+    </marker>
+
+    <!-- ===== ACTOR SYMBOLS (小型 110x130) ===== -->
+    <symbol id="owner" viewBox="0 0 110 130">
+      <rect x="0" y="0" width="110" height="130" rx="12" fill="#1e1b2e" stroke="#a855f7" stroke-width="1.6"/>
+      <g transform="translate(55, 32)">
+        <circle cx="0" cy="-8" r="11" fill="none" stroke="#a855f7" stroke-width="1.5"/>
+        <circle cx="-3" cy="-10" r="1.2" fill="#a855f7"/><circle cx="3" cy="-10" r="1.2" fill="#a855f7"/>
+        <path d="M-2.5,-4 Q0,-1 2.5,-4" fill="none" stroke="#a855f7" stroke-width="1" stroke-linecap="round"/>
+        <path d="M-13,28 Q-13,10 0,6 Q13,10 13,28" fill="none" stroke="#a855f7" stroke-width="1.5"/>
+        <line x1="-13" y1="28" x2="13" y2="28" stroke="#a855f7" stroke-width="1.5" stroke-linecap="round"/>
+        <rect x="17" y="-18" width="20" height="14" rx="2" fill="none" stroke="#a855f7" stroke-width="0.8" opacity="0.5"/>
+        <rect x="19" y="-16" width="5" height="5" rx="1" fill="#a855f7" opacity="0.3"/>
+      </g>
+      <text x="55" y="100" text-anchor="middle" fill="#d8b4fe" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">リソース所有者</text>
+      <text x="55" y="116" text-anchor="middle" fill="#a855f7" font-size="8.5" opacity="0.7" font-family="'Segoe UI', sans-serif">(Resource Owner)</text>
+    </symbol>
+
+    <symbol id="client" viewBox="0 0 110 130">
+      <rect x="0" y="0" width="110" height="130" rx="12" fill="#1e1b2e" stroke="#22d3ee" stroke-width="1.6"/>
+      <g transform="translate(55, 34)">
+        <rect x="-18" y="-16" width="36" height="26" rx="3" fill="none" stroke="#22d3ee" stroke-width="1.3"/>
+        <rect x="-14" y="-12" width="28" height="18" rx="1" fill="#22d3ee" opacity="0.05"/>
+        <circle cx="0" cy="-3" r="6.5" fill="none" stroke="#22d3ee" stroke-width="1"/>
+        <circle cx="0" cy="-3" r="2.5" fill="none" stroke="#22d3ee" stroke-width="0.8"/>
+        <line x1="0" y1="-11" x2="0" y2="-9.5" stroke="#22d3ee" stroke-width="1"/>
+        <line x1="0" y1="3.5" x2="0" y2="5" stroke="#22d3ee" stroke-width="1"/>
+        <line x1="-8" y1="-3" x2="-6.5" y2="-3" stroke="#22d3ee" stroke-width="1"/>
+        <line x1="6.5" y1="-3" x2="8" y2="-3" stroke="#22d3ee" stroke-width="1"/>
+        <line x1="0" y1="13" x2="0" y2="18" stroke="#22d3ee" stroke-width="1.3"/>
+        <line x1="-9" y1="18" x2="9" y2="18" stroke="#22d3ee" stroke-width="1.3" stroke-linecap="round"/>
+      </g>
+      <text x="55" y="100" text-anchor="middle" fill="#67e8f9" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">クライアント</text>
+      <text x="55" y="116" text-anchor="middle" fill="#22d3ee" font-size="8.5" opacity="0.7" font-family="'Segoe UI', sans-serif">(Client)</text>
+    </symbol>
+
+    <symbol id="authsv" viewBox="0 0 110 130">
+      <rect x="0" y="0" width="110" height="130" rx="12" fill="#1e1b2e" stroke="#f59e0b" stroke-width="1.6"/>
+      <g transform="translate(55, 32)">
+        <path d="M0,-22 L14,-15 L14,1 Q14,14 0,20 Q-14,14 -14,1 L-14,-15 Z" fill="none" stroke="#f59e0b" stroke-width="1.4"/>
+        <rect x="-6" y="-3" width="12" height="10" rx="2" fill="none" stroke="#f59e0b" stroke-width="1.2"/>
+        <path d="M-3.5,-3 L-3.5,-7 Q-3.5,-12 0,-12 Q3.5,-12 3.5,-7 L3.5,-3" fill="none" stroke="#f59e0b" stroke-width="1.2"/>
+        <circle cx="0" cy="2" r="1.5" fill="#f59e0b"/>
+        <line x1="0" y1="3.5" x2="0" y2="6" stroke="#f59e0b" stroke-width="1.1"/>
+      </g>
+      <text x="55" y="100" text-anchor="middle" fill="#fcd34d" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">認可サーバー</text>
+      <text x="55" y="116" text-anchor="middle" fill="#f59e0b" font-size="8.5" opacity="0.7" font-family="'Segoe UI', sans-serif">(Auth Server)</text>
+    </symbol>
+
+    <symbol id="ressv" viewBox="0 0 110 130">
+      <rect x="0" y="0" width="110" height="130" rx="12" fill="#1e1b2e" stroke="#3b82f6" stroke-width="1.6"/>
+      <g transform="translate(55, 30)">
+        <rect x="-18" y="-18" width="36" height="11" rx="2" fill="none" stroke="#3b82f6" stroke-width="1.2"/>
+        <circle cx="-10" cy="-12.5" r="1.5" fill="#3b82f6"/><circle cx="-5" cy="-12.5" r="1.5" fill="#3b82f6"/>
+        <rect x="-18" y="-3" width="36" height="11" rx="2" fill="none" stroke="#3b82f6" stroke-width="1.2"/>
+        <circle cx="-10" cy="2.5" r="1.5" fill="#3b82f6"/><circle cx="-5" cy="2.5" r="1.5" fill="#3b82f6"/>
+        <rect x="-18" y="12" width="36" height="11" rx="2" fill="none" stroke="#3b82f6" stroke-width="1.2"/>
+        <circle cx="-10" cy="17.5" r="1.5" fill="#3b82f6"/><circle cx="-5" cy="17.5" r="1.5" fill="#3b82f6"/>
+        <g transform="translate(24, 8)">
+          <rect x="-5" y="-2" width="10" height="7" rx="1.5" fill="#1e1b2e" stroke="#3b82f6" stroke-width="1"/>
+          <path d="M-2.5,-2 L-2.5,-5 Q-2.5,-8 0,-8 Q2.5,-8 2.5,-5 L2.5,-2" fill="none" stroke="#3b82f6" stroke-width="1"/>
+        </g>
+      </g>
+      <text x="55" y="100" text-anchor="middle" fill="#93c5fd" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">リソースサーバー</text>
+      <text x="55" y="116" text-anchor="middle" fill="#3b82f6" font-size="8.5" opacity="0.7" font-family="'Segoe UI', sans-serif">(Resource Server)</text>
+    </symbol>
+
+    <symbol id="dimbox" viewBox="0 0 110 130">
+      <rect x="0" y="0" width="110" height="130" rx="12" fill="#131a2b" stroke="#1e293b" stroke-width="1" stroke-dasharray="5,4"/>
+    </symbol>
+  </defs>
+
+  <rect width="1100" height="3200" fill="url(#bgGrad)"/>
+
+  <!-- ===== HEADER ===== -->
+  <text x="36" y="42" fill="#f8fafc" font-size="24" font-weight="700" font-family="'Segoe UI', sans-serif">OAuth 2.0 Authorization Code Flow</text>
+  <text x="36" y="66" fill="#94a3b8" font-size="13" font-family="'Segoe UI', sans-serif">認可コードフロー — サーバーサイドアプリケーション向け標準フロー</text>
+  <rect x="520" y="28" width="84" height="24" rx="12" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1"/>
+  <text x="562" y="44" text-anchor="middle" fill="#93c5fd" font-size="11" font-weight="600" font-family="'Segoe UI', sans-serif">RFC 6749</text>
+  <rect x="612" y="28" width="130" height="24" rx="12" fill="#1a2e05" stroke="#22c55e" stroke-width="1"/>
+  <text x="677" y="44" text-anchor="middle" fill="#86efac" font-size="11" font-weight="600" font-family="'Segoe UI', sans-serif">authorization_code</text>
+
+  <!-- ====================
+    GRID PER PHASE (図エリア幅 ~690px):
+      左列 x=55, 右列 x=530  → 間隔 530-55-110 = 365px
+      上段 y=base+75, 下段 y=base+310 → 間隔 310-75-130 = 105px
+      カード 110x130
+    
+    Phase高さ: 720, Y bases: 88, 808, 1528, 2248
+    サイドバー: x=740, w=340
+  ==================== -->
+
+  <!-- ================================================================ -->
+  <!-- PHASE 1                                                          -->
+  <!-- ================================================================ -->
+  <g transform="translate(0, 88)">
+    <rect x="36" y="0" width="220" height="36" rx="8" fill="#22d3ee" opacity="0.08" stroke="#22d3ee" stroke-width="1"/>
+    <text x="56" y="24" fill="#67e8f9" font-size="15" font-weight="700" font-family="'Segoe UI', sans-serif">Phase 1</text>
+    <text x="136" y="24" fill="#67e8f9" font-size="12" font-family="'Segoe UI', sans-serif">認可リクエスト</text>
+
+    <!-- actors -->
+    <use href="#owner"  x="55"  y="70"  width="110" height="130" filter="url(#shadow)"/>
+    <use href="#authsv" x="530" y="70"  width="110" height="130" filter="url(#shadow)"/>
+    <use href="#client" x="55"  y="310" width="110" height="130" filter="url(#shadow)"/>
+    <use href="#dimbox" x="530" y="310" width="110" height="130"/>
+    <text x="585" y="385" text-anchor="middle" fill="#334155" font-size="10" font-family="'Segoe UI', sans-serif">リソースサーバー</text>
+
+    <!-- ① 所有者 → クライアント (縦) -->
+    <path d="M 110 205 L 110 305" fill="none" stroke="#a855f7" stroke-width="2.5" marker-end="url(#arrowCyan)"/>
+    <circle cx="78" cy="254" r="15" fill="#a855f7"/>
+    <text x="78" y="259" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">1</text>
+    <text x="130" y="258" fill="#d8b4fe" font-size="11" font-weight="600" font-family="'Segoe UI', sans-serif">ログインボタン押下</text>
+
+    <!-- ② クライアント → 認可サーバー (右上斜め) -->
+    <path d="M 170 345 L 524 155" fill="none" stroke="#22d3ee" stroke-width="2.5" stroke-dasharray="9,4" marker-end="url(#arrowAmber)" filter="url(#glow)"/>
+    <circle cx="420" cy="210" r="15" fill="#22d3ee"/>
+    <text x="420" y="215" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">2</text>
+
+    <!-- ② 説明ボックス (中央下寄り — アクターに被らない位置) -->
+    <g transform="translate(195, 290)">
+      <rect x="-6" y="-14" width="270" height="50" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" opacity="0.92"/>
+      <text x="6" y="2" fill="#67e8f9" font-size="11" font-weight="600" font-family="'Segoe UI', sans-serif">② 認可リクエスト (フロントチャネル)</text>
+      <text x="6" y="18" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace">response_type=<tspan fill="#22d3ee">code</tspan></text>
+      <text x="6" y="32" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace">client_id&amp;scope=openid&amp;state=abc</text>
+    </g>
+
+    <!-- ===== SIDEBAR ===== -->
+    <g transform="translate(740, 0)">
+      <rect x="0" y="0" width="340" height="700" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="170" y="28" text-anchor="middle" fill="#e2e8f0" font-size="14" font-weight="700" font-family="'Segoe UI', sans-serif">全体フロー</text>
+      <line x1="16" y1="40" x2="324" y2="40" stroke="#334155" stroke-width="1"/>
+
+      <!-- 1 ACTIVE -->
+      <rect x="12" y="50" width="316" height="42" rx="6" fill="#a855f7" opacity="0.08" stroke="#a855f7" stroke-width="0.8"/>
+      <circle cx="30" cy="68" r="11" fill="#a855f7"/><text x="30" y="73" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">1</text>
+      <text x="48" y="64" fill="#f8fafc" font-size="10.5" font-weight="600" font-family="'Segoe UI', sans-serif">認可リクエスト開始</text>
+      <text x="48" y="78" fill="#d8b4fe" font-size="8.5" font-family="'Segoe UI', sans-serif">ユーザーが「ログイン」ボタンを押下</text>
+      <text x="48" y="89" fill="#d8b4fe" font-size="8.5" font-family="'Segoe UI', sans-serif">クライアントが認可フローを開始</text>
+
+      <!-- 2 ACTIVE -->
+      <rect x="12" y="98" width="316" height="56" rx="6" fill="#22d3ee" opacity="0.08" stroke="#22d3ee" stroke-width="0.8"/>
+      <circle cx="30" cy="120" r="11" fill="#22d3ee"/><text x="30" y="125" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">2</text>
+      <text x="48" y="116" fill="#f8fafc" font-size="10.5" font-weight="600" font-family="'Segoe UI', sans-serif">認可リクエスト (フロントチャネル)</text>
+      <text x="48" y="130" fill="#67e8f9" font-size="8.5" font-family="'Segoe UI', sans-serif">ブラウザリダイレクトで認可エンドポイントへ</text>
+      <text x="48" y="142" fill="#67e8f9" font-size="8.5" font-family="'Segoe UI', sans-serif">response_type=code, scope, state, redirect_uri</text>
+
+      <!-- 3-8 dim -->
+      <circle cx="30" cy="174" r="11" fill="#334155"/><text x="30" y="179" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">3</text>
+      <text x="48" y="178" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">認証・同意画面表示</text>
+      <circle cx="30" cy="206" r="11" fill="#334155"/><text x="30" y="211" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">4</text>
+      <text x="48" y="210" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">ユーザー認証 + 同意</text>
+      <circle cx="30" cy="238" r="11" fill="#334155"/><text x="30" y="243" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">5</text>
+      <text x="48" y="242" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">認可コード返却</text>
+      <circle cx="30" cy="270" r="11" fill="#334155"/><text x="30" y="275" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">6</text>
+      <text x="48" y="274" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">トークンリクエスト (バックチャネル)</text>
+      <circle cx="30" cy="302" r="11" fill="#334155"/><text x="30" y="307" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">7</text>
+      <text x="48" y="306" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">トークン発行</text>
+      <circle cx="30" cy="334" r="11" fill="#334155"/><text x="30" y="339" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">8</text>
+      <text x="48" y="338" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">リソースアクセス</text>
+
+      <!-- Legend -->
+      <line x1="16" y1="362" x2="324" y2="362" stroke="#334155" stroke-width="1"/>
+      <text x="16" y="382" fill="#94a3b8" font-size="10" font-weight="600" font-family="'Segoe UI', sans-serif">凡例</text>
+      <line x1="16" y1="398" x2="42" y2="398" stroke="#22d3ee" stroke-width="2.5" stroke-dasharray="5,3"/>
+      <text x="50" y="402" fill="#67e8f9" font-size="9" font-family="'Segoe UI', sans-serif">フロントチャネル</text>
+      <line x1="160" y1="398" x2="186" y2="398" stroke="#22c55e" stroke-width="2.5"/>
+      <text x="194" y="402" fill="#86efac" font-size="9" font-family="'Segoe UI', sans-serif">バックチャネル</text>
+      <line x1="16" y1="418" x2="42" y2="418" stroke="#a855f7" stroke-width="2.5"/>
+      <text x="50" y="422" fill="#d8b4fe" font-size="9" font-family="'Segoe UI', sans-serif">ユーザー操作</text>
+      <line x1="160" y1="418" x2="186" y2="418" stroke="#3b82f6" stroke-width="2.5"/>
+      <text x="194" y="422" fill="#93c5fd" font-size="9" font-family="'Segoe UI', sans-serif">APIアクセス</text>
+
+      <!-- Security -->
+      <line x1="16" y1="440" x2="324" y2="440" stroke="#334155" stroke-width="1"/>
+      <text x="16" y="462" fill="#e2e8f0" font-size="11" font-weight="700" font-family="'Segoe UI', sans-serif">🔑 セキュリティポイント</text>
+      <rect x="16" y="474" width="308" height="38" rx="6" fill="#1e1b2e" stroke="#f59e0b" stroke-width="0.8"/>
+      <text x="28" y="490" fill="#fcd34d" font-size="9.5" font-weight="600" font-family="'Segoe UI', sans-serif">🛡 state パラメータ — CSRF攻撃を防止</text>
+      <text x="28" y="504" fill="#94a3b8" font-size="8" font-family="'Segoe UI', sans-serif">リクエストとコールバックで値の一致を検証</text>
+      <rect x="16" y="518" width="308" height="38" rx="6" fill="#1e1b2e" stroke="#22c55e" stroke-width="0.8"/>
+      <text x="28" y="534" fill="#86efac" font-size="9.5" font-weight="600" font-family="'Segoe UI', sans-serif">🔒 バックチャネル交換 — サーバー間で安全に実行</text>
+      <text x="28" y="548" fill="#94a3b8" font-size="8" font-family="'Segoe UI', sans-serif">トークンはブラウザに露出しない</text>
+      <rect x="16" y="562" width="308" height="38" rx="6" fill="#1e1b2e" stroke="#22d3ee" stroke-width="0.8"/>
+      <text x="28" y="578" fill="#67e8f9" font-size="9.5" font-weight="600" font-family="'Segoe UI', sans-serif">⏱ 短寿命の認可コード — 一回限り使用</text>
+      <text x="28" y="592" fill="#94a3b8" font-size="8" font-family="'Segoe UI', sans-serif">通常10分以内に失効する</text>
+    </g>
+  </g>
+
+  <!-- separator -->
+  <line x1="36" y1="796" x2="700" y2="796" stroke="#334155" stroke-width="1" stroke-dasharray="8,8"/>
+
+  <!-- ================================================================ -->
+  <!-- PHASE 2                                                          -->
+  <!-- ================================================================ -->
+  <g transform="translate(0, 808)">
+    <rect x="36" y="0" width="300" height="36" rx="8" fill="#f59e0b" opacity="0.08" stroke="#f59e0b" stroke-width="1"/>
+    <text x="56" y="24" fill="#fcd34d" font-size="15" font-weight="700" font-family="'Segoe UI', sans-serif">Phase 2</text>
+    <text x="136" y="24" fill="#fcd34d" font-size="12" font-family="'Segoe UI', sans-serif">認証 + 認可コード返却</text>
+
+    <use href="#owner"  x="55"  y="70"  width="110" height="130" filter="url(#shadow)"/>
+    <use href="#authsv" x="530" y="70"  width="110" height="130" filter="url(#shadow)"/>
+    <use href="#client" x="55"  y="310" width="110" height="130" filter="url(#shadow)"/>
+    <use href="#dimbox" x="530" y="310" width="110" height="130"/>
+    <text x="585" y="385" text-anchor="middle" fill="#334155" font-size="10" font-family="'Segoe UI', sans-serif">リソースサーバー</text>
+
+    <!-- ③ 認可サーバー → 所有者 (水平左, Y=115) -->
+    <path d="M 524 115 L 170 115" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="8,4" marker-end="url(#arrowPurple)"/>
+    <circle cx="348" cy="96" r="15" fill="#f59e0b"/>
+    <text x="348" y="101" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">3</text>
+    <text x="348" y="134" text-anchor="middle" fill="#fcd34d" font-size="11" font-weight="600" font-family="'Segoe UI', sans-serif">③ 認証・同意画面を表示</text>
+
+    <!-- ④ 所有者 → 認可サーバー (水平右, Y=180) -->
+    <path d="M 170 180 L 524 180" fill="none" stroke="#a855f7" stroke-width="2.5" marker-end="url(#arrowAmber)"/>
+    <circle cx="348" cy="161" r="15" fill="#a855f7"/>
+    <text x="348" y="166" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">4</text>
+    <text x="348" y="198" text-anchor="middle" fill="#d8b4fe" font-size="11" font-weight="600" font-family="'Segoe UI', sans-serif">④ ユーザー認証 + スコープ同意</text>
+
+    <!-- ⑤ 認可サーバー → クライアント (左下斜め) -->
+    <path d="M 524 195 L 170 345" fill="none" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#arrowCyan)"/>
+    <circle cx="450" cy="235" r="15" fill="#f59e0b"/>
+    <text x="450" y="240" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">5</text>
+
+    <!-- ⑤ 説明 (中央寄り下、カード間の空間) -->
+    <g transform="translate(220, 260)">
+      <rect x="-6" y="-14" width="260" height="50" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" opacity="0.92"/>
+      <text x="6" y="2" fill="#fcd34d" font-size="11" font-weight="600" font-family="'Segoe UI', sans-serif">⑤ 認可コード返却 (302 Redirect)</text>
+      <text x="6" y="18" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace">code=<tspan fill="#f59e0b">SplxlOBeZQQYbYS6WxSbIA</tspan></text>
+      <text x="6" y="32" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace">state=abc</text>
+    </g>
+
+    <!-- SIDEBAR -->
+    <g transform="translate(740, 0)">
+      <rect x="0" y="0" width="340" height="470" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="170" y="28" text-anchor="middle" fill="#e2e8f0" font-size="14" font-weight="700" font-family="'Segoe UI', sans-serif">全体フロー</text>
+      <line x1="16" y1="40" x2="324" y2="40" stroke="#334155" stroke-width="1"/>
+      <!-- 1-2 dim -->
+      <circle cx="30" cy="62" r="11" fill="#334155"/><text x="30" y="67" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">1</text><text x="48" y="66" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">認可リクエスト開始</text>
+      <circle cx="30" cy="92" r="11" fill="#334155"/><text x="30" y="97" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">2</text><text x="48" y="96" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">認可リクエスト</text>
+      <!-- 3 ACTIVE -->
+      <rect x="12" y="112" width="316" height="36" rx="6" fill="#f59e0b" opacity="0.08" stroke="#f59e0b" stroke-width="0.8"/>
+      <circle cx="30" cy="128" r="11" fill="#f59e0b"/><text x="30" y="133" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">3</text>
+      <text x="48" y="126" fill="#f8fafc" font-size="10.5" font-weight="600" font-family="'Segoe UI', sans-serif">認証・同意画面表示</text>
+      <text x="48" y="140" fill="#fcd34d" font-size="8.5" font-family="'Segoe UI', sans-serif">認可サーバーがログインフォームを表示</text>
+      <!-- 4 ACTIVE -->
+      <rect x="12" y="154" width="316" height="36" rx="6" fill="#a855f7" opacity="0.08" stroke="#a855f7" stroke-width="0.8"/>
+      <circle cx="30" cy="170" r="11" fill="#a855f7"/><text x="30" y="175" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">4</text>
+      <text x="48" y="168" fill="#f8fafc" font-size="10.5" font-weight="600" font-family="'Segoe UI', sans-serif">ユーザー認証 + 同意</text>
+      <text x="48" y="182" fill="#d8b4fe" font-size="8.5" font-family="'Segoe UI', sans-serif">認証情報送信、スコープに同意</text>
+      <!-- 5 ACTIVE -->
+      <rect x="12" y="196" width="316" height="48" rx="6" fill="#f59e0b" opacity="0.08" stroke="#f59e0b" stroke-width="0.8"/>
+      <circle cx="30" cy="216" r="11" fill="#f59e0b"/><text x="30" y="221" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">5</text>
+      <text x="48" y="212" fill="#f8fafc" font-size="10.5" font-weight="600" font-family="'Segoe UI', sans-serif">認可コード返却</text>
+      <text x="48" y="226" fill="#fcd34d" font-size="8.5" font-family="'Segoe UI', sans-serif">redirect_uriへ認可コード付きリダイレクト</text>
+      <text x="48" y="238" fill="#475569" font-size="7.5" font-family="'Fira Code', monospace">→ 302 /callback?code=SplxlO...&amp;state=abc</text>
+      <!-- 6-8 dim -->
+      <circle cx="30" cy="264" r="11" fill="#334155"/><text x="30" y="269" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">6</text><text x="48" y="268" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">トークンリクエスト</text>
+      <circle cx="30" cy="294" r="11" fill="#334155"/><text x="30" y="299" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">7</text><text x="48" y="298" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">トークン発行</text>
+      <circle cx="30" cy="324" r="11" fill="#334155"/><text x="30" y="329" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">8</text><text x="48" y="328" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">リソースアクセス</text>
+    </g>
+  </g>
+
+  <line x1="36" y1="1516" x2="700" y2="1516" stroke="#334155" stroke-width="1" stroke-dasharray="8,8"/>
+
+  <!-- ================================================================ -->
+  <!-- PHASE 3                                                          -->
+  <!-- ================================================================ -->
+  <g transform="translate(0, 1528)">
+    <rect x="36" y="0" width="330" height="36" rx="8" fill="#22c55e" opacity="0.08" stroke="#22c55e" stroke-width="1"/>
+    <text x="56" y="24" fill="#86efac" font-size="15" font-weight="700" font-family="'Segoe UI', sans-serif">Phase 3</text>
+    <text x="136" y="24" fill="#86efac" font-size="12" font-family="'Segoe UI', sans-serif">トークン交換 (バックチャネル)</text>
+
+    <use href="#dimbox" x="55"  y="70"  width="110" height="130"/>
+    <text x="110" y="145" text-anchor="middle" fill="#334155" font-size="10" font-family="'Segoe UI', sans-serif">リソース所有者</text>
+    <use href="#authsv" x="530" y="70"  width="110" height="130" filter="url(#shadow)"/>
+    <use href="#client" x="55"  y="310" width="110" height="130" filter="url(#shadow)"/>
+    <use href="#dimbox" x="530" y="310" width="110" height="130"/>
+    <text x="585" y="385" text-anchor="middle" fill="#334155" font-size="10" font-family="'Segoe UI', sans-serif">リソースサーバー</text>
+
+    <!-- バックチャネルラベル -->
+    <rect x="220" y="52" width="230" height="26" rx="6" fill="#052e16" stroke="#22c55e" stroke-width="1"/>
+    <text x="335" y="70" text-anchor="middle" fill="#86efac" font-size="10" font-weight="600" font-family="'Segoe UI', sans-serif">🔒 サーバー間通信 (ブラウザ非経由)</text>
+
+    <!-- ⑥ クライアント → 認可サーバー (右上斜め) -->
+    <path d="M 170 345 L 524 165" fill="none" stroke="#22c55e" stroke-width="2.5" marker-end="url(#arrowAmber)"/>
+    <circle cx="280" cy="300" r="15" fill="#22c55e"/>
+    <text x="280" y="305" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">6</text>
+
+    <!-- ⑥ 説明 (上寄り中央) -->
+    <g transform="translate(215, 210)">
+      <rect x="-6" y="-14" width="290" height="50" rx="6" fill="#0f172a" stroke="#22c55e" stroke-width="1" opacity="0.92"/>
+      <text x="6" y="2" fill="#86efac" font-size="11" font-weight="600" font-family="'Segoe UI', sans-serif">⑥ トークンリクエスト (POST)</text>
+      <text x="6" y="18" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace">grant_type=<tspan fill="#22c55e">authorization_code</tspan></text>
+      <text x="6" y="32" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace">code=SplxlO...&amp;client_secret=xxx</text>
+    </g>
+
+    <!-- ⑦ 認可サーバー → クライアント (左下斜め) -->
+    <path d="M 524 195 L 170 395" fill="none" stroke="#22c55e" stroke-width="2.5" marker-end="url(#arrowCyan)"/>
+    <circle cx="430" cy="270" r="15" fill="#22c55e"/>
+    <text x="430" y="275" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">7</text>
+
+    <!-- ⑦ 説明 (下寄り右) -->
+    <g transform="translate(350, 330)">
+      <rect x="-6" y="-14" width="260" height="32" rx="6" fill="#052e16" stroke="#22c55e" stroke-width="1" opacity="0.92"/>
+      <text x="6" y="6" fill="#86efac" font-size="11" font-weight="600" font-family="'Fira Code', monospace">⑦ access_token + refresh_token</text>
+    </g>
+
+    <!-- SIDEBAR -->
+    <g transform="translate(740, 0)">
+      <rect x="0" y="0" width="340" height="470" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="170" y="28" text-anchor="middle" fill="#e2e8f0" font-size="14" font-weight="700" font-family="'Segoe UI', sans-serif">全体フロー</text>
+      <line x1="16" y1="40" x2="324" y2="40" stroke="#334155" stroke-width="1"/>
+      <!-- 1-5 dim -->
+      <circle cx="30" cy="62" r="11" fill="#334155"/><text x="30" y="67" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">1</text><text x="48" y="66" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">認可リクエスト開始</text>
+      <circle cx="30" cy="92" r="11" fill="#334155"/><text x="30" y="97" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">2</text><text x="48" y="96" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">認可リクエスト</text>
+      <circle cx="30" cy="122" r="11" fill="#334155"/><text x="30" y="127" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">3</text><text x="48" y="126" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">認証・同意画面表示</text>
+      <circle cx="30" cy="152" r="11" fill="#334155"/><text x="30" y="157" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">4</text><text x="48" y="156" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">ユーザー認証 + 同意</text>
+      <circle cx="30" cy="182" r="11" fill="#334155"/><text x="30" y="187" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">5</text><text x="48" y="186" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">認可コード返却</text>
+      <!-- 6 ACTIVE -->
+      <rect x="12" y="200" width="316" height="48" rx="6" fill="#22c55e" opacity="0.08" stroke="#22c55e" stroke-width="0.8"/>
+      <circle cx="30" cy="220" r="11" fill="#22c55e"/><text x="30" y="225" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">6</text>
+      <text x="48" y="216" fill="#f8fafc" font-size="10.5" font-weight="600" font-family="'Segoe UI', sans-serif">トークンリクエスト (バックチャネル)</text>
+      <text x="48" y="230" fill="#86efac" font-size="8.5" font-family="'Segoe UI', sans-serif">サーバー間POSTで認可コードをトークンに交換</text>
+      <text x="48" y="242" fill="#475569" font-size="7.5" font-family="'Fira Code', monospace">→ POST /token grant_type=authorization_code</text>
+      <!-- 7 ACTIVE -->
+      <rect x="12" y="254" width="316" height="48" rx="6" fill="#22c55e" opacity="0.08" stroke="#22c55e" stroke-width="0.8"/>
+      <circle cx="30" cy="274" r="11" fill="#22c55e"/><text x="30" y="279" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">7</text>
+      <text x="48" y="270" fill="#f8fafc" font-size="10.5" font-weight="600" font-family="'Segoe UI', sans-serif">トークン発行</text>
+      <text x="48" y="284" fill="#86efac" font-size="8.5" font-family="'Segoe UI', sans-serif">access_token + refresh_token を返却</text>
+      <text x="48" y="296" fill="#475569" font-size="7.5" font-family="'Fira Code', monospace">← 200 {"access_token":"eyJ...","token_type":"Bearer"}</text>
+      <!-- 8 dim -->
+      <circle cx="30" cy="322" r="11" fill="#334155"/><text x="30" y="327" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">8</text><text x="48" y="326" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">リソースアクセス</text>
+    </g>
+  </g>
+
+  <line x1="36" y1="2236" x2="700" y2="2236" stroke="#334155" stroke-width="1" stroke-dasharray="8,8"/>
+
+  <!-- ================================================================ -->
+  <!-- PHASE 4                                                          -->
+  <!-- ================================================================ -->
+  <g transform="translate(0, 2248)">
+    <rect x="36" y="0" width="260" height="36" rx="8" fill="#3b82f6" opacity="0.08" stroke="#3b82f6" stroke-width="1"/>
+    <text x="56" y="24" fill="#93c5fd" font-size="15" font-weight="700" font-family="'Segoe UI', sans-serif">Phase 4</text>
+    <text x="136" y="24" fill="#93c5fd" font-size="12" font-family="'Segoe UI', sans-serif">リソースアクセス</text>
+
+    <use href="#dimbox" x="55"  y="70"  width="110" height="130"/>
+    <text x="110" y="145" text-anchor="middle" fill="#334155" font-size="10" font-family="'Segoe UI', sans-serif">リソース所有者</text>
+    <use href="#dimbox" x="530" y="70"  width="110" height="130"/>
+    <text x="585" y="145" text-anchor="middle" fill="#334155" font-size="10" font-family="'Segoe UI', sans-serif">認可サーバー</text>
+    <use href="#client" x="55"  y="310" width="110" height="130" filter="url(#shadow)"/>
+    <use href="#ressv"  x="530" y="310" width="110" height="130" filter="url(#shadow)"/>
+
+    <!-- ⑧ クライアント → リソースサーバー (水平右) -->
+    <path d="M 170 355 L 524 355" fill="none" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arrowBlue)"/>
+    <circle cx="348" cy="336" r="15" fill="#3b82f6"/>
+    <text x="348" y="341" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">8</text>
+    <text x="348" y="375" text-anchor="middle" fill="#93c5fd" font-size="11" font-weight="600" font-family="'Segoe UI', sans-serif">⑧ APIリクエスト (Bearer Token)</text>
+    <rect x="240" y="384" width="280" height="24" rx="5" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="380" y="401" text-anchor="middle" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace">Authorization: Bearer <tspan fill="#3b82f6">{access_token}</tspan></text>
+
+    <!-- ⑨ リソースサーバー → クライアント (水平左) -->
+    <path d="M 524 420 L 170 420" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-dasharray="8,4" marker-end="url(#arrowCyan)"/>
+    <circle cx="348" cy="438" r="15" fill="#3b82f6"/>
+    <text x="348" y="443" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">9</text>
+    <text x="348" y="414" text-anchor="middle" fill="#93c5fd" font-size="11" font-weight="600" font-family="'Segoe UI', sans-serif">⑨ 保護リソース返却 (200 OK)</text>
+
+    <!-- SIDEBAR -->
+    <g transform="translate(740, 0)">
+      <rect x="0" y="0" width="340" height="470" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="170" y="28" text-anchor="middle" fill="#e2e8f0" font-size="14" font-weight="700" font-family="'Segoe UI', sans-serif">全体フロー</text>
+      <line x1="16" y1="40" x2="324" y2="40" stroke="#334155" stroke-width="1"/>
+      <!-- 1-7 dim -->
+      <circle cx="30" cy="62" r="11" fill="#334155"/><text x="30" y="67" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">1</text><text x="48" y="66" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">認可リクエスト開始</text>
+      <circle cx="30" cy="92" r="11" fill="#334155"/><text x="30" y="97" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">2</text><text x="48" y="96" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">認可リクエスト</text>
+      <circle cx="30" cy="122" r="11" fill="#334155"/><text x="30" y="127" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">3</text><text x="48" y="126" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">認証・同意画面表示</text>
+      <circle cx="30" cy="152" r="11" fill="#334155"/><text x="30" y="157" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">4</text><text x="48" y="156" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">ユーザー認証 + 同意</text>
+      <circle cx="30" cy="182" r="11" fill="#334155"/><text x="30" y="187" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">5</text><text x="48" y="186" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">認可コード返却</text>
+      <circle cx="30" cy="212" r="11" fill="#334155"/><text x="30" y="217" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">6</text><text x="48" y="216" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">トークンリクエスト</text>
+      <circle cx="30" cy="242" r="11" fill="#334155"/><text x="30" y="247" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">7</text><text x="48" y="246" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">トークン発行</text>
+      <!-- 8 ACTIVE -->
+      <rect x="12" y="260" width="316" height="60" rx="6" fill="#3b82f6" opacity="0.08" stroke="#3b82f6" stroke-width="0.8"/>
+      <circle cx="30" cy="284" r="11" fill="#3b82f6"/><text x="30" y="289" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">8</text>
+      <text x="48" y="278" fill="#f8fafc" font-size="10.5" font-weight="600" font-family="'Segoe UI', sans-serif">リソースアクセス</text>
+      <text x="48" y="292" fill="#93c5fd" font-size="8.5" font-family="'Segoe UI', sans-serif">Bearerトークンを付与してAPIコール</text>
+      <text x="48" y="304" fill="#93c5fd" font-size="8.5" font-family="'Segoe UI', sans-serif">リソースサーバーが保護リソースを返却</text>
+      <text x="48" y="316" fill="#475569" font-size="7.5" font-family="'Fira Code', monospace">→ GET /resource Authorization: Bearer eyJ...</text>
+    </g>
+  </g>
+</svg>
