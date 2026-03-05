@@ -3,6 +3,12 @@
   "dockerComposeFile": "docker-compose.yml",
   "service": "devcontainer",
   "workspaceFolder": "/workspace",
+  "containerEnv": {
+    "GIT_AUTHOR_NAME": "${localEnv:GIT_AUTHOR_NAME}",
+    "GIT_AUTHOR_EMAIL": "${localEnv:GIT_AUTHOR_EMAIL}",
+    "GIT_COMMITTER_NAME": "${localEnv:GIT_COMMITTER_NAME}",
+    "GIT_COMMITTER_EMAIL": "${localEnv:GIT_COMMITTER_EMAIL}"
+  },
   "customizations": {
     "vscode": {
       "extensions": [
@@ -17,6 +23,5 @@
     "3000": { "label": "Frontend", "onAutoForward": "notify" },
     "3001": { "label": "Backend API", "onAutoForward": "notify" },
     "8080": { "label": "Auth Server", "onAutoForward": "notify" }
-  },
-  "postCreateCommand": "cd /workspace && npm install --workspaces"
+  }
 }
