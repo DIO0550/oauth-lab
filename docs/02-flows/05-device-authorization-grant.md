@@ -1,5 +1,9 @@
 # Device Authorization Grant
 
+## フロー図
+
+![Device Authorization Grant](./diagrams/device-authorization-flow.svg)
+
 ## 概要
 
 Device Authorization Grant（RFC 8628）は、**入力機能が制限されたデバイス**（スマートTV、IoTデバイス、CLIツールなど）向けのフローです。

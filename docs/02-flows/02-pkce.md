@@ -1,5 +1,9 @@
 # PKCE（Proof Key for Code Exchange）
 
+## フロー図
+
+![PKCE Flow](./diagrams/pkce-flow.svg)
+
 ## PKCEとは
 
 PKCE (RFC 7636) は Authorization Code Flow を公開クライアント（SPA、モバイルアプリ）でも安全に利用するための拡張です。

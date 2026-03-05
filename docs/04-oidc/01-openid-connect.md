@@ -1,5 +1,9 @@
 # OpenID Connect (OIDC)
 
+## フロー図
+
+![OpenID Connect Flow](./diagrams/oidc-flow.svg)
+
 ## OIDCとは
 
 OpenID Connect は OAuth 2.0 の上に構築された **認証（Authentication）** のレイヤーです。
