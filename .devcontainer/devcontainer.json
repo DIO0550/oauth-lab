@@ -11,18 +11,23 @@
   },
   "customizations": {
     "vscode": {
-      "extensions": [
-        "dbaeumer.vscode-eslint",
-        "esbenp.prettier-vscode",
-        "humao.rest-client"
-      ]
+      "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"],
+      "settings": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      }
     }
   },
-  "postCreateCommand": "cd /workspace/services/auth-server && npm install && cd /workspace/services/backend && npm install && cd /workspace/services/frontend && npm install",
+  "mounts": [
+    "source=${localEnv:HOME}/.config/gh,target=/home/vscode/.config/gh,type=bind,readonly"
+  ],
+  "initializeCommand": "curl -fsSL https://gist.githubusercontent.com/DIO0550/9030208a4e92984e9a1369f61ca8605e/raw/initialize-command.sh | bash",
+  "postCreateCommand": "curl -fsSL https://gist.githubusercontent.com/DIO0550/b08fa721f2b2e63f3cf708015390d5af/raw/post-create.sh | bash",
   "forwardPorts": [3000, 3001, 8080],
   "portsAttributes": {
     "3000": { "label": "Frontend", "onAutoForward": "notify" },
     "3001": { "label": "Backend API", "onAutoForward": "notify" },
     "8080": { "label": "Auth Server", "onAutoForward": "notify" }
-  }
+  },
+  "remoteUser": "vscode"
 }
