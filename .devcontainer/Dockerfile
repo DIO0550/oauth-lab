@@ -17,10 +17,7 @@ RUN apt-get update && apt-get install -y \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-RUN apt-get update && apt-get install -y sudo \
-    && apt-get clean && rm -rf /var/lib/apt/lists/* \
-    && useradd -m -s /bin/bash vscode \
-    && echo "vscode ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+RUN useradd -m -s /bin/bash vscode
 
 USER vscode
 
