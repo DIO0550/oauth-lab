@@ -3,7 +3,7 @@
 // ============================================================
 
 import { Hono } from "hono";
-import { authMiddleware } from "../../middleware/auth.js";
+import { authMiddleware } from "../../middleware/step01/auth.js";
 
 const protectedRoute = new Hono();
 
