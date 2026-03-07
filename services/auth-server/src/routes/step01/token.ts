@@ -5,7 +5,7 @@
 
 import { Hono } from "hono";
 import crypto from "node:crypto";
-import { clients, authorizationCodes, accessTokens } from "../store.js";
+import { clients, authorizationCodes, accessTokens } from "../../store.js";
 
 const token = new Hono();
 

@@ -5,9 +5,9 @@
 
 import { serve } from "@hono/node-server";
 import { Hono } from "hono";
-import home from "./routes/home.js";
-import login from "./routes/login.js";
-import callback from "./routes/callback.js";
+import home from "./routes/step01/home.js";
+import login from "./routes/step01/login.js";
+import callback from "./routes/step01/callback.js";
 import proxy from "./proxy.js";
 
 const app = new Hono();

@@ -6,11 +6,11 @@
 import { serve } from "@hono/node-server";
 import { Hono } from "hono";
 import { cors } from "hono/cors";
-import authorize from "./routes/authorize.js";
-import approve from "./routes/approve.js";
-import token from "./routes/token.js";
-import introspect from "./routes/introspect.js";
-import userinfo from "./routes/userinfo.js";
+import authorize from "./routes/step01/authorize.js";
+import approve from "./routes/step01/approve.js";
+import token from "./routes/step01/token.js";
+import introspect from "./routes/step01/introspect.js";
+import userinfo from "./routes/step01/userinfo.js";
 
 const app = new Hono();
 

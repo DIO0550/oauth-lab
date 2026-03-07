@@ -6,8 +6,8 @@
 import { serve } from "@hono/node-server";
 import { Hono } from "hono";
 import { cors } from "hono/cors";
-import publicRoute from "./routes/public.js";
-import protectedRoute from "./routes/protected.js";
+import publicRoute from "./routes/step01/public.js";
+import protectedRoute from "./routes/step01/protected.js";
 
 const app = new Hono();
 

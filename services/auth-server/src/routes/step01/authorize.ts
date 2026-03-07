@@ -4,7 +4,7 @@
 // ============================================================
 
 import { Hono } from "hono";
-import { clients } from "../store.js";
+import { clients } from "../../store.js";
 
 const authorize = new Hono();
 

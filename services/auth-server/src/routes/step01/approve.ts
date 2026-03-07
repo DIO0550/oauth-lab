@@ -5,7 +5,7 @@
 
 import { Hono } from "hono";
 import crypto from "node:crypto";
-import { users, clients, authorizationCodes } from "../store.js";
+import { users, clients, authorizationCodes } from "../../store.js";
 
 const approve = new Hono();
 

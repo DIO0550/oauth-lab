@@ -4,7 +4,7 @@
 // ============================================================
 
 import { Hono } from "hono";
-import { getSessionId, getSession } from "../session.js";
+import { getSessionId, getSession } from "../../session.js";
 
 const callback = new Hono();
 

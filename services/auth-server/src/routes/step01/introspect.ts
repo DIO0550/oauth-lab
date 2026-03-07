@@ -4,7 +4,7 @@
 // ============================================================
 
 import { Hono } from "hono";
-import { accessTokens } from "../store.js";
+import { accessTokens } from "../../store.js";
 
 const introspect = new Hono();
 

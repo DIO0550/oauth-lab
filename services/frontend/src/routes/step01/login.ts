@@ -5,7 +5,7 @@
 
 import { Hono } from "hono";
 import crypto from "node:crypto";
-import { createSession, setSessionCookie } from "../session.js";
+import { createSession, setSessionCookie } from "../../session.js";
 
 const login = new Hono();
 

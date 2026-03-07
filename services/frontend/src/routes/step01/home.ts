@@ -3,8 +3,8 @@
 // ============================================================
 
 import { Hono } from "hono";
-import { getSessionId, getSession } from "../session.js";
-import { homePage } from "../templates/home.js";
+import { getSessionId, getSession } from "../../session.js";
+import { homePage } from "../../templates/home.js";
 
 const home = new Hono();
 
