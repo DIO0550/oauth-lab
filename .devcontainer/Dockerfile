@@ -17,7 +17,13 @@ RUN apt-get update && apt-get install -y \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-RUN useradd -m -s /bin/bash vscode
+RUN apt-get update && apt-get install -y sudo \
+    && apt-get clean && rm -rf /var/lib/apt/lists/* \
+    && useradd -m -s /bin/bash vscode \
+    && echo "vscode ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+
 USER vscode
+
+EXPOSE 3000 3001 8080
 
 WORKDIR /workspace
