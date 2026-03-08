@@ -15,6 +15,7 @@ RUN apt-get update \
         gnupg \
         git \
         tmux \
+        jq \
     && useradd -m -s /bin/bash $USERNAME \
     && curl -fsSL https://deb.nodesource.com/setup_${NODE_VERSION}.x | bash - \
     && apt-get install -y nodejs \
