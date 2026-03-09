@@ -334,7 +334,7 @@
     <text x="348" y="155" text-anchor="middle" fill="#86efac" font-size="11" font-weight="600" font-family="'Segoe UI', sans-serif">⑥ POST /token (ポーリング)</text>
 
     <!-- ⑥ 説明ボックス -->
-    <g transform="translate(180, 165)">
+    <g transform="translate(180, 178)">
       <rect x="-6" y="-14" width="360" height="64" rx="6" fill="#0f172a" stroke="#22c55e" stroke-width="1" opacity="0.92"/>
       <text x="6" y="2" fill="#86efac" font-size="11" font-weight="600" font-family="'Segoe UI', sans-serif">⑥ トークンリクエスト (POST)</text>
       <text x="6" y="18" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace">grant_type=<tspan fill="#22c55e">urn:ietf:params:oauth:grant-type:device_code</tspan></text>
@@ -348,7 +348,7 @@
     <text x="348" y="283" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">7</text>
 
     <!-- ⑦ 説明 -->
-    <g transform="translate(220, 310)">
+    <g transform="translate(220, 320)">
       <rect x="-6" y="-14" width="310" height="50" rx="6" fill="#052e16" stroke="#22c55e" stroke-width="1" opacity="0.92"/>
       <text x="6" y="2" fill="#86efac" font-size="11" font-weight="600" font-family="'Segoe UI', sans-serif">⑦ access_token返却 (認証完了後)</text>
       <text x="6" y="18" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace">未完了時: error=<tspan fill="#f59e0b">authorization_pending</tspan></text>
