@@ -137,20 +137,6 @@
     <text x="80" y="200" fill="#64748b" font-family="'Segoe UI', sans-serif" font-size="11" font-style="italic">簡素化 + 強化。FAPI 1.0 Advanced を整理し、最新ベストプラクティスに統一</text>
   </g>
 
-  <!-- ===== Connecting arrows between layers ===== -->
-  <!-- L1 → L2 -->
-  <path d="M 385 518 L 385 502" fill="none" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrowUp)"/>
-  <path d="M 365 518 L 365 502" fill="none" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrowUp)"/>
-  <path d="M 405 518 L 405 502" fill="none" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrowUp)"/>
-  <!-- L2 → L3 -->
-  <path d="M 385 378 L 385 362" fill="none" stroke="#a855f7" stroke-width="2" marker-end="url(#arrowUp)"/>
-  <path d="M 365 378 L 365 362" fill="none" stroke="#a855f7" stroke-width="2" marker-end="url(#arrowUp)"/>
-  <path d="M 405 378 L 405 362" fill="none" stroke="#a855f7" stroke-width="2" marker-end="url(#arrowUp)"/>
-  <!-- L3 → L4 -->
-  <path d="M 385 238 L 385 222" fill="none" stroke="#22c55e" stroke-width="2" marker-end="url(#arrowUp)"/>
-  <path d="M 365 238 L 365 222" fill="none" stroke="#22c55e" stroke-width="2" marker-end="url(#arrowUp)"/>
-  <path d="M 405 238 L 405 222" fill="none" stroke="#22c55e" stroke-width="2" marker-end="url(#arrowUp)"/>
-
   <!-- ================================================================ -->
   <!-- RIGHT SIDE PANEL: 適用分野 -->
   <!-- ================================================================ -->
