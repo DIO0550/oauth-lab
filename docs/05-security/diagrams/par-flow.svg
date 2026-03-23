@@ -77,7 +77,7 @@
     </symbol>
   </defs>
 
-  <rect width="1100" height="1620" fill="url(#bgGrad)"/>
+  <rect width="1100" height="2120" fill="url(#bgGrad)"/>
 
   <!-- ===== HEADER ===== -->
   <text x="36" y="42" fill="#f8fafc" font-size="24" font-weight="700" font-family="'Segoe UI', sans-serif">PAR (Pushed Authorization Requests) フロー</text>
@@ -310,16 +310,16 @@
     <text x="348" y="135" text-anchor="middle" fill="#fcd34d" font-size="10" font-weight="600" font-family="'Segoe UI', sans-serif">認証・同意画面を表示</text>
 
     <!-- ④b Owner → 認可サーバー (水平中段右) ユーザー認証 + 同意 -->
-    <path d="M 170 200 L 524 200" fill="none" stroke="#a855f7" stroke-width="2.5" marker-end="url(#arrowAmber)"/>
-    <circle cx="348" cy="215" r="15" fill="#a855f7"/>
-    <text x="348" y="220" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">4b</text>
-    <text x="348" y="243" text-anchor="middle" fill="#d8b4fe" font-size="10" font-weight="600" font-family="'Segoe UI', sans-serif">ユーザー認証 + スコープ同意</text>
+    <path d="M 170 175 L 524 175" fill="none" stroke="#a855f7" stroke-width="2.5" marker-end="url(#arrowAmber)"/>
+    <circle cx="348" cy="158" r="15" fill="#a855f7"/>
+    <text x="348" y="163" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">4b</text>
+    <text x="348" y="198" text-anchor="middle" fill="#d8b4fe" font-size="10" font-weight="600" font-family="'Segoe UI', sans-serif">ユーザー認証 + スコープ同意</text>
 
     <!-- ④c 認可サーバー → クライアント (斜め左下) 認可コード返却 -->
-    <path d="M 524 260 L 170 385" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="8,4" marker-end="url(#arrowCyan)"/>
-    <circle cx="430" cy="310" r="15" fill="#f59e0b"/>
-    <text x="430" y="315" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">4c</text>
-    <g transform="translate(195, 280)">
+    <path d="M 524 220 L 170 385" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="8,4" marker-end="url(#arrowCyan)"/>
+    <circle cx="440" cy="280" r="15" fill="#f59e0b"/>
+    <text x="440" y="285" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">4c</text>
+    <g transform="translate(195, 395)">
       <rect x="-6" y="-14" width="330" height="52" rx="6" fill="#0f172a" stroke="#f59e0b" stroke-width="1" opacity="0.92"/>
       <text x="6" y="2" fill="#fcd34d" font-size="11" font-weight="600" font-family="'Segoe UI', sans-serif">④ 認可コード返却 (302 Redirect)</text>
       <text x="6" y="20" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace">302 Location: http://localhost:3000/callback</text>
