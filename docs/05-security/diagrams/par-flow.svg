@@ -224,15 +224,15 @@
     <text x="348" y="135" text-anchor="middle" fill="#fcd34d" font-size="10" font-weight="600" font-family="'Segoe UI', sans-serif">認証・同意画面を表示</text>
 
     <!-- Owner → 認可サーバー (水平上段右) ユーザー認証 + 同意 -->
-    <path d="M 170 180 L 524 180" fill="none" stroke="#a855f7" stroke-width="2.5" marker-end="url(#arrowAmber)"/>
-    <circle cx="348" cy="200" r="15" fill="#a855f7"/>
-    <text x="348" y="205" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">4b</text>
-    <text x="348" y="223" text-anchor="middle" fill="#d8b4fe" font-size="10" font-weight="600" font-family="'Segoe UI', sans-serif">ユーザー認証 + スコープ同意</text>
+    <path d="M 170 240 L 524 240" fill="none" stroke="#a855f7" stroke-width="2.5" marker-end="url(#arrowAmber)"/>
+    <circle cx="348" cy="255" r="15" fill="#a855f7"/>
+    <text x="348" y="260" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">4b</text>
+    <text x="348" y="278" text-anchor="middle" fill="#d8b4fe" font-size="10" font-weight="600" font-family="'Segoe UI', sans-serif">ユーザー認証 + スコープ同意</text>
 
     <!-- 認可サーバー → クライアント (斜め左下) 認可コード返却 -->
-    <path d="M 524 195 L 170 385" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="8,4" marker-end="url(#arrowCyan)"/>
-    <circle cx="400" cy="330" r="15" fill="#f59e0b"/>
-    <text x="400" y="335" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">4c</text>
+    <path d="M 524 260 L 170 385" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="8,4" marker-end="url(#arrowCyan)"/>
+    <circle cx="420" cy="305" r="15" fill="#f59e0b"/>
+    <text x="420" y="310" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">4c</text>
     <g transform="translate(195, 395)">
       <rect x="-6" y="-14" width="330" height="52" rx="6" fill="#0f172a" stroke="#f59e0b" stroke-width="1" opacity="0.92"/>
       <text x="6" y="2" fill="#fcd34d" font-size="11" font-weight="600" font-family="'Segoe UI', sans-serif">④ 認可コード返却 (302 Redirect)</text>
