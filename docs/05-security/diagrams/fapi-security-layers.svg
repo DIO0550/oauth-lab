@@ -1,0 +1,228 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 900">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrowUp" markerWidth="8" markerHeight="10" refX="4" refY="10" orient="auto">
+      <polygon points="0 10, 4 0, 8 10" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <!-- ===== BACKGROUND ===== -->
+  <rect width="1100" height="900" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- ===== HEADER ===== -->
+  <text x="40" y="46" fill="#e2e8f0" font-family="'Segoe UI', sans-serif" font-size="24" font-weight="700">FAPI セキュリティレイヤー</text>
+  <text x="40" y="66" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="13">Financial-grade API Security Profile</text>
+
+  <!-- Badge: OpenID Foundation -->
+  <rect x="830" y="26" width="120" height="26" rx="13" fill="#a855f7" fill-opacity="0.15" stroke="#a855f7" stroke-width="1"/>
+  <text x="890" y="44" fill="#c084fc" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600" text-anchor="middle">OpenID Foundation</text>
+
+  <!-- Badge: FAPI 2.0 -->
+  <rect x="960" y="26" width="100" height="26" rx="13" fill="#22c55e" fill-opacity="0.15" stroke="#22c55e" stroke-width="1"/>
+  <text x="1010" y="44" fill="#4ade80" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600" text-anchor="middle">FAPI 2.0</text>
+
+  <!-- ===== VERTICAL ARROW (Left side) ===== -->
+  <line x1="22" y1="630" x2="22" y2="110" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrowUp)"/>
+  <text x="24" y="400" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600" transform="rotate(-90, 24, 400)" text-anchor="middle">セキュリティ強化 ▲</text>
+
+  <!-- ================================================================ -->
+  <!-- LAYER 1: OAuth 2.0 Standard (base) -->
+  <!-- ================================================================ -->
+  <g filter="url(#shadow)">
+    <!-- Background -->
+    <rect x="50" y="520" width="670" height="120" rx="8" fill="#22d3ee" fill-opacity="0.05" stroke="#22d3ee" stroke-opacity="0.2" stroke-width="1"/>
+    <!-- Left accent bar -->
+    <rect x="50" y="520" width="4" height="120" rx="2" fill="#22d3ee"/>
+    <!-- Level badge -->
+    <rect x="66" y="530" width="140" height="26" rx="6" fill="#22d3ee" fill-opacity="0.15" stroke="#22d3ee" stroke-width="1"/>
+    <text x="136" y="548" fill="#22d3ee" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700" text-anchor="middle">OAuth 2.0 標準</text>
+    <!-- Layer number -->
+    <text x="680" y="550" fill="#22d3ee" fill-opacity="0.2" font-family="'Segoe UI', sans-serif" font-size="48" font-weight="800" text-anchor="end">L1</text>
+    <!-- Items -->
+    <circle cx="80" cy="578" r="3" fill="#22d3ee"/>
+    <text x="92" y="582" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="12">Authorization Code</text>
+    <circle cx="250" cy="578" r="3" fill="#22d3ee"/>
+    <text x="262" y="582" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="12">PKCE</text>
+    <circle cx="340" cy="578" r="3" fill="#22d3ee"/>
+    <text x="352" y="582" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="12">state パラメータ</text>
+    <circle cx="510" cy="578" r="3" fill="#22d3ee"/>
+    <text x="522" y="582" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="12">HTTPS 必須</text>
+    <!-- Description -->
+    <text x="80" y="620" fill="#64748b" font-family="'Segoe UI', sans-serif" font-size="11" font-style="italic">基本的な認可フレームワーク。一般的な Web アプリケーション向け</text>
+  </g>
+
+  <!-- ================================================================ -->
+  <!-- LAYER 2: FAPI 1.0 Baseline -->
+  <!-- ================================================================ -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="380" width="670" height="120" rx="8" fill="#f59e0b" fill-opacity="0.05" stroke="#f59e0b" stroke-opacity="0.2" stroke-width="1"/>
+    <rect x="50" y="380" width="4" height="120" rx="2" fill="#f59e0b"/>
+    <!-- Level badge -->
+    <rect x="66" y="390" width="160" height="26" rx="6" fill="#f59e0b" fill-opacity="0.15" stroke="#f59e0b" stroke-width="1"/>
+    <text x="146" y="408" fill="#f59e0b" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700" text-anchor="middle">FAPI 1.0 Baseline</text>
+    <!-- Layer number -->
+    <text x="680" y="410" fill="#f59e0b" fill-opacity="0.2" font-family="'Segoe UI', sans-serif" font-size="48" font-weight="800" text-anchor="end">L2</text>
+    <!-- Items row 1 -->
+    <circle cx="80" cy="438" r="3" fill="#f59e0b"/>
+    <text x="92" y="442" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="12">クライアント認証必須</text>
+    <circle cx="270" cy="438" r="3" fill="#f59e0b"/>
+    <text x="282" y="442" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="12">TLS 1.2+</text>
+    <!-- Items row 2 -->
+    <circle cx="380" cy="438" r="3" fill="#f59e0b"/>
+    <text x="392" y="442" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="12">リダイレクトURI完全一致</text>
+    <circle cx="590" cy="438" r="3" fill="#f59e0b"/>
+    <text x="602" y="442" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="12">短いトークン有効期限</text>
+    <!-- Description -->
+    <text x="80" y="480" fill="#64748b" font-family="'Segoe UI', sans-serif" font-size="11" font-style="italic">読み取り専用 API 向け。OAuth 2.0 のセキュリティを強化</text>
+  </g>
+
+  <!-- ================================================================ -->
+  <!-- LAYER 3: FAPI 1.0 Advanced -->
+  <!-- ================================================================ -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="240" width="670" height="120" rx="8" fill="#a855f7" fill-opacity="0.05" stroke="#a855f7" stroke-opacity="0.2" stroke-width="1"/>
+    <rect x="50" y="240" width="4" height="120" rx="2" fill="#a855f7"/>
+    <!-- Level badge -->
+    <rect x="66" y="250" width="170" height="26" rx="6" fill="#a855f7" fill-opacity="0.15" stroke="#a855f7" stroke-width="1"/>
+    <text x="151" y="268" fill="#c084fc" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700" text-anchor="middle">FAPI 1.0 Advanced</text>
+    <!-- Layer number -->
+    <text x="680" y="270" fill="#a855f7" fill-opacity="0.2" font-family="'Segoe UI', sans-serif" font-size="48" font-weight="800" text-anchor="end">L3</text>
+    <!-- Items row 1 -->
+    <circle cx="80" cy="298" r="3" fill="#a855f7"/>
+    <text x="92" y="302" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="12">PAR 必須</text>
+    <circle cx="200" cy="298" r="3" fill="#a855f7"/>
+    <text x="212" y="302" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="12">JARM / ハイブリッドフロー</text>
+    <circle cx="420" cy="298" r="3" fill="#a855f7"/>
+    <text x="432" y="302" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="12">送信者制約トークン (mTLS)</text>
+    <!-- Items row 2 -->
+    <circle cx="80" cy="324" r="3" fill="#a855f7"/>
+    <text x="92" y="328" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="12">リクエストオブジェクト</text>
+    <circle cx="270" cy="324" r="3" fill="#a855f7"/>
+    <text x="282" y="328" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="12">s_hash</text>
+    <!-- Description -->
+    <text x="80" y="346" fill="#64748b" font-family="'Segoe UI', sans-serif" font-size="11" font-style="italic">読み書き API 向け。高度な攻撃ベクターに対する防御</text>
+  </g>
+
+  <!-- ================================================================ -->
+  <!-- LAYER 4: FAPI 2.0 (top) -->
+  <!-- ================================================================ -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="100" width="670" height="120" rx="8" fill="#22c55e" fill-opacity="0.05" stroke="#22c55e" stroke-opacity="0.2" stroke-width="1"/>
+    <rect x="50" y="100" width="4" height="120" rx="2" fill="#22c55e"/>
+    <!-- Level badge -->
+    <rect x="66" y="110" width="200" height="26" rx="6" fill="#22c55e" fill-opacity="0.15" stroke="#22c55e" stroke-width="1"/>
+    <text x="166" y="128" fill="#4ade80" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700" text-anchor="middle">FAPI 2.0 Security Profile</text>
+    <!-- Layer number -->
+    <text x="680" y="130" fill="#22c55e" fill-opacity="0.2" font-family="'Segoe UI', sans-serif" font-size="48" font-weight="800" text-anchor="end">L4</text>
+    <!-- Items -->
+    <circle cx="80" cy="158" r="3" fill="#22c55e"/>
+    <text x="92" y="162" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="12">PAR 必須</text>
+    <circle cx="200" cy="158" r="3" fill="#22c55e"/>
+    <text x="212" y="162" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="12">PKCE 必須</text>
+    <circle cx="320" cy="158" r="3" fill="#22c55e"/>
+    <text x="332" y="162" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="12">送信者制約 (mTLS / DPoP)</text>
+    <circle cx="550" cy="158" r="3" fill="#22c55e"/>
+    <text x="562" y="162" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="12">Implicit / Hybrid 禁止</text>
+    <!-- Description -->
+    <text x="80" y="200" fill="#64748b" font-family="'Segoe UI', sans-serif" font-size="11" font-style="italic">簡素化 + 強化。FAPI 1.0 Advanced を整理し、最新ベストプラクティスに統一</text>
+  </g>
+
+  <!-- ===== Connecting arrows between layers ===== -->
+  <!-- L1 → L2 -->
+  <line x1="385" y1="518" x2="385" y2="502" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="3 2" marker-end="url(#arrowUp)"/>
+  <!-- L2 → L3 -->
+  <line x1="385" y1="378" x2="385" y2="362" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="3 2" marker-end="url(#arrowUp)"/>
+  <!-- L3 → L4 -->
+  <line x1="385" y1="238" x2="385" y2="222" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="3 2" marker-end="url(#arrowUp)"/>
+
+  <!-- ================================================================ -->
+  <!-- RIGHT SIDE PANEL: 適用分野 -->
+  <!-- ================================================================ -->
+  <g filter="url(#shadow)">
+    <rect x="740" y="100" width="320" height="540" rx="8" fill="#334155" fill-opacity="0.4" stroke="#475569" stroke-width="1"/>
+    <!-- Panel header -->
+    <rect x="740" y="100" width="320" height="40" rx="8" fill="#3b82f6" fill-opacity="0.12"/>
+    <rect x="740" y="130" width="320" height="10" fill="#3b82f6" fill-opacity="0.12"/>
+    <text x="900" y="126" fill="#93c5fd" font-family="'Segoe UI', sans-serif" font-size="15" font-weight="700" text-anchor="middle">適用分野</text>
+    <text x="900" y="162" fill="#64748b" font-family="'Segoe UI', sans-serif" font-size="11" text-anchor="middle">Application Areas</text>
+
+    <!-- 金融 (Finance) -->
+    <rect x="760" y="185" width="280" height="100" rx="6" fill="#f59e0b" fill-opacity="0.06" stroke="#f59e0b" stroke-opacity="0.2" stroke-width="1"/>
+    <rect x="760" y="185" width="3" height="100" rx="1.5" fill="#f59e0b"/>
+    <!-- Finance icon -->
+    <rect x="776" y="196" width="22" height="18" rx="3" fill="none" stroke="#f59e0b" stroke-width="1.2"/>
+    <text x="787" y="210" fill="#f59e0b" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="700" text-anchor="middle">¥</text>
+    <text x="810" y="210" fill="#fbbf24" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="700">金融</text>
+    <text x="776" y="232" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="11">Open Banking (UK, EU, BR, AU)</text>
+    <text x="776" y="250" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10">PSD2, CDR, Open Finance Brasil</text>
+    <text x="776" y="268" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10">銀行API、決済API、口座情報API</text>
+
+    <!-- 行政 (Government) -->
+    <rect x="760" y="300" width="280" height="100" rx="6" fill="#a855f7" fill-opacity="0.06" stroke="#a855f7" stroke-opacity="0.2" stroke-width="1"/>
+    <rect x="760" y="300" width="3" height="100" rx="1.5" fill="#a855f7"/>
+    <!-- Gov icon -->
+    <rect x="776" y="311" width="22" height="14" rx="2" fill="none" stroke="#a855f7" stroke-width="1.2"/>
+    <line x1="776" y1="325" x2="798" y2="325" stroke="#a855f7" stroke-width="1.2"/>
+    <line x1="787" y1="308" x2="787" y2="311" stroke="#a855f7" stroke-width="1.2"/>
+    <polygon points="776,311 787,304 798,311" fill="none" stroke="#a855f7" stroke-width="1.2"/>
+    <text x="810" y="325" fill="#c084fc" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="700">行政</text>
+    <text x="776" y="347" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="11">デジタル ID・マイナンバー</text>
+    <text x="776" y="365" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10">eIDAS, Gov.UK Verify</text>
+    <text x="776" y="383" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10">電子政府API、行政手続きAPI</text>
+
+    <!-- 医療 (Healthcare) -->
+    <rect x="760" y="415" width="280" height="100" rx="6" fill="#22d3ee" fill-opacity="0.06" stroke="#22d3ee" stroke-opacity="0.2" stroke-width="1"/>
+    <rect x="760" y="415" width="3" height="100" rx="1.5" fill="#22d3ee"/>
+    <!-- Healthcare icon -->
+    <rect x="780" y="426" width="14" height="14" rx="2" fill="none" stroke="#22d3ee" stroke-width="1.2"/>
+    <line x1="787" y1="429" x2="787" y2="437" stroke="#22d3ee" stroke-width="1.5"/>
+    <line x1="783" y1="433" x2="791" y2="433" stroke="#22d3ee" stroke-width="1.5"/>
+    <text x="810" y="440" fill="#22d3ee" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="700">医療</text>
+    <text x="776" y="462" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="11">電子カルテ API</text>
+    <text x="776" y="480" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10">HL7 FHIR, SMART on FHIR</text>
+    <text x="776" y="498" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10">患者データ、医療情報連携</text>
+
+    <!-- 通信 (Telecom) -->
+    <rect x="760" y="530" width="280" height="90" rx="6" fill="#22c55e" fill-opacity="0.06" stroke="#22c55e" stroke-opacity="0.2" stroke-width="1"/>
+    <rect x="760" y="530" width="3" height="90" rx="1.5" fill="#22c55e"/>
+    <!-- Telecom icon -->
+    <circle cx="787" cy="550" r="3" fill="none" stroke="#22c55e" stroke-width="1.2"/>
+    <path d="M779,543 Q787,538 795,543" fill="none" stroke="#22c55e" stroke-width="1"/>
+    <path d="M775,539 Q787,532 799,539" fill="none" stroke="#22c55e" stroke-width="1"/>
+    <text x="810" y="555" fill="#4ade80" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="700">通信</text>
+    <text x="776" y="577" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="11">CAMARA API</text>
+    <text x="776" y="595" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10">GSMA Open Gateway、通信事業者API</text>
+  </g>
+
+  <!-- ===== BOTTOM: Evolution note ===== -->
+  <g>
+    <rect x="50" y="660" width="670" height="50" rx="8" fill="#3b82f6" fill-opacity="0.06" stroke="#3b82f6" stroke-opacity="0.15" stroke-width="1"/>
+    <!-- Evolution flow -->
+    <text x="80" y="690" fill="#64748b" font-family="'Segoe UI', sans-serif" font-size="11">進化:</text>
+    <text x="120" y="690" fill="#22d3ee" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600">OAuth 2.0</text>
+    <text x="195" y="690" fill="#475569" font-family="'Segoe UI', sans-serif" font-size="11">→</text>
+    <text x="215" y="690" fill="#f59e0b" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600">FAPI 1.0 Baseline</text>
+    <text x="350" y="690" fill="#475569" font-family="'Segoe UI', sans-serif" font-size="11">→</text>
+    <text x="370" y="690" fill="#a855f7" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600">FAPI 1.0 Advanced</text>
+    <text x="515" y="690" fill="#475569" font-family="'Segoe UI', sans-serif" font-size="11">→</text>
+    <text x="535" y="690" fill="#22c55e" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600">FAPI 2.0 (簡素化+強化)</text>
+  </g>
+
+  <!-- ===== LEGEND: Key concepts ===== -->
+  <g>
+    <rect x="740" y="660" width="320" height="50" rx="8" fill="#334155" fill-opacity="0.3" stroke="#475569" stroke-opacity="0.5" stroke-width="1"/>
+    <text x="760" y="682" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="600">KEY:</text>
+    <text x="796" y="682" fill="#64748b" font-family="'Segoe UI', sans-serif" font-size="10">PAR = Pushed Authorization Request</text>
+    <text x="760" y="698" fill="#64748b" font-family="'Segoe UI', sans-serif" font-size="10">JARM = JWT Secured Authorization Response Mode</text>
+  </g>
+</svg>

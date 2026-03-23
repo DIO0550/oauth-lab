@@ -1,0 +1,313 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 1620">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrowPurple" markerWidth="11" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 11 3.5, 0 7" fill="#a855f7"/>
+    </marker>
+    <marker id="arrowCyan" markerWidth="11" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 11 3.5, 0 7" fill="#22d3ee"/>
+    </marker>
+    <marker id="arrowAmber" markerWidth="11" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 11 3.5, 0 7" fill="#f59e0b"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="11" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 11 3.5, 0 7" fill="#22c55e"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="11" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 11 3.5, 0 7" fill="#3b82f6"/>
+    </marker>
+
+    <!-- ===== ACTOR SYMBOLS (110x130) ===== -->
+    <symbol id="client" viewBox="0 0 110 130">
+      <rect x="0" y="0" width="110" height="130" rx="12" fill="#1e1b2e" stroke="#22d3ee" stroke-width="1.6"/>
+      <g transform="translate(55, 34)">
+        <rect x="-18" y="-16" width="36" height="26" rx="3" fill="none" stroke="#22d3ee" stroke-width="1.3"/>
+        <rect x="-14" y="-12" width="28" height="18" rx="1" fill="#22d3ee" opacity="0.05"/>
+        <circle cx="0" cy="-3" r="6.5" fill="none" stroke="#22d3ee" stroke-width="1"/>
+        <circle cx="0" cy="-3" r="2.5" fill="none" stroke="#22d3ee" stroke-width="0.8"/>
+        <line x1="0" y1="-11" x2="0" y2="-9.5" stroke="#22d3ee" stroke-width="1"/>
+        <line x1="0" y1="3.5" x2="0" y2="5" stroke="#22d3ee" stroke-width="1"/>
+        <line x1="-8" y1="-3" x2="-6.5" y2="-3" stroke="#22d3ee" stroke-width="1"/>
+        <line x1="6.5" y1="-3" x2="8" y2="-3" stroke="#22d3ee" stroke-width="1"/>
+        <line x1="0" y1="13" x2="0" y2="18" stroke="#22d3ee" stroke-width="1.3"/>
+        <line x1="-9" y1="18" x2="9" y2="18" stroke="#22d3ee" stroke-width="1.3" stroke-linecap="round"/>
+      </g>
+      <text x="55" y="100" text-anchor="middle" fill="#67e8f9" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">クライアント</text>
+      <text x="55" y="116" text-anchor="middle" fill="#22d3ee" font-size="8.5" opacity="0.7" font-family="'Segoe UI', sans-serif">(Client)</text>
+    </symbol>
+    <symbol id="authsv" viewBox="0 0 110 130">
+      <rect x="0" y="0" width="110" height="130" rx="12" fill="#1e1b2e" stroke="#f59e0b" stroke-width="1.6"/>
+      <g transform="translate(55, 32)">
+        <path d="M0,-22 L14,-15 L14,1 Q14,14 0,20 Q-14,14 -14,1 L-14,-15 Z" fill="none" stroke="#f59e0b" stroke-width="1.4"/>
+        <rect x="-6" y="-3" width="12" height="10" rx="2" fill="none" stroke="#f59e0b" stroke-width="1.2"/>
+        <path d="M-3.5,-3 L-3.5,-7 Q-3.5,-12 0,-12 Q3.5,-12 3.5,-7 L3.5,-3" fill="none" stroke="#f59e0b" stroke-width="1.2"/>
+        <circle cx="0" cy="2" r="1.5" fill="#f59e0b"/>
+        <line x1="0" y1="3.5" x2="0" y2="6" stroke="#f59e0b" stroke-width="1.1"/>
+      </g>
+      <text x="55" y="100" text-anchor="middle" fill="#fcd34d" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">認可サーバー</text>
+      <text x="55" y="116" text-anchor="middle" fill="#f59e0b" font-size="8.5" opacity="0.7" font-family="'Segoe UI', sans-serif">(Auth Server)</text>
+    </symbol>
+    <symbol id="ressv" viewBox="0 0 110 130">
+      <rect x="0" y="0" width="110" height="130" rx="12" fill="#1e1b2e" stroke="#3b82f6" stroke-width="1.6"/>
+      <g transform="translate(55, 30)">
+        <rect x="-18" y="-18" width="36" height="11" rx="2" fill="none" stroke="#3b82f6" stroke-width="1.2"/>
+        <circle cx="-10" cy="-12.5" r="1.5" fill="#3b82f6"/><circle cx="-5" cy="-12.5" r="1.5" fill="#3b82f6"/>
+        <rect x="-18" y="-3" width="36" height="11" rx="2" fill="none" stroke="#3b82f6" stroke-width="1.2"/>
+        <circle cx="-10" cy="2.5" r="1.5" fill="#3b82f6"/><circle cx="-5" cy="2.5" r="1.5" fill="#3b82f6"/>
+        <rect x="-18" y="12" width="36" height="11" rx="2" fill="none" stroke="#3b82f6" stroke-width="1.2"/>
+        <circle cx="-10" cy="17.5" r="1.5" fill="#3b82f6"/><circle cx="-5" cy="17.5" r="1.5" fill="#3b82f6"/>
+        <g transform="translate(24, 8)">
+          <rect x="-5" y="-2" width="10" height="7" rx="1.5" fill="#1e1b2e" stroke="#3b82f6" stroke-width="1"/>
+          <path d="M-2.5,-2 L-2.5,-5 Q-2.5,-8 0,-8 Q2.5,-8 2.5,-5 L2.5,-2" fill="none" stroke="#3b82f6" stroke-width="1"/>
+        </g>
+      </g>
+      <text x="55" y="100" text-anchor="middle" fill="#93c5fd" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">リソースサーバー</text>
+      <text x="55" y="116" text-anchor="middle" fill="#3b82f6" font-size="8.5" opacity="0.7" font-family="'Segoe UI', sans-serif">(Resource Server)</text>
+    </symbol>
+    <symbol id="dimbox" viewBox="0 0 110 130">
+      <rect x="0" y="0" width="110" height="130" rx="12" fill="#131a2b" stroke="#1e293b" stroke-width="1" stroke-dasharray="5,4"/>
+    </symbol>
+  </defs>
+
+  <rect width="1100" height="1620" fill="url(#bgGrad)"/>
+
+  <!-- ===== HEADER ===== -->
+  <text x="36" y="42" fill="#f8fafc" font-size="24" font-weight="700" font-family="'Segoe UI', sans-serif">DPoP (Demonstration of Proof-of-Possession) フロー</text>
+  <text x="36" y="66" fill="#94a3b8" font-size="13" font-family="'Segoe UI', sans-serif">送信者制約トークン — トークン盗難によるリプレイ攻撃を防止</text>
+  <rect x="620" y="28" width="84" height="24" rx="12" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1"/>
+  <text x="662" y="44" text-anchor="middle" fill="#93c5fd" font-size="11" font-weight="600" font-family="'Segoe UI', sans-serif">RFC 9449</text>
+  <rect x="712" y="28" width="60" height="24" rx="12" fill="#1a2e05" stroke="#22c55e" stroke-width="1"/>
+  <text x="742" y="44" text-anchor="middle" fill="#86efac" font-size="11" font-weight="600" font-family="'Segoe UI', sans-serif">DPoP</text>
+
+  <!-- ================================================================ -->
+  <!-- PHASE 1 — DPoP鍵ペア生成 + トークンリクエスト                       -->
+  <!-- ================================================================ -->
+  <g transform="translate(0, 88)">
+    <rect x="36" y="0" width="440" height="36" rx="8" fill="#22d3ee" opacity="0.08" stroke="#22d3ee" stroke-width="1"/>
+    <text x="56" y="24" fill="#67e8f9" font-size="15" font-weight="700" font-family="'Segoe UI', sans-serif">Phase 1</text>
+    <text x="136" y="24" fill="#67e8f9" font-size="12" font-family="'Segoe UI', sans-serif">DPoP鍵ペア生成 + トークンリクエスト</text>
+
+    <!-- actors -->
+    <use href="#dimbox"  x="55"  y="70"  width="110" height="130"/>
+    <use href="#authsv"  x="530" y="70"  width="110" height="130" filter="url(#shadow)"/>
+    <use href="#client"  x="55"  y="310" width="110" height="130" filter="url(#shadow)"/>
+    <use href="#dimbox"  x="530" y="310" width="110" height="130"/>
+    <text x="585" y="385" text-anchor="middle" fill="#334155" font-size="10" font-family="'Segoe UI', sans-serif">リソースサーバー</text>
+
+    <!-- ① DPoP鍵ペア生成 (クライアント内部) -->
+    <circle cx="60" cy="280" r="15" fill="#22c55e"/>
+    <text x="60" y="285" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">1</text>
+    <g transform="translate(80, 255)">
+      <rect x="-6" y="-14" width="280" height="52" rx="6" fill="#0f172a" stroke="#22c55e" stroke-width="1" opacity="0.92"/>
+      <text x="6" y="2" fill="#86efac" font-size="11" font-weight="600" font-family="'Segoe UI', sans-serif">① DPoP鍵ペア生成 (公開鍵 + 秘密鍵)</text>
+      <text x="6" y="18" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace">const { publicKey, privateKey } =</text>
+      <text x="6" y="32" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace">  crypto.generateKeyPairSync(<tspan fill="#22c55e">"ES256"</tspan>)</text>
+    </g>
+
+    <!-- ② クライアント → 認可サーバー (斜め右上) DPoP Proof付きトークンリクエスト -->
+    <path d="M 170 345 L 524 155" fill="none" stroke="#22c55e" stroke-width="2.5" marker-end="url(#arrowGreen)" filter="url(#glow)"/>
+    <circle cx="300" cy="275" r="15" fill="#22c55e"/>
+    <text x="300" y="280" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">2</text>
+    <g transform="translate(195, 135)">
+      <rect x="-6" y="-14" width="330" height="90" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" opacity="0.92"/>
+      <text x="6" y="2" fill="#86efac" font-size="11" font-weight="600" font-family="'Segoe UI', sans-serif">② トークンリクエスト + DPoP Proof</text>
+      <text x="6" y="20" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace">POST /token HTTP/1.1</text>
+      <text x="6" y="34" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace">DPoP: <tspan fill="#22c55e">{DPoP-Proof-JWT}</tspan></text>
+      <text x="6" y="48" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace">grant_type=<tspan fill="#22d3ee">authorization_code</tspan></text>
+      <text x="6" y="62" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace">code=<tspan fill="#f59e0b">{authorization_code}</tspan></text>
+      <text x="6" y="76" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace">code_verifier=<tspan fill="#a855f7">{code_verifier}</tspan></text>
+    </g>
+
+    <!-- ③ 認可サーバー → クライアント (斜め左下) DPoP Bound Token -->
+    <path d="M 524 195 L 170 385" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="8,4" marker-end="url(#arrowCyan)"/>
+    <circle cx="400" cy="265" r="15" fill="#f59e0b"/>
+    <text x="400" y="270" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">3</text>
+    <g transform="translate(195, 395)">
+      <rect x="-6" y="-14" width="330" height="72" rx="6" fill="#0f172a" stroke="#f59e0b" stroke-width="1" opacity="0.92"/>
+      <text x="6" y="2" fill="#fcd34d" font-size="11" font-weight="600" font-family="'Segoe UI', sans-serif">③ DPoP Bound アクセストークン発行</text>
+      <text x="6" y="20" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace">{"access_token": <tspan fill="#22d3ee">"eyJ..."</tspan>,</text>
+      <text x="6" y="34" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace"> "token_type": <tspan fill="#22c55e">"DPoP"</tspan>,</text>
+      <text x="6" y="48" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace"> "expires_in": <tspan fill="#f59e0b">3600</tspan>}</text>
+    </g>
+
+    <!-- ===== SIDEBAR ===== -->
+    <g transform="translate(740, 0)">
+      <rect x="0" y="0" width="340" height="700" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="170" y="28" text-anchor="middle" fill="#e2e8f0" font-size="14" font-weight="700" font-family="'Segoe UI', sans-serif">全体フロー</text>
+      <line x1="16" y1="40" x2="324" y2="40" stroke="#334155" stroke-width="1"/>
+
+      <!-- 1 ACTIVE -->
+      <rect x="12" y="50" width="316" height="56" rx="6" fill="#22c55e" opacity="0.08" stroke="#22c55e" stroke-width="0.8"/>
+      <circle cx="30" cy="72" r="11" fill="#22c55e"/><text x="30" y="77" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">1</text>
+      <text x="48" y="68" fill="#f8fafc" font-size="10.5" font-weight="600" font-family="'Segoe UI', sans-serif">DPoP鍵ペア生成</text>
+      <text x="48" y="82" fill="#86efac" font-size="8.5" font-family="'Segoe UI', sans-serif">クライアントがES256等の公開鍵/秘密鍵ペアを生成</text>
+      <text x="48" y="94" fill="#475569" font-size="7.5" font-family="'Fira Code', monospace">→ generateKeyPairSync("ES256")</text>
+
+      <!-- 2 ACTIVE -->
+      <rect x="12" y="112" width="316" height="56" rx="6" fill="#22c55e" opacity="0.08" stroke="#22c55e" stroke-width="0.8"/>
+      <circle cx="30" cy="134" r="11" fill="#22c55e"/><text x="30" y="139" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">2</text>
+      <text x="48" y="130" fill="#f8fafc" font-size="10.5" font-weight="600" font-family="'Segoe UI', sans-serif">トークンリクエスト + DPoP Proof</text>
+      <text x="48" y="144" fill="#86efac" font-size="8.5" font-family="'Segoe UI', sans-serif">DPoP Proof JWTをヘッダーに付けてトークン要求</text>
+      <text x="48" y="156" fill="#475569" font-size="7.5" font-family="'Fira Code', monospace">→ POST /token DPoP: {proof-jwt}</text>
+
+      <!-- 3 ACTIVE -->
+      <rect x="12" y="174" width="316" height="56" rx="6" fill="#f59e0b" opacity="0.08" stroke="#f59e0b" stroke-width="0.8"/>
+      <circle cx="30" cy="196" r="11" fill="#f59e0b"/><text x="30" y="201" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">3</text>
+      <text x="48" y="192" fill="#f8fafc" font-size="10.5" font-weight="600" font-family="'Segoe UI', sans-serif">DPoP Bound トークン発行</text>
+      <text x="48" y="206" fill="#fcd34d" font-size="8.5" font-family="'Segoe UI', sans-serif">token_type: "DPoP" のアクセストークンを返却</text>
+      <text x="48" y="218" fill="#475569" font-size="7.5" font-family="'Fira Code', monospace">← 200 {"token_type":"DPoP",...}</text>
+
+      <!-- 4 dim -->
+      <circle cx="30" cy="250" r="11" fill="#334155"/><text x="30" y="255" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">4</text>
+      <text x="48" y="254" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">DPoP Proof付きAPIリクエスト</text>
+
+      <!-- 5 dim -->
+      <circle cx="30" cy="280" r="11" fill="#334155"/><text x="30" y="285" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">5</text>
+      <text x="48" y="284" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">DPoP検証 + リソース返却</text>
+
+      <!-- Legend -->
+      <line x1="16" y1="310" x2="324" y2="310" stroke="#334155" stroke-width="1"/>
+      <text x="16" y="330" fill="#94a3b8" font-size="10" font-weight="600" font-family="'Segoe UI', sans-serif">凡例</text>
+      <line x1="16" y1="346" x2="42" y2="346" stroke="#22c55e" stroke-width="2.5"/>
+      <text x="50" y="350" fill="#86efac" font-size="9" font-family="'Segoe UI', sans-serif">バックチャネル (トークンリクエスト)</text>
+      <line x1="16" y1="366" x2="42" y2="366" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="5,3"/>
+      <text x="50" y="370" fill="#fcd34d" font-size="9" font-family="'Segoe UI', sans-serif">認可サーバー応答</text>
+      <line x1="16" y1="386" x2="42" y2="386" stroke="#3b82f6" stroke-width="2.5"/>
+      <text x="50" y="390" fill="#93c5fd" font-size="9" font-family="'Segoe UI', sans-serif">APIリクエスト (DPoP Proof付き)</text>
+      <line x1="16" y1="406" x2="42" y2="406" stroke="#3b82f6" stroke-width="2.5" stroke-dasharray="5,3"/>
+      <text x="50" y="410" fill="#93c5fd" font-size="9" font-family="'Segoe UI', sans-serif">リソース返却</text>
+
+      <!-- Security -->
+      <line x1="16" y1="430" x2="324" y2="430" stroke="#334155" stroke-width="1"/>
+      <text x="16" y="452" fill="#e2e8f0" font-size="11" font-weight="700" font-family="'Segoe UI', sans-serif">セキュリティポイント</text>
+      <rect x="16" y="464" width="308" height="50" rx="6" fill="#1e1b2e" stroke="#22c55e" stroke-width="0.8"/>
+      <text x="28" y="482" fill="#86efac" font-size="9.5" font-weight="600" font-family="'Segoe UI', sans-serif">送信者制約 (Sender Constraint)</text>
+      <text x="28" y="496" fill="#94a3b8" font-size="8" font-family="'Segoe UI', sans-serif">トークンが秘密鍵の所有者にバインドされ</text>
+      <text x="28" y="508" fill="#94a3b8" font-size="8" font-family="'Segoe UI', sans-serif">盗まれても他者が使用できない</text>
+      <rect x="16" y="520" width="308" height="50" rx="6" fill="#1e1b2e" stroke="#f59e0b" stroke-width="0.8"/>
+      <text x="28" y="538" fill="#fcd34d" font-size="9.5" font-weight="600" font-family="'Segoe UI', sans-serif">リプレイ攻撃防止</text>
+      <text x="28" y="552" fill="#94a3b8" font-size="8" font-family="'Segoe UI', sans-serif">DPoP Proofにjti (一意ID) + iat (発行時刻) を含み</text>
+      <text x="28" y="564" fill="#94a3b8" font-size="8" font-family="'Segoe UI', sans-serif">同じProofの再利用を検知・拒否</text>
+      <rect x="16" y="576" width="308" height="50" rx="6" fill="#1e1b2e" stroke="#3b82f6" stroke-width="0.8"/>
+      <text x="28" y="594" fill="#93c5fd" font-size="9.5" font-weight="600" font-family="'Segoe UI', sans-serif">HTTPメソッド + URI バインディング</text>
+      <text x="28" y="608" fill="#94a3b8" font-size="8" font-family="'Segoe UI', sans-serif">DPoP ProofにHTMとHTUクレームを含み</text>
+      <text x="28" y="620" fill="#94a3b8" font-size="8" font-family="'Segoe UI', sans-serif">特定のリクエストにのみ有効なProofを生成</text>
+    </g>
+  </g>
+
+  <!-- separator -->
+  <line x1="36" y1="796" x2="700" y2="796" stroke="#334155" stroke-width="1" stroke-dasharray="8,8"/>
+
+  <!-- ================================================================ -->
+  <!-- PHASE 2 — DPoP Proof付きAPIアクセス                               -->
+  <!-- ================================================================ -->
+  <g transform="translate(0, 808)">
+    <rect x="36" y="0" width="380" height="36" rx="8" fill="#3b82f6" opacity="0.08" stroke="#3b82f6" stroke-width="1"/>
+    <text x="56" y="24" fill="#93c5fd" font-size="15" font-weight="700" font-family="'Segoe UI', sans-serif">Phase 2</text>
+    <text x="136" y="24" fill="#93c5fd" font-size="12" font-family="'Segoe UI', sans-serif">DPoP Proof付きAPIアクセス</text>
+
+    <!-- actors -->
+    <use href="#dimbox"  x="55"  y="70"  width="110" height="130"/>
+    <use href="#dimbox"  x="530" y="70"  width="110" height="130"/>
+    <text x="585" y="145" text-anchor="middle" fill="#334155" font-size="10" font-family="'Segoe UI', sans-serif">認可サーバー</text>
+    <use href="#client"  x="55"  y="310" width="110" height="130" filter="url(#shadow)"/>
+    <use href="#ressv"   x="530" y="310" width="110" height="130" filter="url(#shadow)"/>
+
+    <!-- ④ クライアント → リソースサーバー (水平下段) DPoP Proof付きAPIリクエスト -->
+    <path d="M 170 355 L 524 355" fill="none" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arrowBlue)"/>
+    <circle cx="348" cy="336" r="15" fill="#3b82f6"/>
+    <text x="348" y="341" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">4</text>
+    <g transform="translate(195, 365)">
+      <rect x="-6" y="-14" width="330" height="72" rx="6" fill="#0f172a" stroke="#3b82f6" stroke-width="1" opacity="0.92"/>
+      <text x="6" y="2" fill="#93c5fd" font-size="11" font-weight="600" font-family="'Segoe UI', sans-serif">④ APIリクエスト (DPoP Token + DPoP Proof)</text>
+      <text x="6" y="20" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace">GET /resource HTTP/1.1</text>
+      <text x="6" y="34" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace">Authorization: DPoP <tspan fill="#22d3ee">{access_token}</tspan></text>
+      <text x="6" y="48" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace">DPoP: <tspan fill="#22c55e">{new-DPoP-Proof-JWT}</tspan></text>
+    </g>
+
+    <!-- ⑤ リソースサーバー → クライアント (水平左・dashed) -->
+    <path d="M 524 420 L 170 420" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-dasharray="8,4" marker-end="url(#arrowCyan)"/>
+    <circle cx="348" cy="450" r="15" fill="#3b82f6"/>
+    <text x="348" y="455" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">5</text>
+    <text x="348" y="474" text-anchor="middle" fill="#93c5fd" font-size="11" font-weight="600" font-family="'Segoe UI', sans-serif">⑤ 保護リソース返却 (200 OK)</text>
+
+    <!-- DPoP Proof JWT 構造 -->
+    <g transform="translate(100, 500)">
+      <rect x="0" y="0" width="500" height="210" rx="8" fill="#0f172a" stroke="#22c55e" stroke-width="1"/>
+      <text x="250" y="24" text-anchor="middle" fill="#e2e8f0" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">DPoP Proof JWT の構造</text>
+      <line x1="16" y1="34" x2="484" y2="34" stroke="#334155" stroke-width="1"/>
+
+      <!-- Header -->
+      <text x="16" y="56" fill="#22c55e" font-size="10" font-weight="600" font-family="'Segoe UI', sans-serif">Header</text>
+      <text x="16" y="72" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace">{"typ": <tspan fill="#22c55e">"dpop+jwt"</tspan>, "alg": <tspan fill="#22d3ee">"ES256"</tspan>,</text>
+      <text x="16" y="86" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace"> "jwk": <tspan fill="#f59e0b">{"kty":"EC","crv":"P-256","x":"...","y":"..."}</tspan>}</text>
+
+      <line x1="16" y1="98" x2="484" y2="98" stroke="#334155" stroke-width="0.5"/>
+
+      <!-- Payload -->
+      <text x="16" y="118" fill="#3b82f6" font-size="10" font-weight="600" font-family="'Segoe UI', sans-serif">Payload</text>
+      <text x="16" y="134" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace">{"jti": <tspan fill="#a855f7">"unique-id-123"</tspan>,</text>
+      <text x="16" y="148" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace"> "htm": <tspan fill="#3b82f6">"GET"</tspan>,           // HTTPメソッド</text>
+      <text x="16" y="162" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace"> "htu": <tspan fill="#3b82f6">"https://api.example.com/resource"</tspan>,  // URL</text>
+      <text x="16" y="176" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace"> "iat": <tspan fill="#f59e0b">1711036800</tspan>,       // 発行時刻</text>
+      <text x="16" y="190" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace"> "ath": <tspan fill="#22c55e">"fUHyO2r2Z3..."</tspan>} // access_token ハッシュ</text>
+    </g>
+
+    <!-- SIDEBAR -->
+    <g transform="translate(740, 0)">
+      <rect x="0" y="0" width="340" height="470" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="170" y="28" text-anchor="middle" fill="#e2e8f0" font-size="14" font-weight="700" font-family="'Segoe UI', sans-serif">全体フロー</text>
+      <line x1="16" y1="40" x2="324" y2="40" stroke="#334155" stroke-width="1"/>
+
+      <!-- 1 dim -->
+      <circle cx="30" cy="62" r="11" fill="#334155"/><text x="30" y="67" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">1</text>
+      <text x="48" y="66" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">DPoP鍵ペア生成</text>
+
+      <!-- 2 dim -->
+      <circle cx="30" cy="92" r="11" fill="#334155"/><text x="30" y="97" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">2</text>
+      <text x="48" y="96" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">トークンリクエスト + DPoP Proof</text>
+
+      <!-- 3 dim -->
+      <circle cx="30" cy="122" r="11" fill="#334155"/><text x="30" y="127" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">3</text>
+      <text x="48" y="126" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">DPoP Bound トークン発行</text>
+
+      <!-- 4 ACTIVE -->
+      <rect x="12" y="142" width="316" height="56" rx="6" fill="#3b82f6" opacity="0.08" stroke="#3b82f6" stroke-width="0.8"/>
+      <circle cx="30" cy="164" r="11" fill="#3b82f6"/><text x="30" y="169" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">4</text>
+      <text x="48" y="160" fill="#f8fafc" font-size="10.5" font-weight="600" font-family="'Segoe UI', sans-serif">APIリクエスト (DPoP Token + Proof)</text>
+      <text x="48" y="174" fill="#93c5fd" font-size="8.5" font-family="'Segoe UI', sans-serif">新しいDPoP Proofを生成してリクエストごとに付与</text>
+      <text x="48" y="186" fill="#475569" font-size="7.5" font-family="'Fira Code', monospace">→ Authorization: DPoP {token} + DPoP: {proof}</text>
+
+      <!-- 5 ACTIVE -->
+      <rect x="12" y="204" width="316" height="56" rx="6" fill="#3b82f6" opacity="0.08" stroke="#3b82f6" stroke-width="0.8"/>
+      <circle cx="30" cy="226" r="11" fill="#3b82f6"/><text x="30" y="231" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">5</text>
+      <text x="48" y="222" fill="#f8fafc" font-size="10.5" font-weight="600" font-family="'Segoe UI', sans-serif">DPoP検証 + リソース返却</text>
+      <text x="48" y="236" fill="#93c5fd" font-size="8.5" font-family="'Segoe UI', sans-serif">リソースサーバーがProof署名とjkr thumbprintを検証</text>
+      <text x="48" y="248" fill="#475569" font-size="7.5" font-family="'Fira Code', monospace">← 200 {"data":"protected resource"}</text>
+
+      <!-- DPoP vs Bearer 比較 -->
+      <line x1="16" y1="275" x2="324" y2="275" stroke="#334155" stroke-width="1"/>
+      <text x="16" y="297" fill="#e2e8f0" font-size="11" font-weight="700" font-family="'Segoe UI', sans-serif">DPoP vs Bearer Token</text>
+
+      <rect x="16" y="310" width="308" height="50" rx="6" fill="#1e1b2e" stroke="#22c55e" stroke-width="0.8"/>
+      <text x="28" y="328" fill="#86efac" font-size="9.5" font-weight="600" font-family="'Segoe UI', sans-serif">Bearer: 所持者なら誰でも使用可能</text>
+      <text x="28" y="342" fill="#94a3b8" font-size="8" font-family="'Segoe UI', sans-serif">トークンが漏洩すると即座に悪用される危険</text>
+      <text x="28" y="354" fill="#94a3b8" font-size="8" font-family="'Segoe UI', sans-serif">→ 中間者攻撃やログ漏洩に脆弱</text>
+
+      <rect x="16" y="366" width="308" height="50" rx="6" fill="#1e1b2e" stroke="#3b82f6" stroke-width="0.8"/>
+      <text x="28" y="384" fill="#93c5fd" font-size="9.5" font-weight="600" font-family="'Segoe UI', sans-serif">DPoP: 秘密鍵所有者のみ使用可能</text>
+      <text x="28" y="398" fill="#94a3b8" font-size="8" font-family="'Segoe UI', sans-serif">トークンが漏洩しても秘密鍵がなければ無効</text>
+      <text x="28" y="410" fill="#94a3b8" font-size="8" font-family="'Segoe UI', sans-serif">→ トークン盗難攻撃に対する強力な防御</text>
+    </g>
+  </g>
+</svg>
