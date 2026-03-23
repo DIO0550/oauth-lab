@@ -11,8 +11,8 @@
       <feGaussianBlur stdDeviation="2.5" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <marker id="arrowUp" markerWidth="8" markerHeight="10" refX="4" refY="10" orient="auto">
-      <polygon points="0 10, 4 0, 8 10" fill="#94a3b8"/>
+    <marker id="arrowUp" markerWidth="10" markerHeight="8" refX="5" refY="0" orient="auto">
+      <polygon points="0 8, 5 0, 10 8" fill="#94a3b8"/>
     </marker>
   </defs>
 
@@ -139,11 +139,17 @@
 
   <!-- ===== Connecting arrows between layers ===== -->
   <!-- L1 → L2 -->
-  <line x1="385" y1="518" x2="385" y2="502" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="3 2" marker-end="url(#arrowUp)"/>
+  <path d="M 385 518 L 385 502" fill="none" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrowUp)"/>
+  <path d="M 365 518 L 365 502" fill="none" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrowUp)"/>
+  <path d="M 405 518 L 405 502" fill="none" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrowUp)"/>
   <!-- L2 → L3 -->
-  <line x1="385" y1="378" x2="385" y2="362" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="3 2" marker-end="url(#arrowUp)"/>
+  <path d="M 385 378 L 385 362" fill="none" stroke="#a855f7" stroke-width="2" marker-end="url(#arrowUp)"/>
+  <path d="M 365 378 L 365 362" fill="none" stroke="#a855f7" stroke-width="2" marker-end="url(#arrowUp)"/>
+  <path d="M 405 378 L 405 362" fill="none" stroke="#a855f7" stroke-width="2" marker-end="url(#arrowUp)"/>
   <!-- L3 → L4 -->
-  <line x1="385" y1="238" x2="385" y2="222" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="3 2" marker-end="url(#arrowUp)"/>
+  <path d="M 385 238 L 385 222" fill="none" stroke="#22c55e" stroke-width="2" marker-end="url(#arrowUp)"/>
+  <path d="M 365 238 L 365 222" fill="none" stroke="#22c55e" stroke-width="2" marker-end="url(#arrowUp)"/>
+  <path d="M 405 238 L 405 222" fill="none" stroke="#22c55e" stroke-width="2" marker-end="url(#arrowUp)"/>
 
   <!-- ================================================================ -->
   <!-- RIGHT SIDE PANEL: 適用分野 -->
