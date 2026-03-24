@@ -345,18 +345,18 @@
     <use href="#ressv"  x="530" y="1963" width="110" height="130" filter="url(#shadow)"/>
 
     <!-- Step 7: client → ressv (blue, horizontal right) -->
-    <!-- client center y=2028, arrow at y=2020 (above center) -->
-    <path d="M 170 2020 L 524 2020" fill="none" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arrowBlue)"/>
-    <circle cx="348" cy="2000" r="15" fill="#3b82f6"/>
-    <text x="348" y="2005" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">7</text>
-    <text x="348" y="2040" text-anchor="middle" fill="#93c5fd" font-size="11" font-weight="600">APIリクエスト（Bearer Token）</text>
+    <!-- arrow at y=2015, label above -->
+    <path d="M 170 2015 L 524 2015" fill="none" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arrowBlue)"/>
+    <circle cx="348" cy="1993" r="15" fill="#3b82f6"/>
+    <text x="348" y="1998" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">7</text>
+    <text x="348" y="2008" text-anchor="middle" fill="#93c5fd" font-size="11" font-weight="600">APIリクエスト（Bearer Token）</text>
 
     <!-- Step 8: ressv → client (blue dashed, horizontal left) -->
-    <!-- arrow at y=2060 (below center) -->
-    <path d="M 524 2060 L 170 2060" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-dasharray="8,5" marker-end="url(#arrowBlue)"/>
-    <circle cx="348" cy="2080" r="15" fill="#3b82f6"/>
-    <text x="348" y="2085" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">8</text>
-    <text x="348" y="2055" text-anchor="middle" fill="#93c5fd" font-size="11" font-weight="600">保護リソース返却</text>
+    <!-- arrow at y=2055, label below -->
+    <path d="M 524 2055 L 170 2055" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-dasharray="8,5" marker-end="url(#arrowBlue)"/>
+    <circle cx="348" cy="2077" r="15" fill="#3b82f6"/>
+    <text x="348" y="2082" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">8</text>
+    <text x="348" y="2100" text-anchor="middle" fill="#93c5fd" font-size="11" font-weight="600">保護リソース返却</text>
   </g>
 
   <!-- ===== PHASE 4 SIDEBAR ===== -->
