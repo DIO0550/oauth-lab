@@ -96,7 +96,7 @@
     </symbol>
   </defs>
 
-  <rect width="1100" height="2060" fill="url(#bgGrad)"/>
+  <rect width="1100" height="2360" fill="url(#bgGrad)"/>
 
   <!-- ===== HEADER ===== -->
   <text x="55" y="42" fill="#f1f5f9" font-size="22" font-weight="700">OAuth 2.0 概要フロー</text>
