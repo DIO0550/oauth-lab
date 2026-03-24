@@ -121,18 +121,12 @@
     <use href="#authsv" x="530" y="143" width="110" height="130" filter="url(#shadow)"/>
     <use href="#dimbox" x="530" y="403" width="110" height="130"/>
 
-    <!-- Step 2: client → authsv (cyan dashed, diagonal up-right) — 先に描画して背面に配置 -->
+    <!-- Step 2: client → authsv (cyan dashed, diagonal up-right) -->
     <!-- (170, 88+380=468) → (524, 88+120=208) dx=354 dy=-260 -->
     <line x1="170" y1="468" x2="524" y2="208" stroke="#22d3ee" stroke-width="2.5" stroke-dasharray="8,5" marker-end="url(#arrowCyan)" filter="url(#glow)"/>
     <rect x="280" y="328" width="210" height="24" rx="6" fill="#1e1b2e" stroke="#22d3ee" stroke-width="0.8" opacity="0.9"/>
     <circle cx="295" cy="340" r="15" fill="#22d3ee"/><text x="295" y="345" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">2</text>
     <text x="315" y="345" fill="#67e8f9" font-size="11">認可リクエスト（リダイレクト）</text>
-
-    <!-- Step 1: owner → client (purple, vertical down) — 後に描画して前面に配置 -->
-    <line x1="110" y1="278" x2="110" y2="398" stroke="#a855f7" stroke-width="2.5" marker-end="url(#arrowPurple)" filter="url(#glow)"/>
-    <rect x="122" y="326" width="145" height="24" rx="6" fill="#1e1b2e" stroke="#a855f7" stroke-width="0.8" opacity="0.9"/>
-    <circle cx="137" cy="338" r="15" fill="#a855f7"/><text x="137" y="343" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">1</text>
-    <text x="157" y="343" fill="#d8b4fe" font-size="11">ログインボタン押下</text>
   </g>
 
   <!-- ===== PHASE 1 SIDEBAR ===== -->
@@ -182,6 +176,14 @@
     <text x="965" y="428" fill="#4ade80" font-size="10">バックチャネル</text>
     <line x1="915" y1="444" x2="955" y2="444" stroke="#3b82f6" stroke-width="2"/>
     <text x="965" y="448" fill="#93c5fd" font-size="10">APIアクセス</text>
+  </g>
+
+  <!-- Step 1: owner → client (purple, vertical down) — 全Phase 1要素より後に描画して最前面に配置 -->
+  <g>
+    <line x1="110" y1="278" x2="110" y2="398" stroke="#a855f7" stroke-width="2.5" marker-end="url(#arrowPurple)" filter="url(#glow)"/>
+    <rect x="122" y="326" width="145" height="24" rx="6" fill="#1e1b2e" stroke="#a855f7" stroke-width="0.8" opacity="0.9"/>
+    <circle cx="137" cy="338" r="15" fill="#a855f7"/><text x="137" y="343" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">1</text>
+    <text x="157" y="343" fill="#d8b4fe" font-size="11">ログインボタン押下</text>
   </g>
 
   <!-- ============================================================= -->
