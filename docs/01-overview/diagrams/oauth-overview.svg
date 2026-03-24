@@ -279,8 +279,8 @@
     <text x="255" y="1355" fill="#4ade80" font-size="11">トークンリクエスト（バックチャネル）</text>
 
     <!-- Step 6: authsv → client (green, diagonal down-left) PARALLEL to step 5 -->
-    <!-- (524, 1278) → (170, 1528) midpoint=(347, 1403) -->
-    <line x1="524" y1="1278" x2="170" y2="1528" stroke="#22c55e" stroke-width="2.5" stroke-dasharray="8,5" marker-end="url(#arrowGreen)" filter="url(#glow)"/>
+    <!-- (524, 1278) → (170, 1538) dx=-354 dy=+260 (parallel to step 5) -->
+    <line x1="524" y1="1278" x2="170" y2="1538" stroke="#22c55e" stroke-width="2.5" stroke-dasharray="8,5" marker-end="url(#arrowGreen)" filter="url(#glow)"/>
     <rect x="310" y="1408" width="180" height="24" rx="6" fill="#1e1b2e" stroke="#22c55e" stroke-width="0.8" opacity="0.9"/>
     <circle cx="325" cy="1420" r="15" fill="#22c55e"/><text x="325" y="1425" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">6</text>
     <text x="345" y="1425" fill="#4ade80" font-size="11">アクセストークン発行</text>
