@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 2060" font-family="'Segoe UI', system-ui, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 2360" font-family="'Segoe UI', system-ui, sans-serif">
   <defs>
     <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#0f172a"/>
@@ -107,37 +107,37 @@
 
   <!-- ============================================================= -->
   <!-- PHASE 1: 認可リクエスト (Steps 1-2)  base=88                   -->
-  <!-- Actors: upper y+55, lower y+215, left x=55, right x=530       -->
-  <!-- Actor centers: upper +120, lower +280                          -->
+  <!-- Actors: upper y+55, lower y+315, left x=55, right x=530       -->
+  <!-- Actor centers: upper +120, lower +380                          -->
   <!-- ============================================================= -->
   <g>
-    <rect x="20" y="88" width="700" height="400" rx="16" fill="none" stroke="#a855f7" stroke-width="1.2" opacity="0.3"/>
+    <rect x="20" y="88" width="700" height="500" rx="16" fill="none" stroke="#a855f7" stroke-width="1.2" opacity="0.3"/>
     <rect x="35" y="78" width="300" height="26" rx="8" fill="#0f172a"/>
     <text x="45" y="96" fill="#d8b4fe" font-size="14" font-weight="700">Phase 1: 認可リクエスト</text>
 
     <!-- Active: owner, client, authsv / Dimmed: ressv -->
     <use href="#owner"  x="55"  y="143" width="110" height="130" filter="url(#shadow)"/>
-    <use href="#client" x="55"  y="303" width="110" height="130" filter="url(#shadow)"/>
+    <use href="#client" x="55"  y="403" width="110" height="130" filter="url(#shadow)"/>
     <use href="#authsv" x="530" y="143" width="110" height="130" filter="url(#shadow)"/>
-    <use href="#dimbox" x="530" y="303" width="110" height="130"/>
+    <use href="#dimbox" x="530" y="403" width="110" height="130"/>
 
     <!-- Step 1: owner → client (purple, vertical down) -->
-    <line x1="110" y1="278" x2="110" y2="298" stroke="#a855f7" stroke-width="2.5" marker-end="url(#arrowPurple)" filter="url(#glow)"/>
-    <rect x="125" y="272" width="145" height="24" rx="6" fill="#1e1b2e" stroke="#a855f7" stroke-width="0.8" opacity="0.9"/>
-    <circle cx="140" cy="284" r="15" fill="#a855f7"/><text x="140" y="289" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">1</text>
-    <text x="160" y="289" fill="#d8b4fe" font-size="11">ログインボタン押下</text>
+    <line x1="110" y1="278" x2="110" y2="398" stroke="#a855f7" stroke-width="2.5" marker-end="url(#arrowPurple)" filter="url(#glow)"/>
+    <rect x="125" y="326" width="145" height="24" rx="6" fill="#1e1b2e" stroke="#a855f7" stroke-width="0.8" opacity="0.9"/>
+    <circle cx="140" cy="338" r="15" fill="#a855f7"/><text x="140" y="343" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">1</text>
+    <text x="160" y="343" fill="#d8b4fe" font-size="11">ログインボタン押下</text>
 
     <!-- Step 2: client → authsv (cyan dashed, diagonal up-right) -->
-    <!-- (170, 88+280=368) → (524, 88+180=268) dx=354 dy=-100 -->
-    <line x1="170" y1="368" x2="524" y2="208" stroke="#22d3ee" stroke-width="2.5" stroke-dasharray="8,5" marker-end="url(#arrowCyan)" filter="url(#glow)"/>
-    <rect x="265" y="258" width="210" height="24" rx="6" fill="#1e1b2e" stroke="#22d3ee" stroke-width="0.8" opacity="0.9"/>
-    <circle cx="280" cy="270" r="15" fill="#22d3ee"/><text x="280" y="275" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">2</text>
-    <text x="300" y="275" fill="#67e8f9" font-size="11">認可リクエスト（リダイレクト）</text>
+    <!-- (170, 88+380=468) → (524, 88+120=208) dx=354 dy=-260 -->
+    <line x1="170" y1="468" x2="524" y2="208" stroke="#22d3ee" stroke-width="2.5" stroke-dasharray="8,5" marker-end="url(#arrowCyan)" filter="url(#glow)"/>
+    <rect x="265" y="310" width="210" height="24" rx="6" fill="#1e1b2e" stroke="#22d3ee" stroke-width="0.8" opacity="0.9"/>
+    <circle cx="280" cy="322" r="15" fill="#22d3ee"/><text x="280" y="327" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">2</text>
+    <text x="300" y="327" fill="#67e8f9" font-size="11">認可リクエスト（リダイレクト）</text>
   </g>
 
   <!-- ===== PHASE 1 SIDEBAR ===== -->
   <g>
-    <rect x="740" y="88" width="340" height="400" rx="16" fill="#111827" stroke="#1e293b" stroke-width="1"/>
+    <rect x="740" y="88" width="340" height="500" rx="16" fill="#111827" stroke="#1e293b" stroke-width="1"/>
     <text x="770" y="120" fill="#e2e8f0" font-size="15" font-weight="700">全体フロー</text>
     <line x1="770" y1="130" x2="1050" y2="130" stroke="#1e293b" stroke-width="1"/>
 
@@ -185,222 +185,222 @@
   </g>
 
   <!-- ============================================================= -->
-  <!-- PHASE 2: 認証・認可コード (Steps 3-4)  base=508               -->
+  <!-- PHASE 2: 認証・認可コード (Steps 3-4)  base=608               -->
   <!-- ============================================================= -->
   <g>
-    <rect x="20" y="508" width="700" height="400" rx="16" fill="none" stroke="#f59e0b" stroke-width="1.2" opacity="0.3"/>
-    <rect x="35" y="498" width="300" height="26" rx="8" fill="#0f172a"/>
-    <text x="45" y="516" fill="#fcd34d" font-size="14" font-weight="700">Phase 2: 認証・認可コード取得</text>
+    <rect x="20" y="608" width="700" height="500" rx="16" fill="none" stroke="#f59e0b" stroke-width="1.2" opacity="0.3"/>
+    <rect x="35" y="598" width="300" height="26" rx="8" fill="#0f172a"/>
+    <text x="45" y="616" fill="#fcd34d" font-size="14" font-weight="700">Phase 2: 認証・認可コード取得</text>
 
     <!-- Active: owner, authsv, client / Dimmed: ressv -->
-    <use href="#owner"  x="55"  y="563" width="110" height="130" filter="url(#shadow)"/>
-    <use href="#client" x="55"  y="723" width="110" height="130" filter="url(#shadow)"/>
-    <use href="#authsv" x="530" y="563" width="110" height="130" filter="url(#shadow)"/>
-    <use href="#dimbox" x="530" y="723" width="110" height="130"/>
+    <use href="#owner"  x="55"  y="663" width="110" height="130" filter="url(#shadow)"/>
+    <use href="#client" x="55"  y="923" width="110" height="130" filter="url(#shadow)"/>
+    <use href="#authsv" x="530" y="663" width="110" height="130" filter="url(#shadow)"/>
+    <use href="#dimbox" x="530" y="923" width="110" height="130"/>
 
     <!-- Step 3: authsv → owner (amber dashed, horizontal left) -->
-    <!-- y=508+120=628 -->
-    <line x1="524" y1="628" x2="170" y2="628" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="8,5" marker-end="url(#arrowAmber)" filter="url(#glow)"/>
-    <rect x="270" y="608" width="155" height="24" rx="6" fill="#1e1b2e" stroke="#f59e0b" stroke-width="0.8" opacity="0.9"/>
-    <circle cx="285" cy="620" r="15" fill="#f59e0b"/><text x="285" y="625" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">3</text>
-    <text x="305" y="625" fill="#fcd34d" font-size="11">認証・同意画面</text>
+    <!-- y=608+120=728 -->
+    <line x1="524" y1="728" x2="170" y2="728" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="8,5" marker-end="url(#arrowAmber)" filter="url(#glow)"/>
+    <rect x="270" y="708" width="155" height="24" rx="6" fill="#1e1b2e" stroke="#f59e0b" stroke-width="0.8" opacity="0.9"/>
+    <circle cx="285" cy="720" r="15" fill="#f59e0b"/><text x="285" y="725" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">3</text>
+    <text x="305" y="725" fill="#fcd34d" font-size="11">認証・同意画面</text>
 
     <!-- Step 4: authsv → client (amber, diagonal down-left) -->
-    <!-- (524, 508+180=688) → (170, 508+280=788) dx=-354 dy=100 -->
-    <line x1="524" y1="688" x2="170" y2="788" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#arrowCyan)" filter="url(#glow)"/>
-    <rect x="265" y="720" width="175" height="24" rx="6" fill="#1e1b2e" stroke="#f59e0b" stroke-width="0.8" opacity="0.9"/>
-    <circle cx="280" cy="732" r="15" fill="#f59e0b"/><text x="280" y="737" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">4</text>
-    <text x="300" y="737" fill="#fcd34d" font-size="11">認可コード返却（リダイレクト）</text>
+    <!-- (524, 608+120=728) → (170, 608+380=988) dx=-354 dy=260 -->
+    <line x1="524" y1="788" x2="170" y2="988" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#arrowCyan)" filter="url(#glow)"/>
+    <rect x="265" y="860" width="175" height="24" rx="6" fill="#1e1b2e" stroke="#f59e0b" stroke-width="0.8" opacity="0.9"/>
+    <circle cx="280" cy="872" r="15" fill="#f59e0b"/><text x="280" y="877" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">4</text>
+    <text x="300" y="877" fill="#fcd34d" font-size="11">認可コード返却（リダイレクト）</text>
   </g>
 
   <!-- ===== PHASE 2 SIDEBAR ===== -->
   <g>
-    <rect x="740" y="508" width="340" height="400" rx="16" fill="#111827" stroke="#1e293b" stroke-width="1"/>
-    <text x="770" y="540" fill="#e2e8f0" font-size="15" font-weight="700">全体フロー</text>
-    <line x1="770" y1="550" x2="1050" y2="550" stroke="#1e293b" stroke-width="1"/>
+    <rect x="740" y="608" width="340" height="500" rx="16" fill="#111827" stroke="#1e293b" stroke-width="1"/>
+    <text x="770" y="640" fill="#e2e8f0" font-size="15" font-weight="700">全体フロー</text>
+    <line x1="770" y1="650" x2="1050" y2="650" stroke="#1e293b" stroke-width="1"/>
 
     <g font-size="12">
       <!-- Steps 1-2 dimmed -->
-      <circle cx="780" cy="570" r="11" fill="#334155"/><text x="780" y="575" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">1</text>
-      <text x="798" y="574" fill="#475569">ログインボタン押下</text>
-      <circle cx="780" cy="594" r="11" fill="#334155"/><text x="780" y="599" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">2</text>
-      <text x="798" y="598" fill="#475569">認可リクエスト</text>
+      <circle cx="780" cy="670" r="11" fill="#334155"/><text x="780" y="675" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">1</text>
+      <text x="798" y="674" fill="#475569">ログインボタン押下</text>
+      <circle cx="780" cy="694" r="11" fill="#334155"/><text x="780" y="699" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">2</text>
+      <text x="798" y="698" fill="#475569">認可リクエスト</text>
       <!-- Divider -->
-      <line x1="770" y1="612" x2="1050" y2="612" stroke="#1e293b" stroke-width="1"/>
+      <line x1="770" y1="712" x2="1050" y2="712" stroke="#1e293b" stroke-width="1"/>
       <!-- Step 3 active -->
-      <rect x="758" y="621" width="308" height="36" rx="6" fill="#f59e0b" opacity="0.08" stroke="#f59e0b" stroke-width="0.8"/>
-      <circle cx="780" cy="636" r="11" fill="#f59e0b"/><text x="780" y="641" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">3</text>
-      <text x="798" y="634" fill="#fcd34d" font-weight="600">認証・同意画面</text>
-      <text x="798" y="649" fill="#f59e0b" font-size="10" opacity="0.7">Auth Server → Owner</text>
+      <rect x="758" y="721" width="308" height="36" rx="6" fill="#f59e0b" opacity="0.08" stroke="#f59e0b" stroke-width="0.8"/>
+      <circle cx="780" cy="736" r="11" fill="#f59e0b"/><text x="780" y="741" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">3</text>
+      <text x="798" y="734" fill="#fcd34d" font-weight="600">認証・同意画面</text>
+      <text x="798" y="749" fill="#f59e0b" font-size="10" opacity="0.7">Auth Server → Owner</text>
       <!-- Step 4 active -->
-      <rect x="758" y="663" width="308" height="36" rx="6" fill="#f59e0b" opacity="0.08" stroke="#f59e0b" stroke-width="0.8"/>
-      <circle cx="780" cy="678" r="11" fill="#f59e0b"/><text x="780" y="683" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">4</text>
-      <text x="798" y="676" fill="#fcd34d" font-weight="600">認可コード返却</text>
-      <text x="798" y="691" fill="#f59e0b" font-size="10" opacity="0.7">Auth Server → Client（リダイレクト）</text>
+      <rect x="758" y="763" width="308" height="36" rx="6" fill="#f59e0b" opacity="0.08" stroke="#f59e0b" stroke-width="0.8"/>
+      <circle cx="780" cy="778" r="11" fill="#f59e0b"/><text x="780" y="783" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">4</text>
+      <text x="798" y="776" fill="#fcd34d" font-weight="600">認可コード返却</text>
+      <text x="798" y="791" fill="#f59e0b" font-size="10" opacity="0.7">Auth Server → Client（リダイレクト）</text>
       <!-- Divider -->
-      <line x1="770" y1="708" x2="1050" y2="708" stroke="#1e293b" stroke-width="1"/>
+      <line x1="770" y1="808" x2="1050" y2="808" stroke="#1e293b" stroke-width="1"/>
       <!-- Steps 5-8 dimmed -->
-      <circle cx="780" cy="726" r="11" fill="#334155"/><text x="780" y="731" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">5</text>
-      <text x="798" y="730" fill="#475569">トークンリクエスト</text>
-      <circle cx="780" cy="750" r="11" fill="#334155"/><text x="780" y="755" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">6</text>
-      <text x="798" y="754" fill="#475569">アクセストークン発行</text>
-      <circle cx="780" cy="774" r="11" fill="#334155"/><text x="780" y="779" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">7</text>
-      <text x="798" y="778" fill="#475569">APIリクエスト</text>
-      <circle cx="780" cy="798" r="11" fill="#334155"/><text x="780" y="803" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">8</text>
-      <text x="798" y="802" fill="#475569">保護リソース返却</text>
+      <circle cx="780" cy="826" r="11" fill="#334155"/><text x="780" y="831" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">5</text>
+      <text x="798" y="830" fill="#475569">トークンリクエスト</text>
+      <circle cx="780" cy="850" r="11" fill="#334155"/><text x="780" y="855" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">6</text>
+      <text x="798" y="854" fill="#475569">アクセストークン発行</text>
+      <circle cx="780" cy="874" r="11" fill="#334155"/><text x="780" y="879" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">7</text>
+      <text x="798" y="878" fill="#475569">APIリクエスト</text>
+      <circle cx="780" cy="898" r="11" fill="#334155"/><text x="780" y="903" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">8</text>
+      <text x="798" y="902" fill="#475569">保護リソース返却</text>
     </g>
 
     <!-- Security point -->
-    <line x1="770" y1="818" x2="1050" y2="818" stroke="#1e293b" stroke-width="1"/>
-    <text x="770" y="840" fill="#94a3b8" font-size="11" font-weight="700">ポイント</text>
-    <text x="780" y="860" fill="#fcd34d" font-size="10">● 認可コードは一度きりの使い捨て</text>
-    <text x="780" y="878" fill="#fcd34d" font-size="10">● リダイレクトURIの事前登録が必須</text>
+    <line x1="770" y1="918" x2="1050" y2="918" stroke="#1e293b" stroke-width="1"/>
+    <text x="770" y="940" fill="#94a3b8" font-size="11" font-weight="700">ポイント</text>
+    <text x="780" y="960" fill="#fcd34d" font-size="10">● 認可コードは一度きりの使い捨て</text>
+    <text x="780" y="978" fill="#fcd34d" font-size="10">● リダイレクトURIの事前登録が必須</text>
   </g>
 
   <!-- ============================================================= -->
-  <!-- PHASE 3: トークン取得 (Steps 5-6)  base=928                   -->
+  <!-- PHASE 3: トークン取得 (Steps 5-6)  base=1128                  -->
   <!-- ============================================================= -->
   <g>
-    <rect x="20" y="928" width="700" height="400" rx="16" fill="none" stroke="#22c55e" stroke-width="1.2" opacity="0.3"/>
-    <rect x="35" y="918" width="360" height="26" rx="8" fill="#0f172a"/>
-    <text x="45" y="936" fill="#4ade80" font-size="14" font-weight="700">Phase 3: トークン取得（バックチャネル）</text>
+    <rect x="20" y="1128" width="700" height="500" rx="16" fill="none" stroke="#22c55e" stroke-width="1.2" opacity="0.3"/>
+    <rect x="35" y="1118" width="360" height="26" rx="8" fill="#0f172a"/>
+    <text x="45" y="1136" fill="#4ade80" font-size="14" font-weight="700">Phase 3: トークン取得（バックチャネル）</text>
 
     <!-- Active: client, authsv / Dimmed: owner, ressv -->
-    <use href="#dimbox" x="55"  y="983" width="110" height="130"/>
-    <use href="#client" x="55"  y="1143" width="110" height="130" filter="url(#shadow)"/>
-    <use href="#authsv" x="530" y="983" width="110" height="130" filter="url(#shadow)"/>
-    <use href="#dimbox" x="530" y="1143" width="110" height="130"/>
+    <use href="#dimbox" x="55"  y="1183" width="110" height="130"/>
+    <use href="#client" x="55"  y="1443" width="110" height="130" filter="url(#shadow)"/>
+    <use href="#authsv" x="530" y="1183" width="110" height="130" filter="url(#shadow)"/>
+    <use href="#dimbox" x="530" y="1443" width="110" height="130"/>
 
     <!-- Step 5: client → authsv (green, diagonal up-right) -->
-    <!-- (170, 928+270=1198) → (524, 928+120=1048) dx=354 dy=-150 -->
-    <line x1="170" y1="1198" x2="524" y2="1048" stroke="#22c55e" stroke-width="2.5" marker-end="url(#arrowGreen)" filter="url(#glow)"/>
-    <rect x="250" y="1080" width="240" height="24" rx="6" fill="#1e1b2e" stroke="#22c55e" stroke-width="0.8" opacity="0.9"/>
-    <circle cx="265" cy="1092" r="15" fill="#22c55e"/><text x="265" y="1097" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">5</text>
-    <text x="285" y="1097" fill="#4ade80" font-size="11">トークンリクエスト（バックチャネル）</text>
+    <!-- (170, 1128+380=1508) → (524, 1128+120=1248) -->
+    <line x1="170" y1="1508" x2="524" y2="1248" stroke="#22c55e" stroke-width="2.5" marker-end="url(#arrowGreen)" filter="url(#glow)"/>
+    <rect x="250" y="1340" width="240" height="24" rx="6" fill="#1e1b2e" stroke="#22c55e" stroke-width="0.8" opacity="0.9"/>
+    <circle cx="265" cy="1352" r="15" fill="#22c55e"/><text x="265" y="1357" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">5</text>
+    <text x="285" y="1357" fill="#4ade80" font-size="11">トークンリクエスト（バックチャネル）</text>
 
     <!-- Step 6: authsv → client (green, diagonal down-left) PARALLEL to step 5 -->
-    <!-- (524, 928+150=1078) → (170, 928+300=1228) dx=-354 dy=150 -->
-    <line x1="524" y1="1078" x2="170" y2="1228" stroke="#22c55e" stroke-width="2.5" stroke-dasharray="8,5" marker-end="url(#arrowGreen)" filter="url(#glow)"/>
-    <rect x="270" y="1158" width="180" height="24" rx="6" fill="#1e1b2e" stroke="#22c55e" stroke-width="0.8" opacity="0.9"/>
-    <circle cx="285" cy="1170" r="15" fill="#22c55e"/><text x="285" y="1175" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">6</text>
-    <text x="305" y="1175" fill="#4ade80" font-size="11">アクセストークン発行</text>
+    <!-- (524, 1128+150=1278) → (170, 1128+400=1528) -->
+    <line x1="524" y1="1278" x2="170" y2="1528" stroke="#22c55e" stroke-width="2.5" stroke-dasharray="8,5" marker-end="url(#arrowGreen)" filter="url(#glow)"/>
+    <rect x="270" y="1408" width="180" height="24" rx="6" fill="#1e1b2e" stroke="#22c55e" stroke-width="0.8" opacity="0.9"/>
+    <circle cx="285" cy="1420" r="15" fill="#22c55e"/><text x="285" y="1425" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">6</text>
+    <text x="305" y="1425" fill="#4ade80" font-size="11">アクセストークン発行</text>
   </g>
 
   <!-- ===== PHASE 3 SIDEBAR ===== -->
   <g>
-    <rect x="740" y="928" width="340" height="400" rx="16" fill="#111827" stroke="#1e293b" stroke-width="1"/>
-    <text x="770" y="960" fill="#e2e8f0" font-size="15" font-weight="700">全体フロー</text>
-    <line x1="770" y1="970" x2="1050" y2="970" stroke="#1e293b" stroke-width="1"/>
+    <rect x="740" y="1128" width="340" height="500" rx="16" fill="#111827" stroke="#1e293b" stroke-width="1"/>
+    <text x="770" y="1160" fill="#e2e8f0" font-size="15" font-weight="700">全体フロー</text>
+    <line x1="770" y1="1170" x2="1050" y2="1170" stroke="#1e293b" stroke-width="1"/>
 
     <g font-size="12">
       <!-- Steps 1-4 dimmed -->
-      <circle cx="780" cy="990" r="11" fill="#334155"/><text x="780" y="995" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">1</text>
-      <text x="798" y="994" fill="#475569">ログインボタン押下</text>
-      <circle cx="780" cy="1014" r="11" fill="#334155"/><text x="780" y="1019" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">2</text>
-      <text x="798" y="1018" fill="#475569">認可リクエスト</text>
-      <circle cx="780" cy="1038" r="11" fill="#334155"/><text x="780" y="1043" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">3</text>
-      <text x="798" y="1042" fill="#475569">認証・同意画面</text>
-      <circle cx="780" cy="1062" r="11" fill="#334155"/><text x="780" y="1067" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">4</text>
-      <text x="798" y="1066" fill="#475569">認可コード返却</text>
+      <circle cx="780" cy="1190" r="11" fill="#334155"/><text x="780" y="1195" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">1</text>
+      <text x="798" y="1194" fill="#475569">ログインボタン押下</text>
+      <circle cx="780" cy="1214" r="11" fill="#334155"/><text x="780" y="1219" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">2</text>
+      <text x="798" y="1218" fill="#475569">認可リクエスト</text>
+      <circle cx="780" cy="1238" r="11" fill="#334155"/><text x="780" y="1243" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">3</text>
+      <text x="798" y="1242" fill="#475569">認証・同意画面</text>
+      <circle cx="780" cy="1262" r="11" fill="#334155"/><text x="780" y="1267" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">4</text>
+      <text x="798" y="1266" fill="#475569">認可コード返却</text>
       <!-- Divider -->
-      <line x1="770" y1="1080" x2="1050" y2="1080" stroke="#1e293b" stroke-width="1"/>
+      <line x1="770" y1="1280" x2="1050" y2="1280" stroke="#1e293b" stroke-width="1"/>
       <!-- Step 5 active -->
-      <rect x="758" y="1089" width="308" height="36" rx="6" fill="#22c55e" opacity="0.08" stroke="#22c55e" stroke-width="0.8"/>
-      <circle cx="780" cy="1104" r="11" fill="#22c55e"/><text x="780" y="1109" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">5</text>
-      <text x="798" y="1102" fill="#4ade80" font-weight="600">トークンリクエスト</text>
-      <text x="798" y="1117" fill="#22c55e" font-size="10" opacity="0.7">Client → Auth Server（サーバー間通信）</text>
+      <rect x="758" y="1289" width="308" height="36" rx="6" fill="#22c55e" opacity="0.08" stroke="#22c55e" stroke-width="0.8"/>
+      <circle cx="780" cy="1304" r="11" fill="#22c55e"/><text x="780" y="1309" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">5</text>
+      <text x="798" y="1302" fill="#4ade80" font-weight="600">トークンリクエスト</text>
+      <text x="798" y="1317" fill="#22c55e" font-size="10" opacity="0.7">Client → Auth Server（サーバー間通信）</text>
       <!-- Step 6 active -->
-      <rect x="758" y="1131" width="308" height="36" rx="6" fill="#22c55e" opacity="0.08" stroke="#22c55e" stroke-width="0.8"/>
-      <circle cx="780" cy="1146" r="11" fill="#22c55e"/><text x="780" y="1151" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">6</text>
-      <text x="798" y="1144" fill="#4ade80" font-weight="600">アクセストークン発行</text>
-      <text x="798" y="1159" fill="#22c55e" font-size="10" opacity="0.7">Auth Server → Client</text>
+      <rect x="758" y="1331" width="308" height="36" rx="6" fill="#22c55e" opacity="0.08" stroke="#22c55e" stroke-width="0.8"/>
+      <circle cx="780" cy="1346" r="11" fill="#22c55e"/><text x="780" y="1351" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">6</text>
+      <text x="798" y="1344" fill="#4ade80" font-weight="600">アクセストークン発行</text>
+      <text x="798" y="1359" fill="#22c55e" font-size="10" opacity="0.7">Auth Server → Client</text>
       <!-- Divider -->
-      <line x1="770" y1="1176" x2="1050" y2="1176" stroke="#1e293b" stroke-width="1"/>
+      <line x1="770" y1="1376" x2="1050" y2="1376" stroke="#1e293b" stroke-width="1"/>
       <!-- Steps 7-8 dimmed -->
-      <circle cx="780" cy="1194" r="11" fill="#334155"/><text x="780" y="1199" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">7</text>
-      <text x="798" y="1198" fill="#475569">APIリクエスト</text>
-      <circle cx="780" cy="1218" r="11" fill="#334155"/><text x="780" y="1223" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">8</text>
-      <text x="798" y="1222" fill="#475569">保護リソース返却</text>
+      <circle cx="780" cy="1394" r="11" fill="#334155"/><text x="780" y="1399" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">7</text>
+      <text x="798" y="1398" fill="#475569">APIリクエスト</text>
+      <circle cx="780" cy="1418" r="11" fill="#334155"/><text x="780" y="1423" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">8</text>
+      <text x="798" y="1422" fill="#475569">保護リソース返却</text>
     </g>
 
     <!-- Security point -->
-    <line x1="770" y1="1238" x2="1050" y2="1238" stroke="#1e293b" stroke-width="1"/>
-    <text x="770" y="1260" fill="#94a3b8" font-size="11" font-weight="700">ポイント</text>
-    <text x="780" y="1280" fill="#4ade80" font-size="10">● トークンはバックチャネルで安全に取得</text>
-    <text x="780" y="1298" fill="#4ade80" font-size="10">● ブラウザにトークンが露出しない</text>
+    <line x1="770" y1="1438" x2="1050" y2="1438" stroke="#1e293b" stroke-width="1"/>
+    <text x="770" y="1460" fill="#94a3b8" font-size="11" font-weight="700">ポイント</text>
+    <text x="780" y="1480" fill="#4ade80" font-size="10">● トークンはバックチャネルで安全に取得</text>
+    <text x="780" y="1498" fill="#4ade80" font-size="10">● ブラウザにトークンが露出しない</text>
   </g>
 
   <!-- ============================================================= -->
-  <!-- PHASE 4: リソースアクセス (Steps 7-8)  base=1348              -->
+  <!-- PHASE 4: リソースアクセス (Steps 7-8)  base=1648              -->
   <!-- ============================================================= -->
   <g>
-    <rect x="20" y="1348" width="700" height="400" rx="16" fill="none" stroke="#3b82f6" stroke-width="1.2" opacity="0.3"/>
-    <rect x="35" y="1338" width="300" height="26" rx="8" fill="#0f172a"/>
-    <text x="45" y="1356" fill="#93c5fd" font-size="14" font-weight="700">Phase 4: リソースアクセス</text>
+    <rect x="20" y="1648" width="700" height="500" rx="16" fill="none" stroke="#3b82f6" stroke-width="1.2" opacity="0.3"/>
+    <rect x="35" y="1638" width="300" height="26" rx="8" fill="#0f172a"/>
+    <text x="45" y="1656" fill="#93c5fd" font-size="14" font-weight="700">Phase 4: リソースアクセス</text>
 
     <!-- Active: client, ressv / Dimmed: owner, authsv -->
-    <use href="#dimbox" x="55"  y="1403" width="110" height="130"/>
-    <use href="#client" x="55"  y="1563" width="110" height="130" filter="url(#shadow)"/>
-    <use href="#dimbox" x="530" y="1403" width="110" height="130"/>
-    <use href="#ressv"  x="530" y="1563" width="110" height="130" filter="url(#shadow)"/>
+    <use href="#dimbox" x="55"  y="1703" width="110" height="130"/>
+    <use href="#client" x="55"  y="1963" width="110" height="130" filter="url(#shadow)"/>
+    <use href="#dimbox" x="530" y="1703" width="110" height="130"/>
+    <use href="#ressv"  x="530" y="1963" width="110" height="130" filter="url(#shadow)"/>
 
     <!-- Step 7: client → ressv (blue, horizontal right) -->
-    <!-- y=1348+260=1608 -->
-    <line x1="170" y1="1618" x2="524" y2="1618" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arrowBlue)" filter="url(#glow)"/>
-    <rect x="250" y="1598" width="220" height="24" rx="6" fill="#1e1b2e" stroke="#3b82f6" stroke-width="0.8" opacity="0.9"/>
-    <circle cx="265" cy="1610" r="15" fill="#3b82f6"/><text x="265" y="1615" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">7</text>
-    <text x="285" y="1615" fill="#93c5fd" font-size="11">APIリクエスト（Bearer Token）</text>
+    <!-- y=1648+380=2028 -->
+    <line x1="170" y1="2028" x2="524" y2="2028" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arrowBlue)" filter="url(#glow)"/>
+    <rect x="250" y="2008" width="220" height="24" rx="6" fill="#1e1b2e" stroke="#3b82f6" stroke-width="0.8" opacity="0.9"/>
+    <circle cx="265" cy="2020" r="15" fill="#3b82f6"/><text x="265" y="2025" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">7</text>
+    <text x="285" y="2025" fill="#93c5fd" font-size="11">APIリクエスト（Bearer Token）</text>
 
     <!-- Step 8: ressv → client (blue dashed, horizontal left) PARALLEL to step 7 -->
-    <!-- y=1348+300=1648 -->
-    <line x1="524" y1="1648" x2="170" y2="1648" stroke="#3b82f6" stroke-width="2.5" stroke-dasharray="8,5" marker-end="url(#arrowBlue)" filter="url(#glow)"/>
-    <rect x="275" y="1655" width="160" height="24" rx="6" fill="#1e1b2e" stroke="#3b82f6" stroke-width="0.8" opacity="0.9"/>
-    <circle cx="290" cy="1667" r="15" fill="#3b82f6"/><text x="290" y="1672" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">8</text>
-    <text x="310" y="1672" fill="#93c5fd" font-size="11">保護リソース返却</text>
+    <!-- y=1648+400=2048 -->
+    <line x1="524" y1="2058" x2="170" y2="2058" stroke="#3b82f6" stroke-width="2.5" stroke-dasharray="8,5" marker-end="url(#arrowBlue)" filter="url(#glow)"/>
+    <rect x="275" y="2065" width="160" height="24" rx="6" fill="#1e1b2e" stroke="#3b82f6" stroke-width="0.8" opacity="0.9"/>
+    <circle cx="290" cy="2077" r="15" fill="#3b82f6"/><text x="290" y="2082" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">8</text>
+    <text x="310" y="2082" fill="#93c5fd" font-size="11">保護リソース返却</text>
   </g>
 
   <!-- ===== PHASE 4 SIDEBAR ===== -->
   <g>
-    <rect x="740" y="1348" width="340" height="400" rx="16" fill="#111827" stroke="#1e293b" stroke-width="1"/>
-    <text x="770" y="1380" fill="#e2e8f0" font-size="15" font-weight="700">全体フロー</text>
-    <line x1="770" y1="1390" x2="1050" y2="1390" stroke="#1e293b" stroke-width="1"/>
+    <rect x="740" y="1648" width="340" height="500" rx="16" fill="#111827" stroke="#1e293b" stroke-width="1"/>
+    <text x="770" y="1680" fill="#e2e8f0" font-size="15" font-weight="700">全体フロー</text>
+    <line x1="770" y1="1690" x2="1050" y2="1690" stroke="#1e293b" stroke-width="1"/>
 
     <g font-size="12">
       <!-- Steps 1-6 dimmed -->
-      <circle cx="780" cy="1410" r="11" fill="#334155"/><text x="780" y="1415" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">1</text>
-      <text x="798" y="1414" fill="#475569">ログインボタン押下</text>
-      <circle cx="780" cy="1434" r="11" fill="#334155"/><text x="780" y="1439" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">2</text>
-      <text x="798" y="1438" fill="#475569">認可リクエスト</text>
-      <circle cx="780" cy="1458" r="11" fill="#334155"/><text x="780" y="1463" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">3</text>
-      <text x="798" y="1462" fill="#475569">認証・同意画面</text>
-      <circle cx="780" cy="1482" r="11" fill="#334155"/><text x="780" y="1487" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">4</text>
-      <text x="798" y="1486" fill="#475569">認可コード返却</text>
-      <circle cx="780" cy="1506" r="11" fill="#334155"/><text x="780" y="1511" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">5</text>
-      <text x="798" y="1510" fill="#475569">トークンリクエスト</text>
-      <circle cx="780" cy="1530" r="11" fill="#334155"/><text x="780" y="1535" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">6</text>
-      <text x="798" y="1534" fill="#475569">アクセストークン発行</text>
+      <circle cx="780" cy="1710" r="11" fill="#334155"/><text x="780" y="1715" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">1</text>
+      <text x="798" y="1714" fill="#475569">ログインボタン押下</text>
+      <circle cx="780" cy="1734" r="11" fill="#334155"/><text x="780" y="1739" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">2</text>
+      <text x="798" y="1738" fill="#475569">認可リクエスト</text>
+      <circle cx="780" cy="1758" r="11" fill="#334155"/><text x="780" y="1763" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">3</text>
+      <text x="798" y="1762" fill="#475569">認証・同意画面</text>
+      <circle cx="780" cy="1782" r="11" fill="#334155"/><text x="780" y="1787" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">4</text>
+      <text x="798" y="1786" fill="#475569">認可コード返却</text>
+      <circle cx="780" cy="1806" r="11" fill="#334155"/><text x="780" y="1811" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">5</text>
+      <text x="798" y="1810" fill="#475569">トークンリクエスト</text>
+      <circle cx="780" cy="1830" r="11" fill="#334155"/><text x="780" y="1835" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">6</text>
+      <text x="798" y="1834" fill="#475569">アクセストークン発行</text>
       <!-- Divider -->
-      <line x1="770" y1="1548" x2="1050" y2="1548" stroke="#1e293b" stroke-width="1"/>
+      <line x1="770" y1="1848" x2="1050" y2="1848" stroke="#1e293b" stroke-width="1"/>
       <!-- Step 7 active -->
-      <rect x="758" y="1557" width="308" height="36" rx="6" fill="#3b82f6" opacity="0.08" stroke="#3b82f6" stroke-width="0.8"/>
-      <circle cx="780" cy="1572" r="11" fill="#3b82f6"/><text x="780" y="1577" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">7</text>
-      <text x="798" y="1570" fill="#93c5fd" font-weight="600">APIリクエスト（Bearer Token）</text>
-      <text x="798" y="1585" fill="#3b82f6" font-size="10" opacity="0.7">Client → Resource Server</text>
+      <rect x="758" y="1857" width="308" height="36" rx="6" fill="#3b82f6" opacity="0.08" stroke="#3b82f6" stroke-width="0.8"/>
+      <circle cx="780" cy="1872" r="11" fill="#3b82f6"/><text x="780" y="1877" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">7</text>
+      <text x="798" y="1870" fill="#93c5fd" font-weight="600">APIリクエスト（Bearer Token）</text>
+      <text x="798" y="1885" fill="#3b82f6" font-size="10" opacity="0.7">Client → Resource Server</text>
       <!-- Step 8 active -->
-      <rect x="758" y="1599" width="308" height="36" rx="6" fill="#3b82f6" opacity="0.08" stroke="#3b82f6" stroke-width="0.8"/>
-      <circle cx="780" cy="1614" r="11" fill="#3b82f6"/><text x="780" y="1619" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">8</text>
-      <text x="798" y="1612" fill="#93c5fd" font-weight="600">保護リソース返却</text>
-      <text x="798" y="1627" fill="#3b82f6" font-size="10" opacity="0.7">Resource Server → Client</text>
+      <rect x="758" y="1899" width="308" height="36" rx="6" fill="#3b82f6" opacity="0.08" stroke="#3b82f6" stroke-width="0.8"/>
+      <circle cx="780" cy="1914" r="11" fill="#3b82f6"/><text x="780" y="1919" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">8</text>
+      <text x="798" y="1912" fill="#93c5fd" font-weight="600">保護リソース返却</text>
+      <text x="798" y="1927" fill="#3b82f6" font-size="10" opacity="0.7">Resource Server → Client</text>
     </g>
 
     <!-- Security point -->
-    <line x1="770" y1="1648" x2="1050" y2="1648" stroke="#1e293b" stroke-width="1"/>
-    <text x="770" y="1670" fill="#94a3b8" font-size="11" font-weight="700">ポイント</text>
-    <text x="780" y="1690" fill="#93c5fd" font-size="10">● Bearer Tokenで認可を証明</text>
-    <text x="780" y="1708" fill="#93c5fd" font-size="10">● トークンが無効なら 401 Unauthorized</text>
+    <line x1="770" y1="1948" x2="1050" y2="1948" stroke="#1e293b" stroke-width="1"/>
+    <text x="770" y="1970" fill="#94a3b8" font-size="11" font-weight="700">ポイント</text>
+    <text x="780" y="1990" fill="#93c5fd" font-size="10">● Bearer Tokenで認可を証明</text>
+    <text x="780" y="2008" fill="#93c5fd" font-size="10">● トークンが無効なら 401 Unauthorized</text>
   </g>
 
   <!-- Footer -->
-  <text x="550" y="1810" text-anchor="middle" fill="#475569" font-size="11">OAuth 2.0 Authorization Code Flow — RFC 6749</text>
-  <text x="550" y="1830" text-anchor="middle" fill="#334155" font-size="10">oauth-lab learning environment</text>
+  <text x="550" y="2210" text-anchor="middle" fill="#475569" font-size="11">OAuth 2.0 Authorization Code Flow — RFC 6749</text>
+  <text x="550" y="2230" text-anchor="middle" fill="#334155" font-size="10">oauth-lab learning environment</text>
 </svg>
