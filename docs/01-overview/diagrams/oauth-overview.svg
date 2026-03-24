@@ -178,12 +178,12 @@
     <text x="965" y="448" fill="#93c5fd" font-size="10">APIアクセス</text>
   </g>
 
-  <!-- Step 1: owner → client (purple, vertical down) — 全Phase 1要素より後に描画して最前面に配置 -->
+  <!-- Step 1: owner → client (purple, vertical down) — authorization-code-flow.svg と同じパターン -->
   <g>
-    <line x1="110" y1="278" x2="110" y2="398" stroke="#a855f7" stroke-width="2.5" marker-end="url(#arrowPurple)" filter="url(#glow)"/>
-    <rect x="122" y="326" width="145" height="24" rx="6" fill="#1e1b2e" stroke="#a855f7" stroke-width="0.8" opacity="0.9"/>
-    <circle cx="137" cy="338" r="15" fill="#a855f7"/><text x="137" y="343" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">1</text>
-    <text x="157" y="343" fill="#d8b4fe" font-size="11">ログインボタン押下</text>
+    <path d="M 110 278 L 110 398" fill="none" stroke="#a855f7" stroke-width="2.5" marker-end="url(#arrowPurple)"/>
+    <circle cx="78" cy="338" r="15" fill="#a855f7"/>
+    <text x="78" y="343" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">1</text>
+    <text x="130" y="342" fill="#d8b4fe" font-size="11" font-weight="600">ログインボタン押下</text>
   </g>
 
   <!-- ============================================================= -->
