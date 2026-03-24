@@ -345,18 +345,18 @@
     <use href="#ressv"  x="530" y="1963" width="110" height="130" filter="url(#shadow)"/>
 
     <!-- Step 7: client → ressv (blue, horizontal right) -->
-    <!-- y=1648+380=2028 -->
-    <line x1="170" y1="2028" x2="524" y2="2028" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arrowBlue)" filter="url(#glow)"/>
-    <rect x="250" y="2008" width="220" height="24" rx="6" fill="#1e1b2e" stroke="#3b82f6" stroke-width="0.8" opacity="0.9"/>
-    <circle cx="265" cy="2020" r="15" fill="#3b82f6"/><text x="265" y="2025" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">7</text>
-    <text x="285" y="2025" fill="#93c5fd" font-size="11">APIリクエスト（Bearer Token）</text>
+    <!-- client/ressv center y = 1963+65 = 2028, offset -10 for upper arrow -->
+    <line x1="170" y1="2018" x2="524" y2="2018" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arrowBlue)" filter="url(#glow)"/>
+    <rect x="250" y="1998" width="220" height="24" rx="6" fill="#1e1b2e" stroke="#3b82f6" stroke-width="0.8" opacity="0.9"/>
+    <circle cx="265" cy="2010" r="15" fill="#3b82f6"/><text x="265" y="2015" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">7</text>
+    <text x="285" y="2015" fill="#93c5fd" font-size="11">APIリクエスト（Bearer Token）</text>
 
     <!-- Step 8: ressv → client (blue dashed, horizontal left) PARALLEL to step 7 -->
-    <!-- y=1648+400=2048 -->
-    <line x1="524" y1="2058" x2="170" y2="2058" stroke="#3b82f6" stroke-width="2.5" stroke-dasharray="8,5" marker-end="url(#arrowBlue)" filter="url(#glow)"/>
-    <rect x="275" y="2065" width="160" height="24" rx="6" fill="#1e1b2e" stroke="#3b82f6" stroke-width="0.8" opacity="0.9"/>
-    <circle cx="290" cy="2077" r="15" fill="#3b82f6"/><text x="290" y="2082" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">8</text>
-    <text x="310" y="2082" fill="#93c5fd" font-size="11">保護リソース返却</text>
+    <!-- offset +10 for lower arrow -->
+    <line x1="524" y1="2038" x2="170" y2="2038" stroke="#3b82f6" stroke-width="2.5" stroke-dasharray="8,5" marker-end="url(#arrowBlue)" filter="url(#glow)"/>
+    <rect x="275" y="2045" width="160" height="24" rx="6" fill="#1e1b2e" stroke="#3b82f6" stroke-width="0.8" opacity="0.9"/>
+    <circle cx="290" cy="2057" r="15" fill="#3b82f6"/><text x="290" y="2062" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">8</text>
+    <text x="310" y="2062" fill="#93c5fd" font-size="11">保護リソース返却</text>
   </g>
 
   <!-- ===== PHASE 4 SIDEBAR ===== -->
