@@ -43,7 +43,7 @@
         <line x1="-9" y1="18" x2="9" y2="18" stroke="#22d3ee" stroke-width="1.3" stroke-linecap="round"/>
       </g>
       <text x="55" y="100" text-anchor="middle" fill="#67e8f9" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">クライアント</text>
-      <text x="55" y="116" text-anchor="middle" fill="#22d3ee" font-size="8.5" opacity="0.7" font-family="'Segoe UI', sans-serif">(Client)</text>
+      <text x="55" y="116" text-anchor="middle" fill="#22d3ee" font-size="12" opacity="0.7" font-family="'Segoe UI', sans-serif">(Client)</text>
     </symbol>
 
     <symbol id="authsv" viewBox="0 0 110 130">
@@ -56,7 +56,7 @@
         <line x1="0" y1="3.5" x2="0" y2="6" stroke="#f59e0b" stroke-width="1.1"/>
       </g>
       <text x="55" y="100" text-anchor="middle" fill="#fcd34d" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">認可サーバー</text>
-      <text x="55" y="116" text-anchor="middle" fill="#f59e0b" font-size="8.5" opacity="0.7" font-family="'Segoe UI', sans-serif">(Auth Server)</text>
+      <text x="55" y="116" text-anchor="middle" fill="#f59e0b" font-size="12" opacity="0.7" font-family="'Segoe UI', sans-serif">(Auth Server)</text>
     </symbol>
 
     <symbol id="ressv" viewBox="0 0 110 130">
@@ -74,7 +74,7 @@
         </g>
       </g>
       <text x="55" y="100" text-anchor="middle" fill="#93c5fd" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">リソースサーバー</text>
-      <text x="55" y="116" text-anchor="middle" fill="#3b82f6" font-size="8.5" opacity="0.7" font-family="'Segoe UI', sans-serif">(Resource Server)</text>
+      <text x="55" y="116" text-anchor="middle" fill="#3b82f6" font-size="12" opacity="0.7" font-family="'Segoe UI', sans-serif">(Resource Server)</text>
     </symbol>
 
     <symbol id="dimbox" viewBox="0 0 110 130">
@@ -88,9 +88,9 @@
   <text x="36" y="42" fill="#f8fafc" font-size="24" font-weight="700" font-family="'Segoe UI', sans-serif">OAuth 2.0 Refresh Token Flow</text>
   <text x="36" y="66" fill="#94a3b8" font-size="13" font-family="'Segoe UI', sans-serif">リフレッシュトークンフロー — アクセストークンの更新メカニズム</text>
   <rect x="520" y="28" width="84" height="24" rx="12" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1"/>
-  <text x="562" y="44" text-anchor="middle" fill="#93c5fd" font-size="11" font-weight="600" font-family="'Segoe UI', sans-serif">RFC 6749</text>
+  <text x="562" y="44" text-anchor="middle" fill="#93c5fd" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">RFC 6749</text>
   <rect x="612" y="28" width="120" height="24" rx="12" fill="#1a2e05" stroke="#22c55e" stroke-width="1"/>
-  <text x="672" y="44" text-anchor="middle" fill="#86efac" font-size="11" font-weight="600" font-family="'Segoe UI', sans-serif">refresh_token</text>
+  <text x="672" y="44" text-anchor="middle" fill="#86efac" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">refresh_token</text>
 
   <!-- ====================
     GRID PER PHASE (図エリア幅 ~690px):
@@ -112,9 +112,9 @@
 
     <!-- actors -->
     <use href="#dimbox" x="55"  y="70"  width="110" height="130"/>
-    <text x="110" y="145" text-anchor="middle" fill="#334155" font-size="10" font-family="'Segoe UI', sans-serif">リソース所有者</text>
+    <text x="110" y="145" text-anchor="middle" fill="#334155" font-size="12" font-family="'Segoe UI', sans-serif">リソース所有者</text>
     <use href="#dimbox" x="530" y="70"  width="110" height="130"/>
-    <text x="585" y="145" text-anchor="middle" fill="#334155" font-size="10" font-family="'Segoe UI', sans-serif">認可サーバー</text>
+    <text x="585" y="145" text-anchor="middle" fill="#334155" font-size="12" font-family="'Segoe UI', sans-serif">認可サーバー</text>
     <use href="#client" x="55"  y="310" width="110" height="130" filter="url(#shadow)"/>
     <use href="#ressv"  x="530" y="310" width="110" height="130" filter="url(#shadow)"/>
 
@@ -122,19 +122,19 @@
     <path d="M 170 355 L 524 355" fill="none" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arrowBlue)"/>
     <circle cx="348" cy="336" r="15" fill="#3b82f6"/>
     <text x="348" y="341" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">1</text>
-    <text x="348" y="375" text-anchor="middle" fill="#93c5fd" font-size="11" font-weight="600" font-family="'Segoe UI', sans-serif">① APIリクエスト (Bearer Token)</text>
+    <text x="348" y="375" text-anchor="middle" fill="#93c5fd" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">① APIリクエスト (Bearer Token)</text>
 
     <!-- ② リソースサーバー → クライアント (水平左, 赤) -->
     <path d="M 524 420 L 170 420" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-dasharray="8,4" marker-end="url(#arrowRed)"/>
     <circle cx="348" cy="438" r="15" fill="#ef4444"/>
     <text x="348" y="443" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">2</text>
-    <text x="348" y="414" text-anchor="middle" fill="#fca5a5" font-size="11" font-weight="600" font-family="'Segoe UI', sans-serif">② ⚠ 401 Unauthorized (トークン期限切れ)</text>
+    <text x="348" y="414" text-anchor="middle" fill="#fca5a5" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">② ⚠ 401 Unauthorized (トークン期限切れ)</text>
 
     <!-- 説明ボックス -->
     <g transform="translate(195, 460)">
       <rect x="-6" y="-14" width="340" height="50" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" opacity="0.92"/>
-      <text x="6" y="2" fill="#93c5fd" font-size="11" font-weight="600" font-family="'Segoe UI', sans-serif">Authorization: Bearer <tspan fill="#3b82f6" font-family="'Fira Code', monospace">{expired_token}</tspan></text>
-      <text x="6" y="20" fill="#fca5a5" font-size="11" font-weight="600" font-family="'Segoe UI', sans-serif">→ 401 Token Expired</text>
+      <text x="6" y="2" fill="#93c5fd" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">Authorization: Bearer <tspan fill="#3b82f6" font-family="'Fira Code', monospace">{expired_token}</tspan></text>
+      <text x="6" y="20" fill="#fca5a5" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">→ 401 Token Expired</text>
     </g>
 
     <!-- ===== SIDEBAR ===== -->
@@ -145,53 +145,53 @@
 
       <!-- 1 ACTIVE -->
       <rect x="12" y="50" width="316" height="42" rx="6" fill="#3b82f6" opacity="0.08" stroke="#3b82f6" stroke-width="0.8"/>
-      <circle cx="30" cy="68" r="11" fill="#3b82f6"/><text x="30" y="73" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">1</text>
-      <text x="48" y="64" fill="#f8fafc" font-size="10.5" font-weight="600" font-family="'Segoe UI', sans-serif">APIリクエスト (Bearer Token)</text>
-      <text x="48" y="78" fill="#93c5fd" font-size="8.5" font-family="'Segoe UI', sans-serif">期限切れアクセストークンでAPIコール</text>
+      <circle cx="30" cy="68" r="11" fill="#3b82f6"/><text x="30" y="73" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">1</text>
+      <text x="48" y="64" fill="#f8fafc" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">APIリクエスト (Bearer Token)</text>
+      <text x="48" y="78" fill="#93c5fd" font-size="12" font-family="'Segoe UI', sans-serif">期限切れアクセストークンでAPIコール</text>
 
       <!-- 2 ACTIVE -->
       <rect x="12" y="98" width="316" height="42" rx="6" fill="#ef4444" opacity="0.08" stroke="#ef4444" stroke-width="0.8"/>
-      <circle cx="30" cy="116" r="11" fill="#ef4444"/><text x="30" y="121" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">2</text>
-      <text x="48" y="112" fill="#f8fafc" font-size="10.5" font-weight="600" font-family="'Segoe UI', sans-serif">401 Unauthorized 返却</text>
-      <text x="48" y="126" fill="#fca5a5" font-size="8.5" font-family="'Segoe UI', sans-serif">トークン期限切れでアクセス拒否</text>
+      <circle cx="30" cy="116" r="11" fill="#ef4444"/><text x="30" y="121" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">2</text>
+      <text x="48" y="112" fill="#f8fafc" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">401 Unauthorized 返却</text>
+      <text x="48" y="126" fill="#fca5a5" font-size="12" font-family="'Segoe UI', sans-serif">トークン期限切れでアクセス拒否</text>
 
       <!-- 3-6 dim -->
-      <circle cx="30" cy="160" r="11" fill="#334155"/><text x="30" y="165" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">3</text>
-      <text x="48" y="164" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">トークンリフレッシュリクエスト</text>
-      <circle cx="30" cy="192" r="11" fill="#334155"/><text x="30" y="197" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">4</text>
-      <text x="48" y="196" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">新トークン発行</text>
-      <circle cx="30" cy="224" r="11" fill="#334155"/><text x="30" y="229" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">5</text>
-      <text x="48" y="228" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">APIリクエスト (新Bearer Token)</text>
-      <circle cx="30" cy="256" r="11" fill="#334155"/><text x="30" y="261" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">6</text>
-      <text x="48" y="260" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">保護リソース返却</text>
+      <circle cx="30" cy="160" r="11" fill="#334155"/><text x="30" y="165" text-anchor="middle" fill="#64748b" font-size="12" font-weight="700">3</text>
+      <text x="48" y="164" fill="#64748b" font-size="12" font-family="'Segoe UI', sans-serif">トークンリフレッシュリクエスト</text>
+      <circle cx="30" cy="192" r="11" fill="#334155"/><text x="30" y="197" text-anchor="middle" fill="#64748b" font-size="12" font-weight="700">4</text>
+      <text x="48" y="196" fill="#64748b" font-size="12" font-family="'Segoe UI', sans-serif">新トークン発行</text>
+      <circle cx="30" cy="224" r="11" fill="#334155"/><text x="30" y="229" text-anchor="middle" fill="#64748b" font-size="12" font-weight="700">5</text>
+      <text x="48" y="228" fill="#64748b" font-size="12" font-family="'Segoe UI', sans-serif">APIリクエスト (新Bearer Token)</text>
+      <circle cx="30" cy="256" r="11" fill="#334155"/><text x="30" y="261" text-anchor="middle" fill="#64748b" font-size="12" font-weight="700">6</text>
+      <text x="48" y="260" fill="#64748b" font-size="12" font-family="'Segoe UI', sans-serif">保護リソース返却</text>
 
       <!-- Legend -->
       <line x1="16" y1="284" x2="324" y2="284" stroke="#334155" stroke-width="1"/>
-      <text x="16" y="304" fill="#94a3b8" font-size="10" font-weight="600" font-family="'Segoe UI', sans-serif">凡例</text>
+      <text x="16" y="304" fill="#94a3b8" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">凡例</text>
       <line x1="16" y1="320" x2="42" y2="320" stroke="#3b82f6" stroke-width="2.5"/>
-      <text x="50" y="324" fill="#93c5fd" font-size="9" font-family="'Segoe UI', sans-serif">APIアクセス</text>
+      <text x="50" y="324" fill="#93c5fd" font-size="12" font-family="'Segoe UI', sans-serif">APIアクセス</text>
       <line x1="160" y1="320" x2="186" y2="320" stroke="#22c55e" stroke-width="2.5"/>
-      <text x="194" y="324" fill="#86efac" font-size="9" font-family="'Segoe UI', sans-serif">バックチャネル</text>
+      <text x="194" y="324" fill="#86efac" font-size="12" font-family="'Segoe UI', sans-serif">バックチャネル</text>
       <line x1="16" y1="340" x2="42" y2="340" stroke="#ef4444" stroke-width="2.5" stroke-dasharray="5,3"/>
-      <text x="50" y="344" fill="#fca5a5" font-size="9" font-family="'Segoe UI', sans-serif">エラーレスポンス</text>
+      <text x="50" y="344" fill="#fca5a5" font-size="12" font-family="'Segoe UI', sans-serif">エラーレスポンス</text>
       <line x1="160" y1="340" x2="186" y2="340" stroke="#3b82f6" stroke-width="2.5" stroke-dasharray="5,3"/>
-      <text x="194" y="344" fill="#93c5fd" font-size="9" font-family="'Segoe UI', sans-serif">レスポンス</text>
+      <text x="194" y="344" fill="#93c5fd" font-size="12" font-family="'Segoe UI', sans-serif">レスポンス</text>
 
       <!-- Security -->
       <line x1="16" y1="362" x2="324" y2="362" stroke="#334155" stroke-width="1"/>
-      <text x="16" y="384" fill="#e2e8f0" font-size="11" font-weight="700" font-family="'Segoe UI', sans-serif">🔑 セキュリティポイント</text>
+      <text x="16" y="384" fill="#e2e8f0" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">🔑 セキュリティポイント</text>
       <rect x="16" y="396" width="308" height="48" rx="6" fill="#1e1b2e" stroke="#22c55e" stroke-width="0.8"/>
-      <text x="28" y="414" fill="#86efac" font-size="9.5" font-weight="600" font-family="'Segoe UI', sans-serif">🔄 トークンローテーション</text>
-      <text x="28" y="428" fill="#94a3b8" font-size="8" font-family="'Segoe UI', sans-serif">リフレッシュごとに新トークン発行</text>
-      <text x="28" y="440" fill="#94a3b8" font-size="8" font-family="'Segoe UI', sans-serif">旧リフレッシュトークンは即座に無効化</text>
+      <text x="28" y="414" fill="#86efac" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">🔄 トークンローテーション</text>
+      <text x="28" y="428" fill="#94a3b8" font-size="12" font-family="'Segoe UI', sans-serif">リフレッシュごとに新トークン発行</text>
+      <text x="28" y="440" fill="#94a3b8" font-size="12" font-family="'Segoe UI', sans-serif">旧リフレッシュトークンは即座に無効化</text>
       <rect x="16" y="450" width="308" height="48" rx="6" fill="#1e1b2e" stroke="#f59e0b" stroke-width="0.8"/>
-      <text x="28" y="468" fill="#fcd34d" font-size="9.5" font-weight="600" font-family="'Segoe UI', sans-serif">🛡 漏洩検知</text>
-      <text x="28" y="482" fill="#94a3b8" font-size="8" font-family="'Segoe UI', sans-serif">使用済みリフレッシュトークンの再利用を検知</text>
-      <text x="28" y="494" fill="#94a3b8" font-size="8" font-family="'Segoe UI', sans-serif">不正利用時は全トークンを無効化</text>
+      <text x="28" y="468" fill="#fcd34d" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">🛡 漏洩検知</text>
+      <text x="28" y="482" fill="#94a3b8" font-size="12" font-family="'Segoe UI', sans-serif">使用済みリフレッシュトークンの再利用を検知</text>
+      <text x="28" y="494" fill="#94a3b8" font-size="12" font-family="'Segoe UI', sans-serif">不正利用時は全トークンを無効化</text>
       <rect x="16" y="504" width="308" height="48" rx="6" fill="#1e1b2e" stroke="#3b82f6" stroke-width="0.8"/>
-      <text x="28" y="522" fill="#93c5fd" font-size="9.5" font-weight="600" font-family="'Segoe UI', sans-serif">🔒 安全な保管</text>
-      <text x="28" y="536" fill="#94a3b8" font-size="8" font-family="'Segoe UI', sans-serif">リフレッシュトークンはサーバーサイドで保管</text>
-      <text x="28" y="548" fill="#94a3b8" font-size="8" font-family="'Segoe UI', sans-serif">ブラウザやクライアントに露出させない</text>
+      <text x="28" y="522" fill="#93c5fd" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">🔒 安全な保管</text>
+      <text x="28" y="536" fill="#94a3b8" font-size="12" font-family="'Segoe UI', sans-serif">リフレッシュトークンはサーバーサイドで保管</text>
+      <text x="28" y="548" fill="#94a3b8" font-size="12" font-family="'Segoe UI', sans-serif">ブラウザやクライアントに露出させない</text>
     </g>
   </g>
 
@@ -208,15 +208,15 @@
 
     <!-- actors -->
     <use href="#dimbox" x="55"  y="70"  width="110" height="130"/>
-    <text x="110" y="145" text-anchor="middle" fill="#334155" font-size="10" font-family="'Segoe UI', sans-serif">リソース所有者</text>
+    <text x="110" y="145" text-anchor="middle" fill="#334155" font-size="12" font-family="'Segoe UI', sans-serif">リソース所有者</text>
     <use href="#authsv" x="530" y="70"  width="110" height="130" filter="url(#shadow)"/>
     <use href="#client" x="55"  y="310" width="110" height="130" filter="url(#shadow)"/>
     <use href="#dimbox" x="530" y="310" width="110" height="130"/>
-    <text x="585" y="385" text-anchor="middle" fill="#334155" font-size="10" font-family="'Segoe UI', sans-serif">リソースサーバー</text>
+    <text x="585" y="385" text-anchor="middle" fill="#334155" font-size="12" font-family="'Segoe UI', sans-serif">リソースサーバー</text>
 
     <!-- バックチャネルラベル -->
     <rect x="220" y="52" width="230" height="26" rx="6" fill="#052e16" stroke="#22c55e" stroke-width="1"/>
-    <text x="335" y="70" text-anchor="middle" fill="#86efac" font-size="10" font-weight="600" font-family="'Segoe UI', sans-serif">🔒 サーバー間通信 (ブラウザ非経由)</text>
+    <text x="335" y="70" text-anchor="middle" fill="#86efac" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">🔒 サーバー間通信 (ブラウザ非経由)</text>
 
     <!-- ③ クライアント → 認可サーバー (右上斜め) -->
     <path d="M 170 345 L 524 165" fill="none" stroke="#22c55e" stroke-width="2.5" marker-end="url(#arrowAmber)"/>
@@ -226,10 +226,10 @@
     <!-- ③ 説明ボックス (上寄り中央) -->
     <g transform="translate(215, 210)">
       <rect x="-6" y="-14" width="290" height="60" rx="6" fill="#0f172a" stroke="#22c55e" stroke-width="1" opacity="0.92"/>
-      <text x="6" y="2" fill="#86efac" font-size="11" font-weight="600" font-family="'Segoe UI', sans-serif">③ トークンリフレッシュリクエスト (POST)</text>
-      <text x="6" y="18" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace">grant_type=<tspan fill="#22c55e">refresh_token</tspan></text>
-      <text x="6" y="32" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace">refresh_token=<tspan fill="#22c55e">{current_token}</tspan></text>
-      <text x="6" y="43" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace">client_id&amp;client_secret=xxx</text>
+      <text x="6" y="2" fill="#86efac" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">③ トークンリフレッシュリクエスト (POST)</text>
+      <text x="6" y="18" fill="#94a3b8" font-size="12" font-family="'Fira Code', monospace">grant_type=<tspan fill="#22c55e">refresh_token</tspan></text>
+      <text x="6" y="32" fill="#94a3b8" font-size="12" font-family="'Fira Code', monospace">refresh_token=<tspan fill="#22c55e">{current_token}</tspan></text>
+      <text x="6" y="43" fill="#94a3b8" font-size="12" font-family="'Fira Code', monospace">client_id&amp;client_secret=xxx</text>
     </g>
 
     <!-- ④ 認可サーバー → クライアント (左下斜め) -->
@@ -240,14 +240,14 @@
     <!-- ④ 説明 (下寄り右) -->
     <g transform="translate(350, 330)">
       <rect x="-6" y="-14" width="290" height="42" rx="6" fill="#052e16" stroke="#22c55e" stroke-width="1" opacity="0.92"/>
-      <text x="6" y="4" fill="#86efac" font-size="11" font-weight="600" font-family="'Fira Code', monospace">④ new access_token</text>
-      <text x="6" y="20" fill="#86efac" font-size="11" font-weight="600" font-family="'Fira Code', monospace">  + new refresh_token</text>
+      <text x="6" y="4" fill="#86efac" font-size="12" font-weight="600" font-family="'Fira Code', monospace">④ new access_token</text>
+      <text x="6" y="20" fill="#86efac" font-size="12" font-weight="600" font-family="'Fira Code', monospace">  + new refresh_token</text>
     </g>
 
     <!-- トークンローテーション説明 -->
     <g transform="translate(195, 460)">
       <rect x="-6" y="-14" width="340" height="32" rx="6" fill="#052e16" stroke="#22c55e" stroke-width="1" opacity="0.85"/>
-      <text x="6" y="6" fill="#86efac" font-size="10" font-weight="600" font-family="'Segoe UI', sans-serif">🔄 トークンローテーション — 旧refresh_tokenは無効化</text>
+      <text x="6" y="6" fill="#86efac" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">🔄 トークンローテーション — 旧refresh_tokenは無効化</text>
     </g>
 
     <!-- SIDEBAR -->
@@ -256,23 +256,23 @@
       <text x="170" y="28" text-anchor="middle" fill="#e2e8f0" font-size="14" font-weight="700" font-family="'Segoe UI', sans-serif">全体フロー</text>
       <line x1="16" y1="40" x2="324" y2="40" stroke="#334155" stroke-width="1"/>
       <!-- 1-2 dim -->
-      <circle cx="30" cy="62" r="11" fill="#334155"/><text x="30" y="67" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">1</text><text x="48" y="66" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">APIリクエスト (Bearer Token)</text>
-      <circle cx="30" cy="92" r="11" fill="#334155"/><text x="30" y="97" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">2</text><text x="48" y="96" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">401 Unauthorized</text>
+      <circle cx="30" cy="62" r="11" fill="#334155"/><text x="30" y="67" text-anchor="middle" fill="#64748b" font-size="12" font-weight="700">1</text><text x="48" y="66" fill="#64748b" font-size="12" font-family="'Segoe UI', sans-serif">APIリクエスト (Bearer Token)</text>
+      <circle cx="30" cy="92" r="11" fill="#334155"/><text x="30" y="97" text-anchor="middle" fill="#64748b" font-size="12" font-weight="700">2</text><text x="48" y="96" fill="#64748b" font-size="12" font-family="'Segoe UI', sans-serif">401 Unauthorized</text>
       <!-- 3 ACTIVE -->
       <rect x="12" y="112" width="316" height="56" rx="6" fill="#22c55e" opacity="0.08" stroke="#22c55e" stroke-width="0.8"/>
-      <circle cx="30" cy="132" r="11" fill="#22c55e"/><text x="30" y="137" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">3</text>
-      <text x="48" y="128" fill="#f8fafc" font-size="10.5" font-weight="600" font-family="'Segoe UI', sans-serif">トークンリフレッシュリクエスト</text>
-      <text x="48" y="142" fill="#86efac" font-size="8.5" font-family="'Segoe UI', sans-serif">grant_type=refresh_token でトークン更新要求</text>
+      <circle cx="30" cy="132" r="11" fill="#22c55e"/><text x="30" y="137" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">3</text>
+      <text x="48" y="128" fill="#f8fafc" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">トークンリフレッシュリクエスト</text>
+      <text x="48" y="142" fill="#86efac" font-size="12" font-family="'Segoe UI', sans-serif">grant_type=refresh_token でトークン更新要求</text>
       <text x="48" y="156" fill="#475569" font-size="7.5" font-family="'Fira Code', monospace">→ POST /token grant_type=refresh_token</text>
       <!-- 4 ACTIVE -->
       <rect x="12" y="174" width="316" height="56" rx="6" fill="#22c55e" opacity="0.08" stroke="#22c55e" stroke-width="0.8"/>
-      <circle cx="30" cy="194" r="11" fill="#22c55e"/><text x="30" y="199" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">4</text>
-      <text x="48" y="190" fill="#f8fafc" font-size="10.5" font-weight="600" font-family="'Segoe UI', sans-serif">新アクセストークン + 新リフレッシュトークン発行</text>
-      <text x="48" y="204" fill="#86efac" font-size="8.5" font-family="'Segoe UI', sans-serif">トークンローテーションにより旧トークン無効化</text>
+      <circle cx="30" cy="194" r="11" fill="#22c55e"/><text x="30" y="199" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">4</text>
+      <text x="48" y="190" fill="#f8fafc" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">新アクセストークン + 新リフレッシュトークン発行</text>
+      <text x="48" y="204" fill="#86efac" font-size="12" font-family="'Segoe UI', sans-serif">トークンローテーションにより旧トークン無効化</text>
       <text x="48" y="218" fill="#475569" font-size="7.5" font-family="'Fira Code', monospace">← 200 {"access_token":"new...","refresh_token":"new..."}</text>
       <!-- 5-6 dim -->
-      <circle cx="30" cy="250" r="11" fill="#334155"/><text x="30" y="255" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">5</text><text x="48" y="254" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">APIリクエスト (新Bearer Token)</text>
-      <circle cx="30" cy="282" r="11" fill="#334155"/><text x="30" y="287" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">6</text><text x="48" y="286" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">保護リソース返却</text>
+      <circle cx="30" cy="250" r="11" fill="#334155"/><text x="30" y="255" text-anchor="middle" fill="#64748b" font-size="12" font-weight="700">5</text><text x="48" y="254" fill="#64748b" font-size="12" font-family="'Segoe UI', sans-serif">APIリクエスト (新Bearer Token)</text>
+      <circle cx="30" cy="282" r="11" fill="#334155"/><text x="30" y="287" text-anchor="middle" fill="#64748b" font-size="12" font-weight="700">6</text><text x="48" y="286" fill="#64748b" font-size="12" font-family="'Segoe UI', sans-serif">保護リソース返却</text>
     </g>
   </g>
 
@@ -288,9 +288,9 @@
 
     <!-- actors -->
     <use href="#dimbox" x="55"  y="70"  width="110" height="130"/>
-    <text x="110" y="145" text-anchor="middle" fill="#334155" font-size="10" font-family="'Segoe UI', sans-serif">リソース所有者</text>
+    <text x="110" y="145" text-anchor="middle" fill="#334155" font-size="12" font-family="'Segoe UI', sans-serif">リソース所有者</text>
     <use href="#dimbox" x="530" y="70"  width="110" height="130"/>
-    <text x="585" y="145" text-anchor="middle" fill="#334155" font-size="10" font-family="'Segoe UI', sans-serif">認可サーバー</text>
+    <text x="585" y="145" text-anchor="middle" fill="#334155" font-size="12" font-family="'Segoe UI', sans-serif">認可サーバー</text>
     <use href="#client" x="55"  y="310" width="110" height="130" filter="url(#shadow)"/>
     <use href="#ressv"  x="530" y="310" width="110" height="130" filter="url(#shadow)"/>
 
@@ -298,15 +298,15 @@
     <path d="M 170 355 L 524 355" fill="none" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arrowBlue)"/>
     <circle cx="348" cy="336" r="15" fill="#3b82f6"/>
     <text x="348" y="341" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">5</text>
-    <text x="348" y="375" text-anchor="middle" fill="#93c5fd" font-size="11" font-weight="600" font-family="'Segoe UI', sans-serif">⑤ APIリクエスト (新Bearer Token)</text>
+    <text x="348" y="375" text-anchor="middle" fill="#93c5fd" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">⑤ APIリクエスト (新Bearer Token)</text>
     <rect x="240" y="384" width="280" height="24" rx="5" fill="#0f172a" stroke="#334155" stroke-width="1"/>
-    <text x="380" y="401" text-anchor="middle" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace">Authorization: Bearer <tspan fill="#3b82f6">{new_access_token}</tspan></text>
+    <text x="380" y="401" text-anchor="middle" fill="#94a3b8" font-size="12" font-family="'Fira Code', monospace">Authorization: Bearer <tspan fill="#3b82f6">{new_access_token}</tspan></text>
 
     <!-- ⑥ リソースサーバー → クライアント (水平左) -->
     <path d="M 524 420 L 170 420" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-dasharray="8,4" marker-end="url(#arrowCyan)"/>
     <circle cx="348" cy="438" r="15" fill="#3b82f6"/>
     <text x="348" y="443" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">6</text>
-    <text x="348" y="414" text-anchor="middle" fill="#93c5fd" font-size="11" font-weight="600" font-family="'Segoe UI', sans-serif">⑥ 保護リソース返却 (200 OK)</text>
+    <text x="348" y="414" text-anchor="middle" fill="#93c5fd" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">⑥ 保護リソース返却 (200 OK)</text>
 
     <!-- SIDEBAR -->
     <g transform="translate(740, 0)">
@@ -314,21 +314,21 @@
       <text x="170" y="28" text-anchor="middle" fill="#e2e8f0" font-size="14" font-weight="700" font-family="'Segoe UI', sans-serif">全体フロー</text>
       <line x1="16" y1="40" x2="324" y2="40" stroke="#334155" stroke-width="1"/>
       <!-- 1-4 dim -->
-      <circle cx="30" cy="62" r="11" fill="#334155"/><text x="30" y="67" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">1</text><text x="48" y="66" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">APIリクエスト (Bearer Token)</text>
-      <circle cx="30" cy="92" r="11" fill="#334155"/><text x="30" y="97" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">2</text><text x="48" y="96" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">401 Unauthorized</text>
-      <circle cx="30" cy="122" r="11" fill="#334155"/><text x="30" y="127" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">3</text><text x="48" y="126" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">トークンリフレッシュリクエスト</text>
-      <circle cx="30" cy="152" r="11" fill="#334155"/><text x="30" y="157" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">4</text><text x="48" y="156" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">新トークン発行</text>
+      <circle cx="30" cy="62" r="11" fill="#334155"/><text x="30" y="67" text-anchor="middle" fill="#64748b" font-size="12" font-weight="700">1</text><text x="48" y="66" fill="#64748b" font-size="12" font-family="'Segoe UI', sans-serif">APIリクエスト (Bearer Token)</text>
+      <circle cx="30" cy="92" r="11" fill="#334155"/><text x="30" y="97" text-anchor="middle" fill="#64748b" font-size="12" font-weight="700">2</text><text x="48" y="96" fill="#64748b" font-size="12" font-family="'Segoe UI', sans-serif">401 Unauthorized</text>
+      <circle cx="30" cy="122" r="11" fill="#334155"/><text x="30" y="127" text-anchor="middle" fill="#64748b" font-size="12" font-weight="700">3</text><text x="48" y="126" fill="#64748b" font-size="12" font-family="'Segoe UI', sans-serif">トークンリフレッシュリクエスト</text>
+      <circle cx="30" cy="152" r="11" fill="#334155"/><text x="30" y="157" text-anchor="middle" fill="#64748b" font-size="12" font-weight="700">4</text><text x="48" y="156" fill="#64748b" font-size="12" font-family="'Segoe UI', sans-serif">新トークン発行</text>
       <!-- 5 ACTIVE -->
       <rect x="12" y="170" width="316" height="60" rx="6" fill="#3b82f6" opacity="0.08" stroke="#3b82f6" stroke-width="0.8"/>
-      <circle cx="30" cy="194" r="11" fill="#3b82f6"/><text x="30" y="199" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">5</text>
-      <text x="48" y="188" fill="#f8fafc" font-size="10.5" font-weight="600" font-family="'Segoe UI', sans-serif">APIリクエスト (新Bearer Token)</text>
-      <text x="48" y="202" fill="#93c5fd" font-size="8.5" font-family="'Segoe UI', sans-serif">新アクセストークンでAPIコール</text>
+      <circle cx="30" cy="194" r="11" fill="#3b82f6"/><text x="30" y="199" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">5</text>
+      <text x="48" y="188" fill="#f8fafc" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">APIリクエスト (新Bearer Token)</text>
+      <text x="48" y="202" fill="#93c5fd" font-size="12" font-family="'Segoe UI', sans-serif">新アクセストークンでAPIコール</text>
       <text x="48" y="216" fill="#475569" font-size="7.5" font-family="'Fira Code', monospace">→ GET /resource Authorization: Bearer new...</text>
       <!-- 6 ACTIVE -->
       <rect x="12" y="236" width="316" height="48" rx="6" fill="#3b82f6" opacity="0.08" stroke="#3b82f6" stroke-width="0.8"/>
-      <circle cx="30" cy="256" r="11" fill="#3b82f6"/><text x="30" y="261" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">6</text>
-      <text x="48" y="252" fill="#f8fafc" font-size="10.5" font-weight="600" font-family="'Segoe UI', sans-serif">保護リソース返却 (200 OK)</text>
-      <text x="48" y="266" fill="#93c5fd" font-size="8.5" font-family="'Segoe UI', sans-serif">リソースサーバーが保護リソースを正常返却</text>
+      <circle cx="30" cy="256" r="11" fill="#3b82f6"/><text x="30" y="261" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">6</text>
+      <text x="48" y="252" fill="#f8fafc" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">保護リソース返却 (200 OK)</text>
+      <text x="48" y="266" fill="#93c5fd" font-size="12" font-family="'Segoe UI', sans-serif">リソースサーバーが保護リソースを正常返却</text>
       <text x="48" y="278" fill="#475569" font-size="7.5" font-family="'Fira Code', monospace">← 200 {"data": "protected resource..."}</text>
     </g>
   </g>

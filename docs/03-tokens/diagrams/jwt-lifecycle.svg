@@ -42,7 +42,7 @@
         <line x1="-9" y1="18" x2="9" y2="18" stroke="#22d3ee" stroke-width="1.3" stroke-linecap="round"/>
       </g>
       <text x="55" y="100" text-anchor="middle" fill="#67e8f9" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">クライアント</text>
-      <text x="55" y="116" text-anchor="middle" fill="#22d3ee" font-size="8.5" opacity="0.7" font-family="'Segoe UI', sans-serif">(Client)</text>
+      <text x="55" y="116" text-anchor="middle" fill="#22d3ee" font-size="12" opacity="0.7" font-family="'Segoe UI', sans-serif">(Client)</text>
     </symbol>
 
     <symbol id="authsv" viewBox="0 0 110 130">
@@ -55,7 +55,7 @@
         <line x1="0" y1="3.5" x2="0" y2="6" stroke="#f59e0b" stroke-width="1.1"/>
       </g>
       <text x="55" y="100" text-anchor="middle" fill="#fcd34d" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">認可サーバー</text>
-      <text x="55" y="116" text-anchor="middle" fill="#f59e0b" font-size="8.5" opacity="0.7" font-family="'Segoe UI', sans-serif">(Auth Server)</text>
+      <text x="55" y="116" text-anchor="middle" fill="#f59e0b" font-size="12" opacity="0.7" font-family="'Segoe UI', sans-serif">(Auth Server)</text>
     </symbol>
 
     <symbol id="ressv" viewBox="0 0 110 130">
@@ -73,7 +73,7 @@
         </g>
       </g>
       <text x="55" y="100" text-anchor="middle" fill="#93c5fd" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">APIサーバー</text>
-      <text x="55" y="116" text-anchor="middle" fill="#3b82f6" font-size="8.5" opacity="0.7" font-family="'Segoe UI', sans-serif">(API Server)</text>
+      <text x="55" y="116" text-anchor="middle" fill="#3b82f6" font-size="12" opacity="0.7" font-family="'Segoe UI', sans-serif">(API Server)</text>
     </symbol>
 
     <symbol id="dimbox" viewBox="0 0 110 130">
@@ -87,9 +87,9 @@
   <text x="36" y="42" fill="#f8fafc" font-size="24" font-weight="700" font-family="'Segoe UI', sans-serif">JWT ライフサイクル</text>
   <text x="36" y="66" fill="#94a3b8" font-size="13" font-family="'Segoe UI', sans-serif">JSON Web Token — 発行・利用・更新の流れ</text>
   <rect x="420" y="28" width="84" height="24" rx="12" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1"/>
-  <text x="462" y="44" text-anchor="middle" fill="#93c5fd" font-size="11" font-weight="600" font-family="'Segoe UI', sans-serif">RFC 7519</text>
+  <text x="462" y="44" text-anchor="middle" fill="#93c5fd" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">RFC 7519</text>
   <rect x="512" y="28" width="140" height="24" rx="12" fill="#1a2e05" stroke="#22c55e" stroke-width="1"/>
-  <text x="582" y="44" text-anchor="middle" fill="#86efac" font-size="11" font-weight="600" font-family="'Segoe UI', sans-serif">JSON Web Token</text>
+  <text x="582" y="44" text-anchor="middle" fill="#86efac" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">JSON Web Token</text>
 
   <!-- ================================================================ -->
   <!-- PHASE 1: JWT 取得                                                -->
@@ -103,7 +103,7 @@
     <use href="#authsv" x="530" y="70" width="110" height="130" filter="url(#shadow)"/>
     <use href="#client" x="55" y="310" width="110" height="130" filter="url(#shadow)"/>
     <use href="#dimbox" x="530" y="310" width="110" height="130"/>
-    <text x="585" y="385" text-anchor="middle" fill="#334155" font-size="10" font-family="'Segoe UI', sans-serif">APIサーバー</text>
+    <text x="585" y="385" text-anchor="middle" fill="#334155" font-size="12" font-family="'Segoe UI', sans-serif">APIサーバー</text>
 
     <!-- ① クライアント → 認可サーバー (右上斜め) -->
     <path d="M 170 345 L 524 155" fill="none" stroke="#22c55e" stroke-width="2.5" marker-end="url(#arrowAmber)" filter="url(#glow)"/>
@@ -112,9 +112,9 @@
 
     <g transform="translate(195, 210)">
       <rect x="-6" y="-14" width="290" height="50" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" opacity="0.92"/>
-      <text x="6" y="2" fill="#86efac" font-size="11" font-weight="600" font-family="'Segoe UI', sans-serif">① 認証リクエスト (POST /token)</text>
-      <text x="6" y="18" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace">grant_type=<tspan fill="#22c55e">authorization_code</tspan></text>
-      <text x="6" y="32" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace">code=...&amp;client_secret=xxx</text>
+      <text x="6" y="2" fill="#86efac" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">① 認証リクエスト (POST /token)</text>
+      <text x="6" y="18" fill="#94a3b8" font-size="12" font-family="'Fira Code', monospace">grant_type=<tspan fill="#22c55e">authorization_code</tspan></text>
+      <text x="6" y="32" fill="#94a3b8" font-size="12" font-family="'Fira Code', monospace">code=...&amp;client_secret=xxx</text>
     </g>
 
     <!-- ② 認可サーバー → クライアント (左下斜め) -->
@@ -124,13 +124,13 @@
 
     <g transform="translate(220, 380)">
       <rect x="-6" y="-14" width="290" height="66" rx="6" fill="#0f172a" stroke="#f59e0b" stroke-width="1" opacity="0.92"/>
-      <text x="6" y="2" fill="#fcd34d" font-size="11" font-weight="600" font-family="'Segoe UI', sans-serif">② JWT 発行 (access_token)</text>
-      <text x="6" y="18" fill="#22d3ee" font-size="9" font-family="'Fira Code', monospace">eyJhbGciOiJSUzI1NiJ9</text>
-      <text x="6" y="30" fill="#f59e0b" font-size="9" font-family="'Fira Code', monospace">.eyJzdWIiOiJ0ZXN0dXNlciJ9</text>
-      <text x="6" y="42" fill="#a855f7" font-size="9" font-family="'Fira Code', monospace">.signature</text>
-      <text x="160" y="18" fill="#67e8f9" font-size="8" font-family="'Segoe UI', sans-serif">← Header</text>
-      <text x="210" y="30" fill="#fcd34d" font-size="8" font-family="'Segoe UI', sans-serif">← Payload</text>
-      <text x="90" y="42" fill="#d8b4fe" font-size="8" font-family="'Segoe UI', sans-serif">← Signature</text>
+      <text x="6" y="2" fill="#fcd34d" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">② JWT 発行 (access_token)</text>
+      <text x="6" y="18" fill="#22d3ee" font-size="12" font-family="'Fira Code', monospace">eyJhbGciOiJSUzI1NiJ9</text>
+      <text x="6" y="30" fill="#f59e0b" font-size="12" font-family="'Fira Code', monospace">.eyJzdWIiOiJ0ZXN0dXNlciJ9</text>
+      <text x="6" y="42" fill="#a855f7" font-size="12" font-family="'Fira Code', monospace">.signature</text>
+      <text x="160" y="18" fill="#67e8f9" font-size="12" font-family="'Segoe UI', sans-serif">← Header</text>
+      <text x="210" y="30" fill="#fcd34d" font-size="12" font-family="'Segoe UI', sans-serif">← Payload</text>
+      <text x="90" y="42" fill="#d8b4fe" font-size="12" font-family="'Segoe UI', sans-serif">← Signature</text>
     </g>
 
     <!-- SIDEBAR -->
@@ -140,44 +140,44 @@
       <line x1="16" y1="40" x2="324" y2="40" stroke="#334155" stroke-width="1"/>
 
       <rect x="12" y="50" width="316" height="42" rx="6" fill="#22c55e" opacity="0.08" stroke="#22c55e" stroke-width="0.8"/>
-      <circle cx="30" cy="68" r="11" fill="#22c55e"/><text x="30" y="73" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">1</text>
-      <text x="48" y="64" fill="#f8fafc" font-size="10.5" font-weight="600" font-family="'Segoe UI', sans-serif">認証リクエスト (POST /token)</text>
-      <text x="48" y="78" fill="#86efac" font-size="8.5" font-family="'Segoe UI', sans-serif">クライアント認証情報でトークンを要求</text>
+      <circle cx="30" cy="68" r="11" fill="#22c55e"/><text x="30" y="73" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">1</text>
+      <text x="48" y="64" fill="#f8fafc" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">認証リクエスト (POST /token)</text>
+      <text x="48" y="78" fill="#86efac" font-size="12" font-family="'Segoe UI', sans-serif">クライアント認証情報でトークンを要求</text>
 
       <rect x="12" y="98" width="316" height="42" rx="6" fill="#f59e0b" opacity="0.08" stroke="#f59e0b" stroke-width="0.8"/>
-      <circle cx="30" cy="116" r="11" fill="#f59e0b"/><text x="30" y="121" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">2</text>
-      <text x="48" y="112" fill="#f8fafc" font-size="10.5" font-weight="600" font-family="'Segoe UI', sans-serif">JWT 発行</text>
-      <text x="48" y="126" fill="#fcd34d" font-size="8.5" font-family="'Segoe UI', sans-serif">Header.Payload.Signature 形式で返却</text>
+      <circle cx="30" cy="116" r="11" fill="#f59e0b"/><text x="30" y="121" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">2</text>
+      <text x="48" y="112" fill="#f8fafc" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">JWT 発行</text>
+      <text x="48" y="126" fill="#fcd34d" font-size="12" font-family="'Segoe UI', sans-serif">Header.Payload.Signature 形式で返却</text>
 
-      <circle cx="30" cy="160" r="11" fill="#334155"/><text x="30" y="165" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">3</text>
-      <text x="48" y="164" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">APIリクエスト (Bearer JWT)</text>
-      <circle cx="30" cy="192" r="11" fill="#334155"/><text x="30" y="197" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">4</text>
-      <text x="48" y="196" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">署名検証 + Claims確認</text>
-      <circle cx="30" cy="224" r="11" fill="#334155"/><text x="30" y="229" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">5</text>
-      <text x="48" y="228" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">保護リソース返却</text>
-      <circle cx="30" cy="256" r="11" fill="#334155"/><text x="30" y="261" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">6</text>
-      <text x="48" y="260" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">リフレッシュトークン送信</text>
-      <circle cx="30" cy="288" r="11" fill="#334155"/><text x="30" y="293" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">7</text>
-      <text x="48" y="292" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">新しいJWT発行</text>
+      <circle cx="30" cy="160" r="11" fill="#334155"/><text x="30" y="165" text-anchor="middle" fill="#64748b" font-size="12" font-weight="700">3</text>
+      <text x="48" y="164" fill="#64748b" font-size="12" font-family="'Segoe UI', sans-serif">APIリクエスト (Bearer JWT)</text>
+      <circle cx="30" cy="192" r="11" fill="#334155"/><text x="30" y="197" text-anchor="middle" fill="#64748b" font-size="12" font-weight="700">4</text>
+      <text x="48" y="196" fill="#64748b" font-size="12" font-family="'Segoe UI', sans-serif">署名検証 + Claims確認</text>
+      <circle cx="30" cy="224" r="11" fill="#334155"/><text x="30" y="229" text-anchor="middle" fill="#64748b" font-size="12" font-weight="700">5</text>
+      <text x="48" y="228" fill="#64748b" font-size="12" font-family="'Segoe UI', sans-serif">保護リソース返却</text>
+      <circle cx="30" cy="256" r="11" fill="#334155"/><text x="30" y="261" text-anchor="middle" fill="#64748b" font-size="12" font-weight="700">6</text>
+      <text x="48" y="260" fill="#64748b" font-size="12" font-family="'Segoe UI', sans-serif">リフレッシュトークン送信</text>
+      <circle cx="30" cy="288" r="11" fill="#334155"/><text x="30" y="293" text-anchor="middle" fill="#64748b" font-size="12" font-weight="700">7</text>
+      <text x="48" y="292" fill="#64748b" font-size="12" font-family="'Segoe UI', sans-serif">新しいJWT発行</text>
 
       <line x1="16" y1="316" x2="324" y2="316" stroke="#334155" stroke-width="1"/>
-      <text x="16" y="336" fill="#94a3b8" font-size="10" font-weight="600" font-family="'Segoe UI', sans-serif">凡例</text>
+      <text x="16" y="336" fill="#94a3b8" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">凡例</text>
       <line x1="16" y1="352" x2="42" y2="352" stroke="#22c55e" stroke-width="2.5"/>
-      <text x="50" y="356" fill="#86efac" font-size="9" font-family="'Segoe UI', sans-serif">バックチャネル</text>
+      <text x="50" y="356" fill="#86efac" font-size="12" font-family="'Segoe UI', sans-serif">バックチャネル</text>
       <line x1="160" y1="352" x2="186" y2="352" stroke="#3b82f6" stroke-width="2.5"/>
-      <text x="194" y="356" fill="#93c5fd" font-size="9" font-family="'Segoe UI', sans-serif">APIアクセス</text>
+      <text x="194" y="356" fill="#93c5fd" font-size="12" font-family="'Segoe UI', sans-serif">APIアクセス</text>
 
       <line x1="16" y1="376" x2="324" y2="376" stroke="#334155" stroke-width="1"/>
-      <text x="16" y="398" fill="#e2e8f0" font-size="11" font-weight="700" font-family="'Segoe UI', sans-serif">🔑 セキュリティポイント</text>
+      <text x="16" y="398" fill="#e2e8f0" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">🔑 セキュリティポイント</text>
       <rect x="16" y="410" width="308" height="38" rx="6" fill="#1e1b2e" stroke="#f59e0b" stroke-width="0.8"/>
-      <text x="28" y="426" fill="#fcd34d" font-size="9.5" font-weight="600" font-family="'Segoe UI', sans-serif">🛡 署名検証 — 改ざん防止</text>
-      <text x="28" y="440" fill="#94a3b8" font-size="8" font-family="'Segoe UI', sans-serif">公開鍵(JWKS)で署名を検証、信頼性を確認</text>
+      <text x="28" y="426" fill="#fcd34d" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">🛡 署名検証 — 改ざん防止</text>
+      <text x="28" y="440" fill="#94a3b8" font-size="12" font-family="'Segoe UI', sans-serif">公開鍵(JWKS)で署名を検証、信頼性を確認</text>
       <rect x="16" y="454" width="308" height="38" rx="6" fill="#1e1b2e" stroke="#22c55e" stroke-width="0.8"/>
-      <text x="28" y="470" fill="#86efac" font-size="9.5" font-weight="600" font-family="'Segoe UI', sans-serif">⏱ 有効期限 (exp) — 短寿命設計</text>
-      <text x="28" y="484" fill="#94a3b8" font-size="8" font-family="'Segoe UI', sans-serif">アクセストークンは短時間で失効させる</text>
+      <text x="28" y="470" fill="#86efac" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">⏱ 有効期限 (exp) — 短寿命設計</text>
+      <text x="28" y="484" fill="#94a3b8" font-size="12" font-family="'Segoe UI', sans-serif">アクセストークンは短時間で失効させる</text>
       <rect x="16" y="498" width="308" height="38" rx="6" fill="#1e1b2e" stroke="#22d3ee" stroke-width="0.8"/>
-      <text x="28" y="514" fill="#67e8f9" font-size="9.5" font-weight="600" font-family="'Segoe UI', sans-serif">🔒 自己完結型 — ネットワーク不要で検証</text>
-      <text x="28" y="528" fill="#94a3b8" font-size="8" font-family="'Segoe UI', sans-serif">リソースサーバーが独立して検証可能</text>
+      <text x="28" y="514" fill="#67e8f9" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">🔒 自己完結型 — ネットワーク不要で検証</text>
+      <text x="28" y="528" fill="#94a3b8" font-size="12" font-family="'Segoe UI', sans-serif">リソースサーバーが独立して検証可能</text>
     </g>
   </g>
 
@@ -193,26 +193,26 @@
 
     <use href="#dimbox" x="55" y="70" width="110" height="130"/>
     <use href="#dimbox" x="530" y="70" width="110" height="130"/>
-    <text x="585" y="145" text-anchor="middle" fill="#334155" font-size="10" font-family="'Segoe UI', sans-serif">認可サーバー</text>
+    <text x="585" y="145" text-anchor="middle" fill="#334155" font-size="12" font-family="'Segoe UI', sans-serif">認可サーバー</text>
     <use href="#client" x="55" y="310" width="110" height="130" filter="url(#shadow)"/>
     <use href="#ressv" x="530" y="310" width="110" height="130" filter="url(#shadow)"/>
 
     <!-- ③ クライアント → APIサーバー (水平右) -->
     <path d="M 170 355 L 524 355" fill="none" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arrowBlue)"/>
-    <text x="348" y="295" text-anchor="middle" fill="#93c5fd" font-size="11" font-weight="600" font-family="'Segoe UI', sans-serif">③ APIリクエスト (Bearer JWT)</text>
+    <text x="348" y="295" text-anchor="middle" fill="#93c5fd" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">③ APIリクエスト (Bearer JWT)</text>
     <rect x="240" y="302" width="280" height="24" rx="5" fill="#0f172a" stroke="#334155" stroke-width="1"/>
-    <text x="380" y="319" text-anchor="middle" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace">Authorization: Bearer <tspan fill="#3b82f6">eyJhbGci...</tspan></text>
+    <text x="380" y="319" text-anchor="middle" fill="#94a3b8" font-size="12" font-family="'Fira Code', monospace">Authorization: Bearer <tspan fill="#3b82f6">eyJhbGci...</tspan></text>
     <circle cx="348" cy="340" r="15" fill="#3b82f6"/>
     <text x="348" y="345" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">3</text>
 
     <!-- ④ 署名検証ボックス -->
     <g transform="translate(490, 210)">
       <rect x="-6" y="-14" width="175" height="80" rx="6" fill="#0f172a" stroke="#3b82f6" stroke-width="1" opacity="0.92"/>
-      <text x="6" y="2" fill="#93c5fd" font-size="11" font-weight="600" font-family="'Segoe UI', sans-serif">④ ローカル検証</text>
-      <text x="6" y="18" fill="#94a3b8" font-size="9" font-family="'Segoe UI', sans-serif">1. kid → JWKS から公開鍵取得</text>
-      <text x="6" y="32" fill="#94a3b8" font-size="9" font-family="'Segoe UI', sans-serif">2. alg に基づき署名検証</text>
-      <text x="6" y="46" fill="#94a3b8" font-size="9" font-family="'Segoe UI', sans-serif">3. exp, iss, aud 確認</text>
-      <text x="6" y="60" fill="#22c55e" font-size="9" font-weight="600" font-family="'Segoe UI', sans-serif">→ ネットワーク通信不要</text>
+      <text x="6" y="2" fill="#93c5fd" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">④ ローカル検証</text>
+      <text x="6" y="18" fill="#94a3b8" font-size="12" font-family="'Segoe UI', sans-serif">1. kid → JWKS から公開鍵取得</text>
+      <text x="6" y="32" fill="#94a3b8" font-size="12" font-family="'Segoe UI', sans-serif">2. alg に基づき署名検証</text>
+      <text x="6" y="46" fill="#94a3b8" font-size="12" font-family="'Segoe UI', sans-serif">3. exp, iss, aud 確認</text>
+      <text x="6" y="60" fill="#22c55e" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">→ ネットワーク通信不要</text>
     </g>
     <circle cx="470" cy="250" r="15" fill="#3b82f6"/>
     <text x="470" y="255" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">4</text>
@@ -221,33 +221,33 @@
     <path d="M 524 420 L 170 420" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-dasharray="8,4" marker-end="url(#arrowCyan)"/>
     <circle cx="348" cy="438" r="15" fill="#3b82f6"/>
     <text x="348" y="443" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">5</text>
-    <text x="348" y="414" text-anchor="middle" fill="#93c5fd" font-size="11" font-weight="600" font-family="'Segoe UI', sans-serif">⑤ 保護リソース返却 (200 OK)</text>
+    <text x="348" y="414" text-anchor="middle" fill="#93c5fd" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">⑤ 保護リソース返却 (200 OK)</text>
 
     <!-- SIDEBAR -->
     <g transform="translate(740, 0)">
       <rect x="0" y="0" width="340" height="470" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1"/>
       <text x="170" y="28" text-anchor="middle" fill="#e2e8f0" font-size="14" font-weight="700" font-family="'Segoe UI', sans-serif">全体フロー</text>
       <line x1="16" y1="40" x2="324" y2="40" stroke="#334155" stroke-width="1"/>
-      <circle cx="30" cy="62" r="11" fill="#334155"/><text x="30" y="67" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">1</text><text x="48" y="66" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">認証リクエスト</text>
-      <circle cx="30" cy="92" r="11" fill="#334155"/><text x="30" y="97" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">2</text><text x="48" y="96" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">JWT 発行</text>
+      <circle cx="30" cy="62" r="11" fill="#334155"/><text x="30" y="67" text-anchor="middle" fill="#64748b" font-size="12" font-weight="700">1</text><text x="48" y="66" fill="#64748b" font-size="12" font-family="'Segoe UI', sans-serif">認証リクエスト</text>
+      <circle cx="30" cy="92" r="11" fill="#334155"/><text x="30" y="97" text-anchor="middle" fill="#64748b" font-size="12" font-weight="700">2</text><text x="48" y="96" fill="#64748b" font-size="12" font-family="'Segoe UI', sans-serif">JWT 発行</text>
 
       <rect x="12" y="112" width="316" height="36" rx="6" fill="#3b82f6" opacity="0.08" stroke="#3b82f6" stroke-width="0.8"/>
-      <circle cx="30" cy="128" r="11" fill="#3b82f6"/><text x="30" y="133" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">3</text>
-      <text x="48" y="126" fill="#f8fafc" font-size="10.5" font-weight="600" font-family="'Segoe UI', sans-serif">APIリクエスト (Bearer JWT)</text>
-      <text x="48" y="140" fill="#93c5fd" font-size="8.5" font-family="'Segoe UI', sans-serif">Authorization ヘッダーにJWTを付与</text>
+      <circle cx="30" cy="128" r="11" fill="#3b82f6"/><text x="30" y="133" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">3</text>
+      <text x="48" y="126" fill="#f8fafc" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">APIリクエスト (Bearer JWT)</text>
+      <text x="48" y="140" fill="#93c5fd" font-size="12" font-family="'Segoe UI', sans-serif">Authorization ヘッダーにJWTを付与</text>
 
       <rect x="12" y="154" width="316" height="36" rx="6" fill="#3b82f6" opacity="0.08" stroke="#3b82f6" stroke-width="0.8"/>
-      <circle cx="30" cy="170" r="11" fill="#3b82f6"/><text x="30" y="175" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">4</text>
-      <text x="48" y="168" fill="#f8fafc" font-size="10.5" font-weight="600" font-family="'Segoe UI', sans-serif">署名検証 + Claims確認</text>
-      <text x="48" y="182" fill="#93c5fd" font-size="8.5" font-family="'Segoe UI', sans-serif">JWKSの公開鍵でローカル検証</text>
+      <circle cx="30" cy="170" r="11" fill="#3b82f6"/><text x="30" y="175" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">4</text>
+      <text x="48" y="168" fill="#f8fafc" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">署名検証 + Claims確認</text>
+      <text x="48" y="182" fill="#93c5fd" font-size="12" font-family="'Segoe UI', sans-serif">JWKSの公開鍵でローカル検証</text>
 
       <rect x="12" y="196" width="316" height="36" rx="6" fill="#3b82f6" opacity="0.08" stroke="#3b82f6" stroke-width="0.8"/>
-      <circle cx="30" cy="212" r="11" fill="#3b82f6"/><text x="30" y="217" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">5</text>
-      <text x="48" y="210" fill="#f8fafc" font-size="10.5" font-weight="600" font-family="'Segoe UI', sans-serif">保護リソース返却</text>
-      <text x="48" y="224" fill="#93c5fd" font-size="8.5" font-family="'Segoe UI', sans-serif">検証成功時のみリソースを返却</text>
+      <circle cx="30" cy="212" r="11" fill="#3b82f6"/><text x="30" y="217" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">5</text>
+      <text x="48" y="210" fill="#f8fafc" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">保護リソース返却</text>
+      <text x="48" y="224" fill="#93c5fd" font-size="12" font-family="'Segoe UI', sans-serif">検証成功時のみリソースを返却</text>
 
-      <circle cx="30" cy="252" r="11" fill="#334155"/><text x="30" y="257" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">6</text><text x="48" y="256" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">リフレッシュトークン送信</text>
-      <circle cx="30" cy="282" r="11" fill="#334155"/><text x="30" y="287" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">7</text><text x="48" y="286" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">新しいJWT発行</text>
+      <circle cx="30" cy="252" r="11" fill="#334155"/><text x="30" y="257" text-anchor="middle" fill="#64748b" font-size="12" font-weight="700">6</text><text x="48" y="256" fill="#64748b" font-size="12" font-family="'Segoe UI', sans-serif">リフレッシュトークン送信</text>
+      <circle cx="30" cy="282" r="11" fill="#334155"/><text x="30" y="287" text-anchor="middle" fill="#64748b" font-size="12" font-weight="700">7</text><text x="48" y="286" fill="#64748b" font-size="12" font-family="'Segoe UI', sans-serif">新しいJWT発行</text>
     </g>
   </g>
 
@@ -265,7 +265,7 @@
     <use href="#authsv" x="530" y="70" width="110" height="130" filter="url(#shadow)"/>
     <use href="#client" x="55" y="310" width="110" height="130" filter="url(#shadow)"/>
     <use href="#dimbox" x="530" y="310" width="110" height="130"/>
-    <text x="585" y="385" text-anchor="middle" fill="#334155" font-size="10" font-family="'Segoe UI', sans-serif">APIサーバー</text>
+    <text x="585" y="385" text-anchor="middle" fill="#334155" font-size="12" font-family="'Segoe UI', sans-serif">APIサーバー</text>
 
     <!-- ⑥ クライアント → 認可サーバー (右上斜め) -->
     <path d="M 170 345 L 524 155" fill="none" stroke="#22c55e" stroke-width="2.5" marker-end="url(#arrowAmber)" filter="url(#glow)"/>
@@ -274,9 +274,9 @@
 
     <g transform="translate(195, 140)">
       <rect x="-6" y="-14" width="290" height="50" rx="6" fill="#0f172a" stroke="#22c55e" stroke-width="1" opacity="0.92"/>
-      <text x="6" y="2" fill="#86efac" font-size="11" font-weight="600" font-family="'Segoe UI', sans-serif">⑥ リフレッシュトークン送信 (POST /token)</text>
-      <text x="6" y="18" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace">grant_type=<tspan fill="#22c55e">refresh_token</tspan></text>
-      <text x="6" y="32" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace">refresh_token=dGhpcyBpcyBhIH...</text>
+      <text x="6" y="2" fill="#86efac" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">⑥ リフレッシュトークン送信 (POST /token)</text>
+      <text x="6" y="18" fill="#94a3b8" font-size="12" font-family="'Fira Code', monospace">grant_type=<tspan fill="#22c55e">refresh_token</tspan></text>
+      <text x="6" y="32" fill="#94a3b8" font-size="12" font-family="'Fira Code', monospace">refresh_token=dGhpcyBpcyBhIH...</text>
     </g>
 
     <!-- ⑦ 認可サーバー → クライアント (左下斜め) -->
@@ -286,9 +286,9 @@
 
     <g transform="translate(195, 405)">
       <rect x="-6" y="-14" width="290" height="50" rx="6" fill="#052e16" stroke="#22c55e" stroke-width="1" opacity="0.92"/>
-      <text x="6" y="2" fill="#86efac" font-size="11" font-weight="600" font-family="'Segoe UI', sans-serif">⑦ 新しい JWT + refresh_token 発行</text>
-      <text x="6" y="18" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace">{"access_token": <tspan fill="#22d3ee">"eyJ...new"</tspan>,</text>
-      <text x="6" y="32" fill="#94a3b8" font-size="9" font-family="'Fira Code', monospace"> "refresh_token": <tspan fill="#22c55e">"new_rt..."</tspan>}</text>
+      <text x="6" y="2" fill="#86efac" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">⑦ 新しい JWT + refresh_token 発行</text>
+      <text x="6" y="18" fill="#94a3b8" font-size="12" font-family="'Fira Code', monospace">{"access_token": <tspan fill="#22d3ee">"eyJ...new"</tspan>,</text>
+      <text x="6" y="32" fill="#94a3b8" font-size="12" font-family="'Fira Code', monospace"> "refresh_token": <tspan fill="#22c55e">"new_rt..."</tspan>}</text>
     </g>
 
     <!-- SIDEBAR -->
@@ -296,22 +296,22 @@
       <rect x="0" y="0" width="340" height="470" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1"/>
       <text x="170" y="28" text-anchor="middle" fill="#e2e8f0" font-size="14" font-weight="700" font-family="'Segoe UI', sans-serif">全体フロー</text>
       <line x1="16" y1="40" x2="324" y2="40" stroke="#334155" stroke-width="1"/>
-      <circle cx="30" cy="62" r="11" fill="#334155"/><text x="30" y="67" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">1</text><text x="48" y="66" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">認証リクエスト</text>
-      <circle cx="30" cy="92" r="11" fill="#334155"/><text x="30" y="97" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">2</text><text x="48" y="96" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">JWT 発行</text>
-      <circle cx="30" cy="122" r="11" fill="#334155"/><text x="30" y="127" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">3</text><text x="48" y="126" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">APIリクエスト</text>
-      <circle cx="30" cy="152" r="11" fill="#334155"/><text x="30" y="157" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">4</text><text x="48" y="156" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">署名検証</text>
-      <circle cx="30" cy="182" r="11" fill="#334155"/><text x="30" y="187" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">5</text><text x="48" y="186" fill="#64748b" font-size="10" font-family="'Segoe UI', sans-serif">リソース返却</text>
+      <circle cx="30" cy="62" r="11" fill="#334155"/><text x="30" y="67" text-anchor="middle" fill="#64748b" font-size="12" font-weight="700">1</text><text x="48" y="66" fill="#64748b" font-size="12" font-family="'Segoe UI', sans-serif">認証リクエスト</text>
+      <circle cx="30" cy="92" r="11" fill="#334155"/><text x="30" y="97" text-anchor="middle" fill="#64748b" font-size="12" font-weight="700">2</text><text x="48" y="96" fill="#64748b" font-size="12" font-family="'Segoe UI', sans-serif">JWT 発行</text>
+      <circle cx="30" cy="122" r="11" fill="#334155"/><text x="30" y="127" text-anchor="middle" fill="#64748b" font-size="12" font-weight="700">3</text><text x="48" y="126" fill="#64748b" font-size="12" font-family="'Segoe UI', sans-serif">APIリクエスト</text>
+      <circle cx="30" cy="152" r="11" fill="#334155"/><text x="30" y="157" text-anchor="middle" fill="#64748b" font-size="12" font-weight="700">4</text><text x="48" y="156" fill="#64748b" font-size="12" font-family="'Segoe UI', sans-serif">署名検証</text>
+      <circle cx="30" cy="182" r="11" fill="#334155"/><text x="30" y="187" text-anchor="middle" fill="#64748b" font-size="12" font-weight="700">5</text><text x="48" y="186" fill="#64748b" font-size="12" font-family="'Segoe UI', sans-serif">リソース返却</text>
 
       <rect x="12" y="200" width="316" height="48" rx="6" fill="#22c55e" opacity="0.08" stroke="#22c55e" stroke-width="0.8"/>
-      <circle cx="30" cy="220" r="11" fill="#22c55e"/><text x="30" y="225" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">6</text>
-      <text x="48" y="216" fill="#f8fafc" font-size="10.5" font-weight="600" font-family="'Segoe UI', sans-serif">リフレッシュトークン送信</text>
-      <text x="48" y="230" fill="#86efac" font-size="8.5" font-family="'Segoe UI', sans-serif">期限切れ前に新しいJWTを取得</text>
+      <circle cx="30" cy="220" r="11" fill="#22c55e"/><text x="30" y="225" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">6</text>
+      <text x="48" y="216" fill="#f8fafc" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">リフレッシュトークン送信</text>
+      <text x="48" y="230" fill="#86efac" font-size="12" font-family="'Segoe UI', sans-serif">期限切れ前に新しいJWTを取得</text>
       <text x="48" y="242" fill="#475569" font-size="7.5" font-family="'Fira Code', monospace">→ POST /token grant_type=refresh_token</text>
 
       <rect x="12" y="254" width="316" height="42" rx="6" fill="#22c55e" opacity="0.08" stroke="#22c55e" stroke-width="0.8"/>
-      <circle cx="30" cy="272" r="11" fill="#22c55e"/><text x="30" y="277" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">7</text>
-      <text x="48" y="268" fill="#f8fafc" font-size="10.5" font-weight="600" font-family="'Segoe UI', sans-serif">新しいJWT発行</text>
-      <text x="48" y="282" fill="#86efac" font-size="8.5" font-family="'Segoe UI', sans-serif">新しいaccess_token + refresh_tokenを返却</text>
+      <circle cx="30" cy="272" r="11" fill="#22c55e"/><text x="30" y="277" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">7</text>
+      <text x="48" y="268" fill="#f8fafc" font-size="12" font-weight="600" font-family="'Segoe UI', sans-serif">新しいJWT発行</text>
+      <text x="48" y="282" fill="#86efac" font-size="12" font-family="'Segoe UI', sans-serif">新しいaccess_token + refresh_tokenを返却</text>
     </g>
   </g>
 </svg>
