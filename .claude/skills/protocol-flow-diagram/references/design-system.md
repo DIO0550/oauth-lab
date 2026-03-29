@@ -94,7 +94,7 @@
 font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif
 monospace:   'Fira Code', monospace
 
-※ 最小フォントサイズ: 10px（これ未満は視認性が悪いため禁止）
+※ 最小フォントサイズ: 12px（これ未満は視認性が悪いため禁止）
 
 ヘッダータイトル:    font-size="24"  font-weight="700"
 ヘッダーサブ:       font-size="14"  (text-muted)
@@ -104,27 +104,27 @@ Phaseバッジ:       font-size="16"  font-weight="700"
 Phaseサブ:         font-size="13"
 
 アクター名:         font-size="14"  font-weight="700"
-アクターサブ:       font-size="11"  opacity="0.7"
+アクターサブ:       font-size="12"  opacity="0.7"
 
 番号バッジ:         font-size="13"  font-weight="700" (白)
 番号バッジ半径:     15px
 番号バッジ色:       各チャネルカラー (fill)
 
 ステップタイトル:    font-size="13"  font-weight="600"
-パラメータコード:    font-size="11"  font-family="monospace"
+パラメータコード:    font-size="12"  font-family="monospace"
 説明ボックス角丸:   rx="6"
 
 サイドバータイトル:  font-size="15"  font-weight="700"
 サイドバーステップ:  font-size="12"  font-weight="600"
-サイドバー説明:     font-size="11"  (channel-color)
-サイドバーコード:   font-size="10"  font-family="monospace" (text-dimmer)
+サイドバー説明:     font-size="12"  (channel-color)
+サイドバーコード:   font-size="12"  font-family="monospace" (text-dimmer)
 サイドバーバッジ半径: 11px
 
-凡例テキスト:       font-size="11"
-セキュリティカード:  font-size="11"  font-weight="600"
-セキュリティ説明:   font-size="11"  (text-muted)
+凡例テキスト:       font-size="12"
+セキュリティカード:  font-size="12"  font-weight="600"
+セキュリティ説明:   font-size="12"  (text-muted)
 
-グレーアウトラベル:  font-size="11"  (text-dimmest)
+グレーアウトラベル:  font-size="12"  (text-dimmest)
 ```
 
 ---

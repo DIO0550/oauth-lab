@@ -57,7 +57,7 @@ Phase分割型プロトコルフロー図のSVGコンポーネント集。`<symb
         font-size="14" font-weight="700" font-family="'Segoe UI', sans-serif">
     リソース所有者</text>
   <text x="55" y="116" text-anchor="middle" fill="#a855f7"
-        font-size="11" opacity="0.7" font-family="'Segoe UI', sans-serif">
+        font-size="12" opacity="0.7" font-family="'Segoe UI', sans-serif">
     (Resource Owner)</text>
 </symbol>
 ```
@@ -89,7 +89,7 @@ Phase分割型プロトコルフロー図のSVGコンポーネント集。`<symb
         font-size="14" font-weight="700" font-family="'Segoe UI', sans-serif">
     クライアント</text>
   <text x="55" y="116" text-anchor="middle" fill="#22d3ee"
-        font-size="11" opacity="0.7" font-family="'Segoe UI', sans-serif">
+        font-size="12" opacity="0.7" font-family="'Segoe UI', sans-serif">
     (Client)</text>
 </symbol>
 ```
@@ -114,7 +114,7 @@ Phase分割型プロトコルフロー図のSVGコンポーネント集。`<symb
         font-size="14" font-weight="700" font-family="'Segoe UI', sans-serif">
     認可サーバー</text>
   <text x="55" y="116" text-anchor="middle" fill="#f59e0b"
-        font-size="11" opacity="0.7" font-family="'Segoe UI', sans-serif">
+        font-size="12" opacity="0.7" font-family="'Segoe UI', sans-serif">
     (Auth Server)</text>
 </symbol>
 ```
@@ -149,7 +149,7 @@ Phase分割型プロトコルフロー図のSVGコンポーネント集。`<symb
         font-size="14" font-weight="700" font-family="'Segoe UI', sans-serif">
     リソースサーバー</text>
   <text x="55" y="116" text-anchor="middle" fill="#3b82f6"
-        font-size="11" opacity="0.7" font-family="'Segoe UI', sans-serif">
+        font-size="12" opacity="0.7" font-family="'Segoe UI', sans-serif">
     (Resource Server)</text>
 </symbol>
 ```
@@ -187,7 +187,7 @@ Phase分割型プロトコルフロー図のSVGコンポーネント集。`<symb
         font-size="14" font-weight="700" font-family="'Segoe UI', sans-serif">
     ブラウザ</text>
   <text x="55" y="116" text-anchor="middle" fill="#22d3ee"
-        font-size="11" opacity="0.7" font-family="'Segoe UI', sans-serif">
+        font-size="12" opacity="0.7" font-family="'Segoe UI', sans-serif">
     (User Agent)</text>
 </symbol>
 ```
@@ -214,7 +214,7 @@ Phase分割型プロトコルフロー図のSVGコンポーネント集。`<symb
         font-size="14" font-weight="700" font-family="'Segoe UI', sans-serif">
     属性ストア</text>
   <text x="55" y="116" text-anchor="middle" fill="#8b5cf6"
-        font-size="11" opacity="0.7" font-family="'Segoe UI', sans-serif">
+        font-size="12" opacity="0.7" font-family="'Segoe UI', sans-serif">
     (Attribute Store)</text>
 </symbol>
 ```
@@ -234,7 +234,7 @@ Phase分割型プロトコルフロー図のSVGコンポーネント集。`<symb
 <!-- 使用例 -->
 <use href="#dimbox" x="530" y="310" width="110" height="130"/>
 <text x="585" y="385" text-anchor="middle" fill="#334155"
-      font-size="11" font-family="'Segoe UI', sans-serif">リソースサーバー</text>
+      font-size="12" font-family="'Segoe UI', sans-serif">リソースサーバー</text>
 ```
 
 ---
@@ -300,10 +300,10 @@ Phase分割型プロトコルフロー図のSVGコンポーネント集。`<symb
   <text x="6" y="2" fill="{channel-color-light}" font-size="13"
         font-weight="600" font-family="'Segoe UI', sans-serif">
     {step_label}</text>
-  <text x="6" y="18" fill="#94a3b8" font-size="11"
+  <text x="6" y="18" fill="#94a3b8" font-size="12"
         font-family="'Fira Code', monospace">
     {param_line_1}</text>
-  <text x="6" y="32" fill="#94a3b8" font-size="11"
+  <text x="6" y="32" fill="#94a3b8" font-size="12"
         font-family="'Fira Code', monospace">
     {param_line_2}</text>
 </g>
@@ -318,8 +318,8 @@ Phase分割型プロトコルフロー図のSVGコンポーネント集。`<symb
 ```xml
 <circle cx="30" cy="{y}" r="11" fill="#334155"/>
 <text x="30" y="{y+5}" text-anchor="middle" fill="#64748b"
-      font-size="11" font-weight="700">{N}</text>
-<text x="48" y="{y+4}" fill="#64748b" font-size="11"
+      font-size="12" font-weight="700">{N}</text>
+<text x="48" y="{y+4}" fill="#64748b" font-size="12"
       font-family="'Segoe UI', sans-serif">{step_title}</text>
 ```
 
@@ -331,12 +331,12 @@ Phase分割型プロトコルフロー図のSVGコンポーネント集。`<symb
       stroke="{channel-color}" stroke-width="0.8"/>
 <circle cx="30" cy="{y}" r="11" fill="{channel-color}"/>
 <text x="30" y="{y+5}" text-anchor="middle" fill="#fff"
-      font-size="11" font-weight="700">{N}</text>
+      font-size="12" font-weight="700">{N}</text>
 <text x="48" y="{y-2}" fill="#f8fafc" font-size="12"
       font-weight="600" font-family="'Segoe UI', sans-serif">{step_title}</text>
-<text x="48" y="{y+12}" fill="{channel-color-light}" font-size="11"
+<text x="48" y="{y+12}" fill="{channel-color-light}" font-size="12"
       font-family="'Segoe UI', sans-serif">{step_description}</text>
-<text x="48" y="{y+24}" fill="#475569" font-size="10"
+<text x="48" y="{y+24}" fill="#475569" font-size="12"
       font-family="'Fira Code', monospace">{code_example}</text>
 ```
 
